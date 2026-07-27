@@ -33,6 +33,7 @@
   - `ky-think` 保持无状态；`ky-learn` 与 `ky-council` 改为通用本地状态目录。
   - 移除私有系统路径和内部工作区依赖，补充本地状态初始化脚本与模板。
   - 更新根 README、集合版本和协作说明。
+  - 推送 `codex/publish-three-cognitive-skills` 并创建草稿 PR #1。
 - **改动路径**：
   - `skills/ky-think/**`
   - `skills/ky-learn/**`
@@ -48,7 +49,7 @@
   - 隔离环境中三个 Skill 的安装软链接通过。
   - 私有路径、个人信息、密钥模式扫描无命中；`git diff --check` 通过。
 - **未完成 / 下一步**：
-  - 推送分支并建立草稿 PR。
+  - 审核草稿 PR：https://github.com/KirenYi/ky-skills/pull/1
   - 合并前继续确认公开描述、预览定位和真实验证计划。
 - **风险或注意**：
   - 三个 Skill 尚未达到 Factory 中规定的真实使用验证门槛，公开版本不得标记为稳定成熟版。
