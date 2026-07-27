@@ -24,6 +24,37 @@
 
 ---
 
+## 2026-07-26 17:14 PDT — Codex — 三个认知 Skill 公开预览
+
+- **操作者**：Codex
+- **目标**：将 `ky-think`、`ky-learn`、`ky-council` 以可审核的公开预览形式推送到 GitHub。
+- **已完成**：
+  - 新增三个 Skill 的公开导出版本，明确预览状态与未完成的真实验证。
+  - `ky-think` 保持无状态；`ky-learn` 与 `ky-council` 改为通用本地状态目录。
+  - 移除私有系统路径和内部工作区依赖，补充本地状态初始化脚本与模板。
+  - 更新根 README、集合版本和协作说明。
+- **改动路径**：
+  - `skills/ky-think/**`
+  - `skills/ky-learn/**`
+  - `skills/ky-council/**`
+  - `README.md`
+  - `AGENTS.md`
+  - `VERSION`
+  - `docs/PROGRESS.md`
+- **验证**：
+  - 三个 `SKILL.md` frontmatter 仅含 `name` 与 `description`，目录名一致。
+  - `agents/openai.yaml` 可解析；两个状态脚本通过 Python 编译。
+  - 从任意工作目录初始化成功；重复初始化不覆盖已有状态；相对状态路径被拒绝。
+  - 隔离环境中三个 Skill 的安装软链接通过。
+  - 私有路径、个人信息、密钥模式扫描无命中；`git diff --check` 通过。
+- **未完成 / 下一步**：
+  - 推送分支并建立草稿 PR。
+  - 合并前继续确认公开描述、预览定位和真实验证计划。
+- **风险或注意**：
+  - 三个 Skill 尚未达到 Factory 中规定的真实使用验证门槛，公开版本不得标记为稳定成熟版。
+
+---
+
 ## 2026-07-21 — Grok — Skill 更名 ky-codex-switch
 
 - **操作者**：Grok

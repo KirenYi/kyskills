@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY Think"
+  short_description: "把问题想清楚、搞懂并经受反例检验"
+  default_prompt: "Use $ky-think to select solve, understand, or audit mode and bring one complex problem to a testable conclusion and next action."
