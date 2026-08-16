@@ -90,7 +90,7 @@ fi
 "$INSTALL_DIR/scripts/install-links.sh" --quiet "$@"
 
 if [[ "$#" -eq 0 ]]; then
-  info "完成。请重启 Agent，然后输入 /ky-x /ky-dy /ky-xhs /ky-sph /ky-xdraft /ky-mphtml。"
+  info "完成。请重启 Agent，然后按需输入 /ky-x /ky-dy /ky-xhs /ky-sph /ky-xdraft /ky-mphtml /ky-codex-switch /ky-tool /ky-vcheck /ky-biz。"
 else
   installed_commands=""
   for skill_name in "$@"; do

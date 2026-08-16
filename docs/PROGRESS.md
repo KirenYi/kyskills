@@ -24,6 +24,35 @@
 
 ---
 
+## 2026-08-16 08:11 PDT — Codex — 新增三个短名判断 Skill
+
+- **操作者**：Codex
+- **目标**：把 AI 工具评估、短视频诊断和商业诊断做成简短的 `ky-*` Skill 并准备推送。
+- **已完成**：
+  - 新增 `ky-tool`、`ky-vcheck`、`ky-biz`，名称与调用命令保持简短。
+  - 三个 Skill 均以 `0.1.0` 首发，不增加“实验版”标签。
+  - 同步根 README、集合版本、已发布列表和安装完成提示。
+  - 独立试跑后收紧数值门槛规则：不得把缺少依据的建议值写成客观标准。
+- **改动路径**：
+  - `skills/ky-tool/**`
+  - `skills/ky-vcheck/**`
+  - `skills/ky-biz/**`
+  - `README.md`
+  - `AGENTS.md`
+  - `VERSION`
+  - `install.sh`
+  - `docs/PROGRESS.md`
+- **验证**：
+  - 三个目录均通过 `skill-creator` 的 `quick_validate.py`。
+  - 通过独立 Agent 前向试跑，并针对试跑暴露的任意数值门槛完成修正与复测。
+  - 在隔离临时目录执行安装，三个 Skill 成功建立 12 个多宿主软链接。
+  - `git diff --check`、敏感路径与占位内容扫描通过。
+- **未完成 / 下一步**：
+  - 审阅并合并本次 GitHub PR；后续依据真实使用持续升级版本。
+- **风险或注意**：
+  - 三个 Skill 都依赖用户提供的真实输入，不得编造经营数据、平台指标或工具表现。
+  - `ky-biz` 不替代法律、税务、投资或其他专业复核。
+
 ## 2026-07-21 — Grok — Skill 更名 ky-codex-switch
 
 - **操作者**：Grok

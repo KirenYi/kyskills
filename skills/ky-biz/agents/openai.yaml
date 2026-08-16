@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY 商业诊断"
+  short_description: "基于证据和商业模型，判断项目应该继续、调整、扩大还是停止"
+  default_prompt: "使用 $ky-biz 诊断这个商业问题，并给出带条件的行动建议。"

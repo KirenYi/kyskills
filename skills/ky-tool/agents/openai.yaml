@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY 工具评估"
+  short_description: "对比人工基线与真实成本，判断 AI 工具是否值得采用"
+  default_prompt: "使用 $ky-tool 对这个 AI 工具与人工基线做三次可复核的价值评估。"

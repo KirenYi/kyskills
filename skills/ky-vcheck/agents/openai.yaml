@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY 视频诊断"
+  short_description: "结合口播文案与发布数据，诊断短视频的进场、留存和激发问题"
+  default_prompt: "使用 $ky-vcheck 诊断这条短视频的文案和发布数据。"
