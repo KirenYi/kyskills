@@ -24,6 +24,33 @@
 
 ---
 
+## 2026-09-12 17:54 +08:00 — Codex — 新增 Windows 微信双开 Skill
+
+- **操作者**：Codex
+- **目标**：把官方微信双开桌面快捷方式沉淀为可公开安装的 `ky-wechat-dual`。
+- **已完成**：
+  - 新增 Skill 说明、用户 README、PowerShell 安装脚本、独立版本与变更记录。
+  - 自动发现 `Weixin.exe` / `WeChat.exe`，并校验腾讯版本信息与有效 Authenticode 签名。
+  - 创建无 VBS / BAT 外部依赖的双开快捷方式；默认不启动微信，避免测试导致额外窗口。
+  - 更新集合 README、已发布 Skill 清单与集合版本 `0.7.0`。
+- **改动路径**：
+  - `skills/ky-wechat-dual/**`
+  - `README.md`
+  - `AGENTS.md`
+  - `VERSION`
+  - `docs/PROGRESS.md`
+- **验证**：
+  - Skill Creator `quick_validate.py` 通过。
+  - PowerShell 语法解析零错误，运行脚本返回 `InstalledAndValidated`。
+  - 本机腾讯官方微信 4.1.13.12 的数字签名状态为 `Valid`。
+  - `install-links.sh --dry-run ky-wechat-dual` 成功识别并规划多宿主链接。
+  - 隐私扫描未发现本机用户名、安装路径或凭据。
+- **未完成 / 下一步**：
+  - 无。
+- **风险或注意**：
+  - 仅支持 Windows；登录验证必须由用户本人完成。
+  - 不承诺平台账号风控为零，禁止与第三方多开、补丁或群控工具混用。
+
 ## 2026-07-21 — Grok — Skill 更名 ky-codex-switch
 
 - **操作者**：Grok

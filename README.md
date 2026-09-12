@@ -14,6 +14,7 @@ Kiren Yi（KY）的个人 Agent Skill 集合。
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 把 Markdown 做成 X 长文草稿流程 |
 | [`/ky-mphtml`](./skills/ky-mphtml/) | Markdown 排成公众号可粘贴 HTML |
 | [`/ky-codex-switch`](./skills/ky-codex-switch/) | Codex 一键切模型（弹窗填 Key + 图文教程） |
+| [`/ky-wechat-dual`](./skills/ky-wechat-dual/) | 创建或修复 Windows 官方微信双开快捷方式 |
 
 以上能力均为 **KY 自维护的 skill 说明与脚本**（见 `skills/`）。  
 使用前请阅读各 skill 目录下的 `README.md` / `SKILL.md`。
@@ -58,6 +59,7 @@ Windows 也可先 `git clone` 再执行：
 | ky-xdraft | 本地 Markdown；Chrome 已登录 X | 按流程创建 X 长文**草稿**（默认不发布） |
 | ky-mphtml | Markdown 正文或文件 | 可复制进公众号后台的 HTML |
 | ky-codex-switch | SuperGrok 登录；可选 OpenRouter Key | 桌面一键切 Grok/Claude/DeepSeek/OpenAI… |
+| ky-wechat-dual | Windows + 腾讯官方微信 | 已校验的“微信双开”桌面或开机启动快捷方式 |
 
 更细的步骤、参数与限制见各 skill 内文档，**以 `skills/<name>/SKILL.md` 为准**。
 
