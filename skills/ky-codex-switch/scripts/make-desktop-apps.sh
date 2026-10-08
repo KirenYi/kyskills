@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Only the main hub app. Tutorial is inside the menu. Channel shortcuts on first use.
+# Keep exactly one launcher app. Model and tutorial choices live inside its menu.
 set -euo pipefail
 BIN="${CODEX_BIN_DIR:-$HOME/.codex/bin}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -50,13 +50,19 @@ LAUNCH
   echo "created $app"
 }
 
-# Remove obsolete hub/tutorial/channel preseeds (keep user first-use shortcuts tracked separately)
+# Remove launcher apps created by older versions, except the single menu hub.
 cleanup_obsolete() {
   local dest="$1"
-  rm -rf \
-    "$dest/Codex 使用教程.app" \
-    "$dest/Codex→使用教程.app" \
-    2>/dev/null || true
+  local app plist
+  for app in "$dest"/Codex*.app; do
+    [[ -d "$app" ]] || continue
+    [[ "$app" == "$dest/Codex 切换模型.app" ]] && continue
+    plist="$app/Contents/Info.plist"
+    if [[ -f "$plist" ]] && grep -q 'local\.ky\.codex\.provider\.' "$plist"; then
+      rm -rf -- "$app"
+      echo "removed obsolete $app"
+    fi
+  done
   rm -f "$dest"/Codex*.command 2>/dev/null || true
 }
 

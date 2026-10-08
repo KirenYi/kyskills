@@ -24,6 +24,35 @@
 
 ---
 
+## 2026-10-07 20:09 PDT — Codex — Codex 切换器合并为单一图标
+
+- **操作者**：Codex
+- **目标**：桌面只保留一个 Codex 模型切换图标，打开图标后再选择模型或通道
+- **已完成**：
+  - 停止在通道切换成功后生成 `Codex → 模型` 独立快捷 App
+  - 安装或升级时清理旧版生成的分模型 App，只保留「Codex 切换模型」
+  - 主图标继续进入模型/通道选择菜单，教程也保留在同一菜单中
+  - 删除不再使用的分模型快捷方式脚本与 profile 标记
+  - 同步 README、Skill 说明、教程、版本和 changelog
+- **改动路径**：
+  - `skills/ky-codex-switch/**`
+  - `README.md`
+  - `AGENTS.md`
+  - `VERSION`
+  - `docs/PROGRESS.md`
+- **验证**：
+  - `skill-creator` 的 `quick_validate.py` 通过
+  - 所有修改过的 shell 脚本通过 `bash -n`
+  - 隔离桌面验证旧生成 App 被清理、无关 App 保留、主图标 launcher 使用 `pick`
+  - 隔离 HOME 完整安装通过，桌面最终只有一个 Codex 切换图标
+  - `profiles.json` 通过 JSON 校验，`git diff --check` 通过
+- **未完成 / 下一步**：
+  - 用户确认后推送独立分支
+- **风险或注意**：
+  - 清理逻辑只删除 bundle id 以 `local.ky.codex.provider.` 开头的旧 Codex App，避免误删用户自己的同名应用
+
+---
+
 ## 2026-09-12 17:54 +08:00 — Codex — 新增 Windows 微信双开 Skill
 
 - **操作者**：Codex

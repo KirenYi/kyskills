@@ -2,7 +2,7 @@
 name: ky-codex-switch
 description: |
   Codex 模型/通道一键切换：OpenAI 官方、SuperGrok 订阅、DeepSeek 官网 Key、OpenRouter、中转站 API。
-  首次缺 Key 弹窗引导；菜单内教程；桌面按需生成快捷方式。
+  桌面只保留一个切换图标，打开后在菜单中选择模型；首次缺 Key 弹窗引导，菜单内含教程。
   触发：/ky-codex-switch、「Codex 切换」「Codex 换模型」「切换 Grok」「DeepSeek 接 Codex」「中转站 API」
   One-click Codex model/channel switcher (SuperGrok, DeepSeek, OpenRouter, custom relay).
 ---
@@ -20,7 +20,7 @@ description: |
 ## Agent 该做什么
 
 1. **安装/升级**：`bash "$SKILL_ROOT/scripts/install.sh"`
-2. **引导使用**：优先让用户双击 **Codex 切换模型**（教程在菜单第一项）
+2. **引导使用**：让用户双击唯一的 **Codex 切换模型** 图标，再从菜单选择模型（教程在菜单第一项）
 3. **缺 Key**：说明会自动弹窗；也可 `codex-provider tutorial`
 4. **不要**默认要求用户手写复杂 config.toml
 
@@ -46,7 +46,7 @@ bash "$SKILL_ROOT/scripts/install.sh"
 
 | 场景 | 操作 |
 |------|------|
-| 日常切换 | 双击「Codex 切换模型」 |
+| 日常切换 | 双击「Codex 切换模型」→ 在菜单中选择 |
 | 第一次 DeepSeek/Claude | 点选 → 弹窗贴 OpenRouter Key 或点「查看教程」 |
 | 第二次及以后 | 再点 = 直接切换 |
 | SuperGrok | 先 `grok login`，再点 Grok |
@@ -69,7 +69,7 @@ bash "$SKILL_ROOT/scripts/install.sh"
 
 用中文短说明：
 
-1. 点「Codex 切换模型」  
-2. 第一次 API 会弹窗 / 可点查看教程  
-3. 有「Codex 使用教程」按钮  
-4. 切换后新建对话  
+1. 点「Codex 切换模型」
+2. 在菜单中选择模型
+3. 第一次 API 会弹窗 / 可点查看教程
+4. 切换后新建对话

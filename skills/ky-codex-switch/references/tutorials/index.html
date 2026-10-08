@@ -79,21 +79,21 @@ chmod 600 ~/.codex/ky-provider.env</pre>
   <h2 id="grok">配置 SuperGrok（订阅，不是 API 充值）</h2>
   <ol class="steps">
     <li class="step">安装并打开 Grok Build CLI，执行：<pre>grok login</pre></li>
-    <li class="step">双击 <strong>「Codex → Grok」</strong> 或在「Codex 切换模型」里选 SuperGrok。</li>
+    <li class="step">双击 <strong>「Codex 切换模型」</strong>，在菜单里选 SuperGrok。</li>
     <li class="step">新建对话使用。若 502：终端执行 <code>~/.codex/bin/supergrok-proxy restart</code></li>
   </ol>
 
-  <h2 id="shortcut-recover">误删桌面快捷方式？</h2>
+  <h2 id="shortcut-recover">桌面只有一个图标</h2>
   <div class="card">
-    <p>主图标「Codex 切换模型」请保留。其它如「Codex → Grok」是首次使用后自动生成的。</p>
-    <p><strong>恢复方法：</strong>再打开「切换模型」→ 选同一个通道一次 → 会重新生成图标。已保存的 API Key 不用重填。</p>
+    <p>只保留主图标「Codex 切换模型」。双击后在同一个菜单里选择 OpenAI、Grok、Claude、DeepSeek、Gemini 或其他通道。</p>
+    <p><strong>如果误删：</strong>重新运行安装脚本即可恢复主图标，已保存的 API Key 不用重填。</p>
   </div>
 
   <h2 id="switch">日常怎么切换（越简单越好）</h2>
   <div class="card">
     <ul>
       <li><strong>最省事：</strong>双击桌面 <strong>Codex 切换模型</strong> → 点一下想要的通道</li>
-      <li><strong>快捷按钮：</strong>Codex → OpenAI / Grok / Claude / DeepSeek / Gemini</li>
+      <li><strong>所有选择：</strong>都在「Codex 切换模型」的同一个菜单里</li>
       <li><strong>命令行：</strong><pre>~/.codex/bin/codex-provider pick
 ~/.codex/bin/codex-provider use deepseek
 ~/.codex/bin/codex-provider status</pre></li>

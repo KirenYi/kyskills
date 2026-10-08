@@ -24,9 +24,9 @@ install_bin supergrok-token
 install_bin supergrok-proxy
 install_bin codex-provider
 install_bin codex-provider-app-run
-install_bin ensure-desktop-shortcut.sh
 install_bin deepseek-proxy
 install_bin relay-proxy
+rm -f "$BIN/ensure-desktop-shortcut.sh" "$CODEX_HOME/ky-desktop-shortcuts.txt"
 cp "$SCRIPTS/sync-openrouter-bearer.py" "$BIN/sync-openrouter-bearer.py"
 chmod 700 "$BIN/sync-openrouter-bearer.py"
 cp "$SCRIPTS/profiles.json" "$CODEX_HOME/ky-profiles.json"
@@ -116,7 +116,7 @@ model_catalog_json = "~/.codex/model-catalogs/xai-models.json"
 TOML
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
-  # Hub + tutorial only; per-channel icons created on first successful switch
+  # One hub icon only; the menu contains every model and the tutorial.
   bash "$SCRIPTS/make-desktop-apps.sh" || true
 fi
 
@@ -132,8 +132,8 @@ echo "Profiles:"
 KY_CODEX_PROFILES="$CODEX_HOME/ky-profiles.json" "$BIN/codex-provider" list
 echo
 echo "Next (simple):"
-echo "  • Desktop: only 「Codex 切换模型」(designed icon); tutorial is inside the menu"
-echo "  • First pick of a channel → auto desktop shortcut for that channel"
+echo "  • Desktop: open the single 「Codex 切换模型」 icon, then choose a model"
+echo "  • Tutorial is the first item in the same menu"
 echo "  • DeepSeek: official key | Claude/Gemini: OpenRouter | 中转站: base_url+key+model"
 echo "  • After switch: always NEW chat in Codex"
 echo

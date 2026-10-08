@@ -25,15 +25,13 @@ bash skills/ky-codex-switch/scripts/install.sh
 
 或在 Agent 里：`/ky-codex-switch` → 帮我安装。
 
-### 2. 日常怎么点（桌面不堆图标）
+### 2. 日常怎么点
 
-默认桌面**只有 1 个主图标**（带设计图标）：
+桌面**只有 1 个图标**：
 
 | 图标 | 作用 |
 |------|------|
-| **Codex 切换模型** | 主菜单选通道；第一项可打开教程网页 |
-
-**第一次**选中某通道并成功后，才自动生成 `Codex → 该通道` 快捷方式。
+| **Codex 切换模型** | 打开选择菜单；选择模型/通道，第一项可打开教程 |
 
 
 ### 3. 第一次用 DeepSeek / Claude？
@@ -64,7 +62,7 @@ Key 只存本机 `~/.codex/ky-provider.env`。
 ## 两条「简单路径」
 
 **A. 只要 Grok 订阅**  
-`grok login` → 点 **Codex → Grok**
+`grok login` → 打开 **Codex 切换模型** → 选择 Grok
 
 **B. 要 DeepSeek / Claude / 多家 API**  
 申请 [OpenRouter Key](https://openrouter.ai/keys)（一次）→ 点 **API 合集** 或 DeepSeek/Claude  

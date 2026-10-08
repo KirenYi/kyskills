@@ -34,4 +34,4 @@ Edit `~/.codex/ky-profiles.json` (or skill `scripts/profiles.json` then reinstal
 
 ## Desktop apps
 
-`make-desktop-apps.sh` builds LSUIElement apps that call `codex-provider-app-run <id|pick>`.
+`make-desktop-apps.sh` builds one launcher, **Codex 切换模型**, which calls `codex-provider-app-run pick`. The picker routes every model/channel choice through `codex-provider`; no per-model apps are created.
