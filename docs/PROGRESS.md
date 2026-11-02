@@ -24,6 +24,24 @@
 
 ---
 
+## 2026-11-02 18:40 PDT — Claude Code — 删除 ky-wechat-dual
+
+- **操作者**：Claude Code
+- **目标**：用户不再需要 Windows 微信双开 skill
+- **已完成**：
+  - 删除 `skills/ky-wechat-dual/`，README 两张表和 AGENTS 已发布列表同步移除
+  - 本机删除各宿主下的 `ky-wechat-dual` 软链
+- **改动路径**：
+  - `skills/ky-wechat-dual/`（删除）、`README.md`、`AGENTS.md`、`docs/PROGRESS.md`
+- **验证**：
+  - `git grep wechat-dual` 只剩 PROGRESS 历史记录
+- **未完成 / 下一步**：
+  - 无
+- **风险或注意**：
+  - 其他机器上装过的旧软链会变成坏链接，需手动删除；代码仍在 git 历史里，可找回
+
+---
+
 ## 2026-11-02 18:30 PDT — Claude Code — README 分组、安装提示、清理分支
 
 - **操作者**：Claude Code
