@@ -1,4 +1,8 @@
-# ky-deai
+# ky-write
+
+## 0.2.0
+
+- 改名为 ky-write（曾用名 ky-deai），定位为写作 skill，去 AI 味作为其中一部分
 
 ## 0.1.0
 

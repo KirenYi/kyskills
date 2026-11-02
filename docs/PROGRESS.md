@@ -24,6 +24,26 @@
 
 ---
 
+## 2026-11-02 18:10 PDT — Claude Code — ky-deai 改名为 ky-write
+
+- **操作者**：Claude Code
+- **目标**：用户把这个 skill 定位为「写作」，去 AI 味只是写作的一部分
+- **已完成**：
+  - `skills/ky-deai/` → `skills/ky-write/`，name、description、标题改为写作定位；垫词清单和 AI 腔清单归到「去 AI 味」一节下
+  - skill VERSION 0.2.0；README、AGENTS 同步改名
+  - 删除各宿主下 `ky-deai` 旧软链，重新链接 `ky-write`
+- **改动路径**：
+  - `skills/ky-write/`
+  - `README.md`、`AGENTS.md`、`docs/PROGRESS.md`
+- **验证**：
+  - `./scripts/install-links.sh ky-write`
+- **未完成 / 下一步**：
+  - 同上一条：真实稿件试跑、补示例
+- **风险或注意**：
+  - 已安装过 ky-deai 的其他机器需删除旧软链后重跑 install-links
+
+---
+
 ## 2026-11-02 18:00 PDT — Claude Code — 新增 ky-deai
 
 - **操作者**：Claude Code
