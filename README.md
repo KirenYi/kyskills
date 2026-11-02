@@ -15,6 +15,7 @@ Kiren Yi（KY）的个人 Agent Skill 集合。
 | [`/ky-mphtml`](./skills/ky-mphtml/) | Markdown 排成公众号可粘贴 HTML |
 | [`/ky-codex-switch`](./skills/ky-codex-switch/) | 用一个桌面图标选择并切换 Codex 模型 |
 | [`/ky-wechat-dual`](./skills/ky-wechat-dual/) | 创建或修复 Windows 官方微信双开快捷方式 |
+| [`/ky-deai`](./skills/ky-deai/) | 中文观点文章、口播稿去 AI 味，可出英文字幕 |
 
 以上能力均为 **KY 自维护的 skill 说明与脚本**（见 `skills/`）。  
 使用前请阅读各 skill 目录下的 `README.md` / `SKILL.md`。
@@ -60,6 +61,7 @@ Windows 也可先 `git clone` 再执行：
 | ky-mphtml | Markdown 正文或文件 | 可复制进公众号后台的 HTML |
 | ky-codex-switch | SuperGrok 登录；可选 OpenRouter Key | 打开一个桌面图标，选择 Grok/Claude/DeepSeek/OpenAI… |
 | ky-wechat-dual | Windows + 腾讯官方微信 | 已校验的“微信双开”桌面或开机启动快捷方式 |
+| ky-deai | 文章初稿、口播稿或一个想法 | 问题清单、精简后的版本、修改对照；可选英文字幕 |
 
 更细的步骤、参数与限制见各 skill 内文档，**以 `skills/<name>/SKILL.md` 为准**。
 

@@ -24,6 +24,27 @@
 
 ---
 
+## 2026-11-02 18:00 PDT — Claude Code — 新增 ky-deai
+
+- **操作者**：Claude Code
+- **目标**：把用户在 Claude 对话里做好的「去 AI 味」skill 收进集合，以后在仓库里持续打磨
+- **已完成**：
+  - 新增 `skills/ky-deai/`（曾用名 de-ai-flavor-writing）：文章润色、写作辅助、口播稿、英文字幕四种模式
+  - README skill 表、AGENTS 已发布列表、根 VERSION 升到 0.9.0
+  - 删除 `~/.claude/skills/de-ai-flavor-writing` 本地副本，改为 install-links 软链
+- **改动路径**：
+  - `skills/ky-deai/`
+  - `README.md`、`AGENTS.md`、`VERSION`、`docs/PROGRESS.md`
+- **验证**：
+  - `./scripts/install-links.sh ky-deai`
+- **未完成 / 下一步**：
+  - 用真实文章、口播稿试跑，补一组修改前后示例
+  - 观察「短 20% 到 30%」在原文已精炼时是否硬删
+- **风险或注意**：
+  - claude.ai 账号里还有一份旧的 de-ai-flavor-writing，需用户在网页端手动删除
+
+---
+
 ## 2026-10-07 20:09 PDT — Codex — Codex 切换器合并为单一图标
 
 - **操作者**：Codex
