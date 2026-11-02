@@ -5,17 +5,31 @@ Kiren Yi（KY）的个人 Agent Skill 集合。
 
 ## Skills
 
+按内容工作流分三组：**采集 → 创作 → 发布**，外加几个电脑工具。
+
+### 采集：把素材收进本地
+
 | 命令 | 核心能力 |
 |------|----------|
 | [`/ky-x`](./skills/ky-x/) | 归档 X 公开帖到本地 |
 | [`/ky-dy`](./skills/ky-dy/) | 下载抖音公开视频 |
 | [`/ky-xhs`](./skills/ky-xhs/) | 抓取小红书公开笔记 |
 | [`/ky-sph`](./skills/ky-sph/) | 整理视频号 / 公众号原料入库 |
+
+### 创作与发布：写好内容，排成各平台的格式
+
+| 命令 | 核心能力 |
+|------|----------|
+| [`/ky-write`](./skills/ky-write/) | 中文观点文章、口播稿的写作和润色（含去 AI 味），可出英文字幕 |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 把 Markdown 做成 X 长文草稿流程 |
 | [`/ky-mphtml`](./skills/ky-mphtml/) | Markdown 排成公众号可粘贴 HTML |
+
+### 电脑工具
+
+| 命令 | 核心能力 |
+|------|----------|
 | [`/ky-codex-switch`](./skills/ky-codex-switch/) | 用一个桌面图标选择并切换 Codex 模型 |
 | [`/ky-wechat-dual`](./skills/ky-wechat-dual/) | 创建或修复 Windows 官方微信双开快捷方式 |
-| [`/ky-write`](./skills/ky-write/) | 中文观点文章、口播稿的写作和润色（含去 AI 味），可出英文字幕 |
 
 以上能力均为 **KY 自维护的 skill 说明与脚本**（见 `skills/`）。  
 使用前请阅读各 skill 目录下的 `README.md` / `SKILL.md`。

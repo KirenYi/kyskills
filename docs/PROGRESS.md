@@ -24,6 +24,28 @@
 
 ---
 
+## 2026-11-02 18:30 PDT — Claude Code — README 分组、安装提示、清理分支
+
+- **操作者**：Claude Code
+- **目标**：整理仓库：skill 按工作流分组展示，修过时的安装提示，清掉不要的分支
+- **已完成**：
+  - README skill 表分为「采集 / 创作与发布 / 电脑工具」三组
+  - `install.sh` 装完后的命令列表改为自动读取 `skills/ky-*`，不再写死
+  - 新增 `skills/ky-write/README.md`
+  - 删除分支 `agent/add-short-skills`（ky-biz、ky-tool、ky-vcheck，用户确认不要）和已合并的 `codex/single-switcher-icon`
+  - 本机：删掉指向已不存在的 ky-wechat-html 的坏软链，重跑 install-links 链接全部 9 个 skill
+- **改动路径**：
+  - `README.md`、`install.sh`、`skills/ky-write/README.md`、`docs/PROGRESS.md`
+- **验证**：
+  - `bash -n install.sh`；`./scripts/install-links.sh` 输出 9 个 skill
+- **未完成 / 下一步**：
+  - 私有 skill（Kiren_Skill_Factory、ky-script / ky-kcard / ky-alchemy）是否统一到一个私有仓库，待用户决定
+  - `docs/grok-bot/`、`docs/COVER_ON_CAMERA_NOTES.md` 是否移出公开仓库，待用户决定
+- **风险或注意**：
+  - 无
+
+---
+
 ## 2026-11-02 18:10 PDT — Claude Code — ky-deai 改名为 ky-write
 
 - **操作者**：Claude Code

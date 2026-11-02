@@ -90,7 +90,12 @@ fi
 "$INSTALL_DIR/scripts/install-links.sh" --quiet "$@"
 
 if [[ "$#" -eq 0 ]]; then
-  info "完成。请重启 Agent，然后输入 /ky-x /ky-dy /ky-xhs /ky-sph /ky-xdraft /ky-mphtml。"
+  all_commands=""
+  for skill_dir in "$INSTALL_DIR"/skills/ky-*; do
+    [[ -f "$skill_dir/SKILL.md" ]] || continue
+    all_commands="${all_commands} /$(basename "$skill_dir")"
+  done
+  info "完成。请重启 Agent，然后调用：${all_commands# }"
 else
   installed_commands=""
   for skill_name in "$@"; do
