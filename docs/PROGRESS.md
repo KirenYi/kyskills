@@ -24,6 +24,26 @@
 
 ---
 
+## 2026-11-04 PST — Claude Code — ky-write 加入非共识写法
+
+- **操作者**：Claude Code
+- **目标**：把一篇讲「正确的非共识」的文章方法论放进 ky-write，又不让每篇稿子都被往反常识方向改
+- **已完成**：
+  - 新增 `fei-gongshi.md`：刻板印象 = 简化因果、四步法、告知/认知/植入三层、替换而非消灭、商业模式匹配
+  - `SKILL.md`：作者明确要求时读取该文件；润色/写作辅助时只在合适时提一条「可选」建议，不主动改
+  - 观点文章检查清单新增第 10、11 条（反对时给替代、转述时加判断），每篇都检查
+  - VERSION 0.2.0 → 0.3.0，同步 changelog 和 skill README
+- **改动路径**：
+  - `skills/ky-write/fei-gongshi.md`（新增）、`skills/ky-write/SKILL.md`、`skills/ky-write/README.md`、`skills/ky-write/VERSION`、`skills/ky-write/references/changelog.md`
+- **验证**：
+  - 纯文档 skill，无脚本；`~/.claude/skills/ky-write` 软链指向真源，改动即时生效
+- **未完成 / 下一步**：
+  - 用户之后补充「刻板印象选题库」，可考虑放在用户本地数据而不是仓库
+- **风险或注意**：
+  - 「可选」建议的触发频率需要实际用几篇后再调
+
+---
+
 ## 2026-11-02 18:40 PDT — Claude Code — 删除 ky-wechat-dual
 
 - **操作者**：Claude Code
