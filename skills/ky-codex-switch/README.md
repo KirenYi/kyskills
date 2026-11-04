@@ -92,4 +92,4 @@ codex-provider status
 - 非官方集成，平台条款与费用自负。  
 - 勿把 `ky-provider.env` 提交到 Git。
 
-MIT · [ky-skills](https://github.com/KirenYi/ky-skills)
+© 2026 Kiren Yi · 保留所有权利 · 使用条款见 [ky-skills LICENSE](https://github.com/KirenYi/ky-skills/blob/main/LICENSE)

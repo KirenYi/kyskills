@@ -5,6 +5,8 @@ description: |
   触发：/ky-xdraft、「X 草稿」「X 长文」
 ---
 
+<!-- ky-xdraft · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYXDRAFT-SKILL-2611 -->
+
 # ky-xdraft · X 长文草稿
 
 **核心：本地 Markdown → X 上的文章草稿（不自动公开发布）。**

@@ -24,6 +24,57 @@
 
 ---
 
+## 2026-11-04 PST — Claude Code — 许可证改为保留所有权利；ky-mphtml 更名 ky-typeset；ky-write 去除来源原话
+
+- **操作者**：Claude Code
+- **目标**：用户要求别人只能使用，不能传播、不能改了再发布、不能商用；Skill 要面向全球；所有 Skill 加上作者署名，帮作者引流
+- **已完成**：
+  - `LICENSE`：MIT 改为「保留所有权利 + 有限使用许可」（中文为准，附英文译本）。用 Skill 产出的内容归使用者，可以营利；禁止传播、公开修改版、拿 Skill 本身商用、删除署名、用于 AI 训练。2026-11-04 前的版本仍按 MIT
+  - 填入联系方式：邮箱 kirenyi16@gmail.com、kirenyi.com、抖音/视频号/小红书「知羿Kiren」、YouTube「Kiren Yi」；README 增加「关于作者」
+  - 所有 `SKILL.md` 的 frontmatter 下面加版权与账号注释（`KY*-SKILL-2611`）；ky-dy、ky-xhs 脚本头和 ky-codex-switch README 的 MIT 字样已替换
+  - `ky-mphtml` 更名为 `ky-typeset`（0.4.0）：不再只针对公众号，说明中英双语，样式加英文名，指纹改为 `KYTS-`，旧命令仍可触发；完成回复末尾附作者署名，生成的文章正文不加署名
+  - 删除所有宿主中的 `ky-mphtml` 旧软链，用 `install-links.sh ky-typeset` 重新链接
+  - `ky-write` 0.3.1：`fei-gongshi.md` 改用 KY 自己文章中的观点作例子，三个层次改名为「只转述 / 带判断 / 换框架」，加致谢（思路来自 dontbesilent 2026-03-31 的 X 帖）
+  - `THIRD_PARTY_NOTICES.md` 补充更名记录和致谢
+  - 新增 `scripts/find-copies.py`：从仓库收集 22 个版权标识，在 GitHub 代码搜索中逐个查找，并排除本仓库
+- **改动路径**：
+  - `LICENSE`、`README.md`、`THIRD_PARTY_NOTICES.md`、`AGENTS.md`、`docs/FONT_LICENSE.md`
+  - `skills/ky-typeset/*`（由 `skills/ky-mphtml/` 改名而来）、`skills/ky-write/fei-gongshi.md`、`skills/ky-write/SKILL.md`、`skills/ky-write/VERSION`、`skills/ky-write/references/changelog.md`
+  - 所有 `skills/*/SKILL.md`（头部注释）、`skills/ky-dy/scripts/download.py`、`skills/ky-xhs/scripts/fetch.py`、`skills/ky-codex-switch/README.md`
+- **验证**：
+  - 两个脚本都通过 `py_compile`；Claude Code 已识别 `ky-typeset`
+- **未完成 / 下一步**：
+  - 定期运行 `python3 scripts/find-copies.py --save`，查看有没有别人复制本仓库
+- **风险或注意**：
+  - 已经用 MIT 发出去的旧版本，别人得到的权利收不回来
+
+---
+
+## 2026-11-04 PST — Claude Code — ky-mphtml 净室重写，移除改编自 dbskill 的样式
+
+- **操作者**：Claude Code
+- **目标**：尊重原作者版权。最早 8 套样式改编自 dbskill（当时为 CC BY-NC 4.0），既没有署名，又被放进了 MIT 仓库，所以改为用 KY 自己的方法重做
+- **已完成**：
+  - 删除 clean、essay、docs、pulse、ledger、lecture、memo、stage 8 套；按 KY 视觉风格指南从零设计 paper、window、steps、desk、margin、notebook、kraft、poster 8 套，重写时未参照 dbskill 文件
+  - 保留 KY 原创的 ink、cream、swiss、night、fresh 5 套
+  - 用新结构重写 `SKILL.md`；加入版权标识 `KYMP-*` 和 HTML `generator` 标记
+  - `THIRD_PARTY_NOTICES.md` 写明 0.1.0–0.2.1 版本里含 CC BY-NC 内容
+  - VERSION 0.2.1 → 0.3.0，同步 changelog 和 README
+- **改动路径**：
+  - `skills/ky-mphtml/SKILL.md`、`templates/styles.md`、`README.md`、`VERSION`、`references/changelog.md`
+  - `THIRD_PARTY_NOTICES.md`
+- **验证**：
+  - 和 dbs-wechat-html 对比：新样式色值重合 0，声明重合 13–20 条，与 KY 原创样式的基线（15–26）相当，剩下的都是通用 CSS；SKILL.md 只有 2 行 HTML 模板行相同
+  - 13 套样式都用示例文章渲染过
+- **未完成 / 下一步**：
+  - 仓库许可证从 MIT 改为什么，等用户决定
+  - 未提交、未推送，等用户确认
+  - ky-write 的 `fei-gongshi.md` 改写自一篇文章的方法论，出处待用户补充
+- **风险或注意**：
+  - 样式 id 全部换了。用户习惯说的「clean / essay」等不再存在，`SKILL.md` 里的挑选表已按新 id 写好
+
+---
+
 ## 2026-11-04 PST — Claude Code — ky-write 加入非共识写法
 
 - **操作者**：Claude Code

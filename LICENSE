@@ -1,21 +1,161 @@
-MIT License
+# ky-skills 版权与使用条款
 
-Copyright (c) 2026 Kiren Yi
+版权所有 © 2026 Kiren Yi（KY）。保留所有权利。
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+生效日期：2026-11-04
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## 中文
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### 1. 版权归属
+
+1.1 本仓库（ky-skills）中的全部内容，包括 Skill、提示词、样式、脚本、模板和文档，版权归 Kiren Yi 所有，保留所有权利。
+
+1.2 除本条款明确授予的权利外，作者不授予任何其他权利。
+
+### 2. 你可以做什么
+
+在遵守本条款的前提下，作者授予你非独占、不可转让、不可再许可的以下权利：
+
+2.1 阅读本仓库的内容。
+
+2.2 安装 Skill，包括把 Skill 复制或链接到你自己的设备上。
+
+2.3 使用 Skill 完成你自己的工作，包括个人事务和你自己的业务。
+
+2.4 **你用 Skill 产出的内容归你所有**，例如用 ky-typeset 排版的文章、用 ky-write 修改的文稿，你可以自由发布，也可以用于营利，例如在接广告或收费的账号上发布。这不属于第 3 条所说的商用。
+
+2.5 在你自己的设备上修改 Skill，修改后的版本仅供你自己使用。
+
+2.6 分享本仓库的链接。
+
+### 3. 你不可以做什么
+
+未经作者书面授权，任何人不得：
+
+3.1 **传播**：转载或再分发本仓库内容，包括发布到其他代码仓库、网盘、平台、社群或群聊。
+
+3.2 **篡改后发布**：公开发布本仓库内容的修改版、翻译版或改写版。
+
+3.3 **商用**：出售本仓库内容，或以收费方式向他人提供本仓库内容本身；把本仓库内容打包进其他 Skill 合集、软件、产品或课程，或作为赠品、会员福利提供；把 Skill 文件本身交付给你的客户。
+
+3.4 删除或修改本仓库内容中的署名、版权声明和版权标识（例如 `KYTS-` 开头的标识）。
+
+3.5 使用本仓库内容训练或微调人工智能模型。
+
+### 4. 商用授权
+
+需要第 3 条所列的任何用途，请联系作者取得书面授权：
+
+- 邮箱（正式授权）：kirenyi16@gmail.com
+- 个人网站：https://kirenyi.com
+- 抖音 / 视频号 / 小红书：知羿Kiren
+- YouTube：Kiren Yi
+
+### 5. GitHub 上的浏览与 fork
+
+5.1 GitHub 用户协议允许的浏览和 fork 不受本条款影响。
+
+5.2 浏览或 fork 不会让你获得第 2 条以外的任何权利。fork 后的副本仍受本条款约束。
+
+### 6. 第三方内容
+
+本仓库引用的第三方内容（如有）以 `THIRD_PARTY_NOTICES.md` 的说明为准，适用其原始许可。
+
+### 7. 许可终止
+
+你违反本条款的，第 2 条授予你的权利自动终止，你应删除已安装的副本。
+
+### 8. 生效与过渡
+
+8.1 本条款自生效日起，适用于生效日及之后发布的版本。
+
+8.2 生效日之前以 MIT 许可发布的版本，已经授予的权利依 MIT 许可继续有效；但其中按 `THIRD_PARTY_NOTICES.md` 标明来自第三方的部分，仍适用其原始许可。
+
+### 9. 免责
+
+本仓库内容按"现状"提供，作者不对使用结果作任何保证，也不对因使用产生的任何损失承担责任。
+
+### 10. 语言版本
+
+本条款以中文版本为准。英文译本与中文版本不一致时，以中文版本为准。
+
+---
+
+## English (Translation)
+
+Copyright © 2026 Kiren Yi (KY). All rights reserved.
+
+Effective Date: 2026-11-04
+
+### 1. Ownership
+
+1.1 All content in this repository (ky-skills), including Skills, prompts, styles, scripts, templates and documents, is copyrighted by Kiren Yi, with all rights reserved.
+
+1.2 No rights are granted except those expressly granted in these terms.
+
+### 2. What You May Do
+
+Subject to these terms, the author grants you the following non-exclusive, non-transferable, non-sublicensable rights:
+
+2.1 To read the content of this repository.
+
+2.2 To install Skills, including copying or linking them to your own devices.
+
+2.3 To use the Skills for your own work, including personal matters and your own business.
+
+2.4 **Content you produce with the Skills belongs to you.** For example, articles formatted with ky-typeset or drafts edited with ky-write may be published freely and used for profit, such as on an account that carries ads or charges subscribers. This is not commercial use under Section 3.
+
+2.5 To modify Skills on your own devices, with modified versions for your own use only.
+
+2.6 To share links to this repository.
+
+### 3. What You May Not Do
+
+Without the author's written permission, no one may:
+
+3.1 **Redistribute**: repost or redistribute the content of this repository, including to other code repositories, cloud drives, platforms, communities or group chats.
+
+3.2 **Publish modified versions**: publicly release modified, translated or rewritten versions of the content of this repository.
+
+3.3 **Use commercially**: sell the content of this repository or provide the content itself to others for a fee; bundle it into other Skill collections, software, products or courses, or offer it as a giveaway or membership perk; deliver the Skill files themselves to your clients.
+
+3.4 Remove or alter attribution, copyright notices or copyright markers (such as markers beginning with `KYTS-`) in the content of this repository.
+
+3.5 Use the content of this repository to train or fine-tune artificial intelligence models.
+
+### 4. Commercial Licensing
+
+For any use listed in Section 3, contact the author for written permission:
+
+- Email (formal licensing): kirenyi16@gmail.com
+- Website: https://kirenyi.com
+- Douyin / WeChat Channels / Xiaohongshu: 知羿Kiren
+- YouTube: Kiren Yi
+
+### 5. Viewing and Forking on GitHub
+
+5.1 Viewing and forking permitted by the GitHub Terms of Service are not affected by these terms.
+
+5.2 Viewing or forking does not give you any rights beyond those in Section 2. Forked copies remain subject to these terms.
+
+### 6. Third-Party Content
+
+Third-party content referenced in this repository, if any, is governed by its original license as described in `THIRD_PARTY_NOTICES.md`.
+
+### 7. Termination
+
+If you violate these terms, the rights granted in Section 2 terminate automatically and you must delete your installed copies.
+
+### 8. Effective Date and Transition
+
+8.1 These terms apply to versions released on or after the Effective Date.
+
+8.2 For versions released under the MIT License before the Effective Date, the rights already granted continue under the MIT License, except that parts identified as third-party content in `THIRD_PARTY_NOTICES.md` remain under their original licenses.
+
+### 9. Disclaimer
+
+The content of this repository is provided "as is", without warranty of any kind. The author is not liable for any loss arising from its use.
+
+### 10. Language
+
+The Chinese version of these terms prevails. If the English translation differs from the Chinese version, the Chinese version prevails.

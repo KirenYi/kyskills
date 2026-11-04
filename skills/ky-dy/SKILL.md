@@ -5,6 +5,8 @@ description: |
   触发：/ky-dy、「抖音下载」「下抖音」
 ---
 
+<!-- ky-dy · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYDY-SKILL-2611 -->
+
 # ky-dy · 下抖音
 
 **核心：抖音链接 → 本地 MP4。**

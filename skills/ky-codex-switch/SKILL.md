@@ -7,6 +7,8 @@ description: |
   One-click Codex model/channel switcher (SuperGrok, DeepSeek, OpenRouter, custom relay).
 ---
 
+<!-- ky-codex-switch · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYCODEXSW-SKILL-2611 -->
+
 # ky-codex-switch
 
 > 命名：`ky-codex-` + 主功能 `switch`（切换）。旧名 `ky-codex-supergrok` 已弃用。
