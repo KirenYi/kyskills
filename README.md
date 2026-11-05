@@ -24,12 +24,6 @@ Kiren Yi（KY）的个人 Agent Skill 集合。
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 把 Markdown 做成 X 长文草稿流程 |
 | [`/ky-typeset`](./skills/ky-typeset/) | Markdown 排版成可直接粘贴的网页（公众号、知乎、Substack、Medium、邮件等）· Typeset Markdown for any rich-text editor |
 
-### 电脑工具
-
-| 命令 | 核心能力 |
-|------|----------|
-| [`/ky-codex-switch`](./skills/ky-codex-switch/) | 用一个桌面图标选择并切换 Codex 模型 |
-
 以上能力均为 **KY 自维护的 skill 说明与脚本**（见 `skills/`）。  
 使用前请阅读各 skill 目录下的 `README.md` / `SKILL.md`。
 
@@ -72,7 +66,6 @@ Windows 也可先 `git clone` 再执行：
 | ky-sph | 你已保存的视频号/公众号素材路径或文案 | 统一入库说明与后续步骤 |
 | ky-xdraft | 本地 Markdown；Chrome 已登录 X | 按流程创建 X 长文**草稿**（默认不发布） |
 | ky-typeset | Markdown 正文或文件 | 带样式的单页 HTML，可复制进公众号、知乎、Substack、Medium、邮件等编辑器 |
-| ky-codex-switch | SuperGrok 登录；可选 OpenRouter Key | 打开一个桌面图标，选择 Grok/Claude/DeepSeek/OpenAI… |
 | ky-write | 文章初稿、口播稿或一个想法 | 问题清单、精简后的版本、修改对照；可选英文字幕 |
 
 更细的步骤、参数与限制见各 skill 内文档，**以 `skills/<name>/SKILL.md` 为准**。

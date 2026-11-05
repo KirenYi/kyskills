@@ -6,6 +6,7 @@
 格式固定：
 
 ```markdown
+
 ## YYYY-MM-DD HH:MM TZ — <工具名> — <一句话标题>
 
 - **操作者**：Grok / Claude Code / Codex / Human / …
@@ -23,6 +24,13 @@
 ```
 
 ---
+
+## 2026-11-05 — Claude Code — 移除 ky-codex-switch
+
+- **原因**：用户改用 CC Switch 切换 Codex 模型，这个 Skill 不再需要。
+- **已完成**：删除 `skills/ky-codex-switch/`，README、AGENTS 去掉对应条目；本机桌面和 ~/Applications 的「Codex 切换模型」图标、~/.codex/bin 下的切换脚本、各宿主软链接已移除（文件移到废纸篓，可恢复）。
+- **未改动**：~/.codex/config.toml 里切换器写过的 provider 段落未动，当前由 CC Switch 管理。
+
 
 ## 2026-11-04 PST — Claude Code — 许可证改为保留所有权利；ky-mphtml 更名 ky-typeset；ky-write 去除来源原话
 
