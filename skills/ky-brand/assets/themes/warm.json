@@ -1,0 +1,8 @@
+{
+  "name": "warm",
+  "label": "C · 暖光（备选）",
+  "status": "alternative",
+  "bg": "#F1EADF", "ink": "#2A2420", "sub": "#7A6E62", "accent": "#A8643A", "accent_on_dark": "#D08A5C",
+  "line": "#CDBFAE", "line_px": 1.5, "dark": "#2A2420",
+  "title_font": "serif", "title_weight": 700, "radius": 6, "kicker": "dot", "grain": true
+}

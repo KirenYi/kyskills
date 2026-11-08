@@ -25,6 +25,16 @@
 
 ---
 
+## 2026-11-08 — Claude Code — 发布 6 个新 Skill；多语言 README；适配更多 AI 工具
+
+- **新增 Skill**：`ky-think`、`ky-mirror`、`ky-learn`、`ky-council`、`ky-brand`、`ky-video`（从 Kiren 的私有 Skill 工厂迁入，去掉了验证记录和个人内容）。`ky-card` 未发布：方法改编自第三方提示词，待作者许可或重写。
+- **存储**：`ky-learn`、`ky-council` 不再依赖作者本机的知识库结构，改用 `scripts/notes_root.py`，第一次使用时问用户存在哪；设置存在 `~/.config/ky-skills/config.json`。
+- **ky-brand / ky-video**：署名改为用户设置（`render.py --set-signature`），字体不再随仓库分发，第一次使用时征得同意后用 `scripts/fetch_fonts.py` 下载到 `~/.config/ky-skills/fonts/`；样图换成占位署名；`ky-video` 保留作者已公开发布的《品味》作为示例。
+- **README**：英文、简体中文、日语、西班牙语、韩语五个版本，顶部可切换；按用途分四组；新增支持工具表。
+- **安装**：`install-links.sh` 新增 Gemini CLI、GitHub Copilot、OpenCode、Kiro、Kimi、OpenClaw 的目录（路径经官方文档或公开资料核对）。
+- **反馈**：`CONTRIBUTING.md` 改为只收 Issue、不收 PR（与 LICENSE 一致），新增 Issue 模板。
+- **注意**：`~/.ky-skills/` 是一键安装的仓库目录，更新时会被替换，用户设置和字体不能放在那里。
+
 ## 2026-11-05 — Claude Code — 移除 ky-codex-switch
 
 - **原因**：用户改用 CC Switch 切换 Codex 模型，这个 Skill 不再需要。

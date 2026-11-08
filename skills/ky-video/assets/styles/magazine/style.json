@@ -1,0 +1,8 @@
+{
+  "name": "magazine",
+  "label": "极简杂志风",
+  "bg": "F7F5F0",
+  "speaker_side": "right",
+  "fonts": ["Noto Serif SC", "Noto Sans SC"],
+  "sfx": {"whoosh": 0.5, "impact": 0.7, "ding": 0.45, "pop": 0.55, "tick": 0.5, "strike": 0.5, "type": 0.35}
+}

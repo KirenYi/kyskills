@@ -1,0 +1,13 @@
+{
+  "title": "品味",
+  "source": "path/to/your-footage.mp4",
+  "style": "magazine",
+  "fps": 30,
+  "face": [1140, 420],
+  "frames": {"cover_calm.png": 274.0, "cover_gesture.png": 3.0},
+  "covers": {
+    "cover-169": ["B站-16比9", "YouTube-16比9"],
+    "cover-43": ["抖音-横封面4比3", "视频号-分享卡片4比3", "B站-4比3"],
+    "cover-34": ["抖音-竖封面3比4", "视频号-个人主页卡片3比4"]
+  }
+}

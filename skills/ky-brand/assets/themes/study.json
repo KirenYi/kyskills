@@ -1,0 +1,8 @@
+{
+  "name": "study",
+  "label": "B · 书房（备选）",
+  "status": "alternative",
+  "bg": "#FBFAF6", "ink": "#211F1B", "sub": "#6F6A60", "accent": "#1F6F5B", "accent_on_dark": "#3FA383",
+  "line": "#DED8CC", "line_px": 1.5, "dark": "#211F1B",
+  "title_font": "sans", "title_weight": 800, "radius": 14, "kicker": "pill", "grain": false
+}

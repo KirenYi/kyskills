@@ -1,0 +1,8 @@
+{
+  "name": "magazine",
+  "label": "A · 杂志（默认）",
+  "status": "default",
+  "bg": "#F7F5F0", "ink": "#111111", "sub": "#6B665F", "accent": "#D23C22", "accent_on_dark": "#FF5A3C",
+  "line": "#111111", "line_px": 2, "dark": "#111111",
+  "title_font": "serif", "title_weight": 900, "radius": 0, "kicker": "rule", "grain": false
+}

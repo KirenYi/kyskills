@@ -1,46 +1,28 @@
-# Contributing
+# Contributing / 参与改进
 
-Thanks for interest in **ky-skills** (Kiren Yi).
+Thanks for helping improve **ky-skills**. 谢谢你帮忙改进 ky-skills。
 
-## Ground rules
+## How to help / 怎么参与
 
-- Keep the `ky-` prefix for all skills.
-- Prefer small, reviewable PRs.
-- Do not commit personal archives, tokens, or `config.json` with secrets.
-- Document user-facing behavior in the skill’s `SKILL.md` and root `README.md`.
-- **Multi-agent**: read [`AGENTS.md`](./AGENTS.md) and append to [`docs/PROGRESS.md`](./docs/PROGRESS.md) after meaningful work.
-- **Source of truth**: edit `skills/` in this repo, not copies under `~/.claude/skills` etc.
+Please open an [issue](https://github.com/KirenYi/ky-skills/issues). Choose a template:
 
-## Local setup
+- **Bug report / 问题反馈**: something doesn't work as described.
+- **Suggestion / 建议**: an idea, a missing feature, or feedback from real use.
 
-```bash
-git clone https://github.com/KirenYi/ky-skills.git
-cd ky-skills
-./scripts/install-links.sh
-```
+Good suggestions are built into the next version by the author, and contributors are thanked in the changelog.
 
-For `ky-x`:
+请通过 [Issue](https://github.com/KirenYi/ky-skills/issues) 提问题或建议。好的建议会由作者做进下一个版本，并在更新记录里致谢。
 
-```bash
-export PYTHONPATH=$PWD/skills/ky-x/scripts
-python3 -m xarchive init -c /tmp/ky-x-dev.json
-python3 -m xarchive add <handle> -c /tmp/ky-x-dev.json
-python3 -m xarchive sync --handle <handle> -c /tmp/ky-x-dev.json
-```
+## Pull requests / 关于 PR
 
-## Adding a skill
+This repository does not accept pull requests. Under the [LICENSE](./LICENSE), modified versions may not be published, so changes are made by the author based on issues. Please describe your idea in an issue instead.
 
-1. Copy `templates/skill-skeleton` → `skills/ky-<name>`
-2. Fill `SKILL.md` (triggers + step-by-step agent workflow)
-3. Add scripts under `skills/ky-<name>/scripts/` if needed
-4. Update root README skill table
-5. Bump `VERSION` / skill `VERSION` and changelog when shipping
+本仓库不接受 PR。按照 [LICENSE](./LICENSE)，修改版不得公开发布，所以改动由作者根据 Issue 来做。有想法请直接写在 Issue 里。
 
-## Reporting issues
+## When reporting a problem / 反馈问题时请附上
 
-Please include:
+- Which skill and which tool (Claude Code, Codex, Cursor…) / 哪个 Skill、在哪个工具里用
+- Your OS and Python version / 系统和 Python 版本
+- What you said or ran, and the full error / 你说了什么或运行了什么命令，以及完整报错
 
-- OS + Python version
-- Command or Agent prompt used
-- Full error output
-- Whether network / Nitter instances are reachable
+Don't include passwords, tokens, cookies or private notes. 不要贴密码、token、cookie 或私人笔记。

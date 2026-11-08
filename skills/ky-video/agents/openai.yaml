@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY Video"
+  short_description: "口播原片 → 动画、精剪、字幕、音效、封面、发布包"
+  default_prompt: "Use $ky-video to turn a talking-head recording into a finished video with animations, captions, SFX, covers and a release folder, following the retrospective rules."

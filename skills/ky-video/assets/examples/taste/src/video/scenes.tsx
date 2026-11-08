@@ -1,0 +1,113 @@
+// 《品味》 scenes: which visual plays over which shots, SFX cues, hook text.
+// Shot names come from edl.json. kw('词') = frame where that word is spoken.
+import React from 'react';
+import * as St from '../style';
+import * as V from './custom';
+import type {VProps, Render, SfxList, HookSpec} from '../engine/types';
+
+// ---------- visuals: [fromShot, toShot, render] ----------
+export const VIS: [string, string, Render][] = [
+  ['title', 'title', (p) => <St.TitleSting {...p} word="品味" sub="到底是什么？" />],
+  ['1', '2', (p) => <V.ThreeStyles {...p} />],
+  ['4', '4', (p) => <St.TwoLines {...p} rows={[['AI', '做', false], ['我', '选', true]]} keys={['', '我负责']} />],
+  ['5', '5', (p) => <St.BigWord {...p} word="品味" key2="品位" />],
+  ['6', '6', (p) => <V.TOC {...p} />],
+  ['7', '7', (p) => <St.ChapterCard {...p} tag="TASTE" n="01" title="品味到底是什么？" sub="不是贵，也不是跟风" />],
+  ['9', '9', (p) => <St.NotEqual {...p} left="品味" right="贵" key2="贵" />],
+  ['10', '10', (p) => <St.NotEqual {...p} left="品味" right="跟风" key2="跟潮流" />],
+  ['11', '16', (p) => <V.Pyramid {...p} />],
+  ['18', '18', (p) => <V.Minus {...p} />],
+  ['19', '19', (p) => <St.QuoteCard {...p} en="“The only problem with Microsoft is they just have no taste.”" zh="微软唯一的问题，是他们没有品味。" hi="没有品味" who="Steve Jobs · 1995 年采访" />],
+  ['21', '21', (p) => <St.Statement {...p} lines={['品味不是你买了什么，', '是你没买什么。']} hi="没买什么" />],
+  ['22', '22', (p) => <St.ChapterCard {...p} tag="TASTE" n="02" title="AI 时代，品味更值钱？" sub="做东西越来越便宜，挑东西越来越值钱" />],
+  ['24', '24', (p) => <V.TenCards {...p} />],
+  ['25', '25', (p) => <V.Arrows {...p} />],
+  ['26', '26', (p) => <V.TenCards {...p} pick />],
+  ['27', '28', (p) => <V.BellAI {...p} />],
+  ['30', '30', (p) => <V.BellTaste {...p} />],
+  ['32', '32', (p) => <St.Chat {...p} text="帮我做得高级一点" label="模糊的要求" reply="AI：好的。（然后给你一个平均值）" />],
+  ['33', '33', (p) => <St.Chat {...p} text="标题再短一点，颜色只留一个" good label="清楚的要求" hi="只留一个" startKey="标题" />],
+  ['34', '34', (p) => <V.DoToChoose {...p} />],
+  ['36', '36', (p) => <St.Statement {...p} lines={['大部分，', '是练出来的。']} hi="练出来" size={110} key2="大部分" />],
+  ['37', '38', (p) => <V.Coffee {...p} />],
+  ['40', '40', (p) => <St.ChapterCard {...p} tag="TASTE" n="03" title="品味怎么练？" sub="六个方法" />],
+  ['41', '41', (p) => <St.NumberList {...p} title="六个方法" items={['看最好的', '对比着看', '说出为什么', '顺藤摸瓜', '跨领域', '动手做']} />],
+  ['42', '42', (p) => <St.Method {...p} n="01" title="看最好的" />],
+  ['43', '43', (p) => <St.Statement {...p} kicker="01 看最好的" lines={['经典 ＞ 算法推荐']} hi="经典" size={90} key2="经典" />],
+  ['45', '45', (p) => <St.Method {...p} n="02" title="对比着看" sub="好的差的放在一起" />],
+  ['47', '48', (p) => <V.ABTest {...p} />],
+  ['49', '49', (p) => <V.BWins {...p} />],
+  ['50', '50', (p) => <V.CritiqueA {...p} />],
+  ['51', '51', (p) => <V.CritiqueB {...p} />],
+  ['52', '52', (p) => <V.MiniPyramid {...p} />],
+  ['53', '53', (p) => <St.Method {...p} n="03" title="说出为什么" />],
+  ['54', '54', (p) => <St.TypeNote {...p} label="写下来" text="我喜欢它，是因为……" />],
+  ['56', '56', (p) => <St.Method {...p} n="04" title="顺藤摸瓜" />],
+  ['57', '57', (p) => <V.Tree {...p} />],
+  ['58', '58', (p) => <St.Method {...p} n="05" title="跨领域" />],
+  ['59', '59', (p) => <V.Calligraphy {...p} stage={0} />],
+  ['60', '60', (p) => <V.Calligraphy {...p} stage={1} />],
+  ['61', '61', (p) => <V.Calligraphy {...p} stage={2} />],
+  ['62', '62', (p) => <St.Method {...p} n="06" title="动手做" sub="光看不做，品味只停在眼睛上" />],
+  ['64', '64', (p) => <St.QuoteCard {...p} en="“Your taste is why your work disappoints you.”" zh="你的品味，正是你对自己作品不满意的原因。" hi="品味" who="Ira Glass · 美国电台主持人" />],
+  ['65', '67', (p) => <V.GapChart {...p} />],
+  ['69', '73', (p) => <St.CheckList {...p} title="品味在长的信号" items={['开始嫌弃自己以前的作品', '会想：如果是我，删掉哪里', '买之前犹豫：搭不搭', '说得出喜欢的具体原因']} />],
+  ['76', '76', (p) => <V.FinalQuote {...p} />],
+  ['77', '77', (p) => <V.AorB {...p} />],
+];
+
+// ---------- sound effects: frame offsets relative to the visual's start ----------
+const c = (p: VProps, i: number) => p.cues[Math.min(i, p.cues.length - 1)] ?? 0;
+const range = (n: number, f: (i: number) => number) => Array.from({length: n}, (_, i) => f(i));
+export const SFX_MAP: Record<string, (p: VProps) => SfxList> = {
+  title: () => [[-8, 'whoosh'], [0, 'impact']],
+  '1': (p) => { const k = p.kw('否了', c(p, 1) + 20) - 10; return [[0, 'tick'], [6, 'tick'], [12, 'tick'], [k, 'strike'], [k + 8, 'strike'], [c(p, 1) + 10, 'ding']]; },
+  '4': (p) => [[0, 'pop'], [p.kw('我负责', 30), 'pop'], [p.kw('我负责', 30) + 4, 'ding']],
+  '5': (p) => [[p.kw('品位', 0), 'impact']],
+  '6': (p) => [[p.kw('到底是什么', 30) - 4, 'tick'], [p.kw('为什么', 70) - 4, 'tick'], [p.kw('怎么把', 120) - 4, 'tick']],
+  '7': () => [[-4, 'whoosh']], '22': () => [[-4, 'whoosh']], '40': () => [[-4, 'whoosh']],
+  '9': (p) => [[0, 'pop'], [p.kw('贵', 12) + 10, 'strike']], '10': (p) => [[0, 'pop'], [p.kw('跟潮流', 12) + 10, 'strike']],
+  '11': (p) => [[c(p, 1), 'tick'], [c(p, 3), 'tick'], [c(p, 5), 'tick'], [c(p, 5) + 24, 'ding']],
+  '18': (p) => [[p.kw('做减法', 30), 'pop']],
+  '19': () => [[-4, 'whoosh']], '64': () => [[-4, 'whoosh']],
+  '21': () => [[6, 'ding']],
+  '24': () => range(5, (i) => i * 4).map((f) => [f, 'tick'] as [number, string]),
+  '25': (p) => [[p.kw('做东西', 0), 'pop'], [p.kw('东西的能力', 80) - 6, 'pop']],
+  '26': () => [[12, 'ding']],
+  '27': (p) => [[c(p, 1), 'tick']],
+  '30': (p) => [[p.kw('拉出来', 30) - 14, 'whoosh'], [p.kw('拉出来', 30) + 12, 'ding']],
+  '32': () => range(8, (i) => 8 + i * 2).map((f) => [f, 'type'] as [number, string]),
+  '33': (p) => { const k = p.kw('标题', 20) + 6; return [...range(13, (i) => k + i * 2).map((f) => [f, 'type'] as [number, string]), [k + 26, 'ding']]; },
+  '34': (p) => [[p.kw('变成', 30), 'strike'], [p.kw('定标准', 60), 'pop']],
+  '36': () => [[6, 'pop']],
+  '37': (p) => [[p.kw('苦', 30), 'pop'], [p.kw('酸', c(p, 1) + 20), 'pop']],
+  '41': () => range(6, (i) => 6 + i * 5).map((f) => [f, 'tick'] as [number, string]),
+  '42': () => [[0, 'pop']], '45': () => [[0, 'pop']], '53': () => [[0, 'pop']], '56': () => [[0, 'pop']], '58': () => [[0, 'pop']], '62': () => [[0, 'pop']],
+  '43': () => [[6, 'pop']],
+  '47': (p) => { const k = p.kw('两秒', c(p, 1) + 20) + 18; return [[-4, 'whoosh'], [k, 'tick'], [k + 30, 'tick']]; },
+  '49': () => [[10, 'ding']],
+  '50': (p) => [[p.kw('四种', 10), 'strike'], [p.kw('五种', 40), 'strike'], [p.kw('抢你', 70), 'strike']],
+  '51': (p) => [[p.kw('一种字体', 6), 'tick'], [p.kw('一个颜色', 20), 'tick'], [p.kw('留白', 34), 'tick']],
+  '52': (p) => [[p.kw('直觉', 5), 'tick'], [p.kw('原因', 45), 'tick']],
+  '54': () => range(10, (i) => 10 + i * 3).map((f) => [f, 'type'] as [number, string]),
+  '57': () => [[0, 'tick']],
+  '59': () => [[0, 'whoosh']],
+  '60': () => range(4, (i) => i * 8).map((f) => [f, 'tick'] as [number, string]),
+  '61': () => [[4, 'pop']],
+  '65': (p) => [[p.kw('放弃', c(p, 2) + 30), 'strike']],
+  '69': (p) => range(4, (i) => c(p, i + 1)).map((f) => [f, 'pop'] as [number, string]),
+  '76': (p) => [[p.kw('哪一个', 30) + 20, 'ding']],
+  '77': () => [[0, 'pop']],
+};
+
+// ---------- opening hook (text over the hook clip) ----------
+export const HOOK: HookSpec | null = {
+  variants: [
+    {lines: ['AI 时代，', '拉开人与人差距的，', '是什么？'], hi: '差距'},
+    {lines: ['AI 时代最值钱的，', '不是会用 AI'], hi: '不是会用 AI'},
+    {lines: ['AI 越强，', '这种能力越值钱'], hi: '越值钱'},
+  ],
+  stamp: '品味',
+  payKey: '东西的能力',
+  defaultVariant: 1,
+};

@@ -1,21 +1,25 @@
 # 多宿主安装（同一套 skill，到处能用）
 
-目标：用一条命令安装，在 Codex、Claude Code、豆包、Trae、Grok 等工具里调用 `/ky-x` 等 Skill。
+目标：用一条命令安装，在 Claude Code、Codex、Gemini CLI、Cursor、GitHub Copilot、OpenCode、Kiro、Trae、Grok 等工具里调用 `/ky-x` 等 Skill。
 
 ## 原理
 
 ```text
-~/.ky-skills/skills/ky-x    ← 本机安装目录
+~/.ky-skills/skills/ky-x    ← 本机安装目录（一键安装时）
         ▲
-        │ 软链 / 薄 bridge
+        │ 软链
         │
-~/.agents/skills/ky-x       ← 豆包 / Trae Solo / 通用 Agents
+~/.agents/skills/ky-x       ← 通用标准：Codex、Gemini CLI、GitHub Copilot、Cursor、OpenCode、Goose、Amp 等
 ~/.claude/skills/ky-x       ← Claude Code
 ~/.codex/skills/ky-x        ← Codex
+~/.gemini/skills/ky-x       ← Gemini CLI
+~/.copilot/skills/ky-x      ← GitHub Copilot
+~/.config/opencode/skills/  ← OpenCode
+~/.kiro/skills/ky-x         ← Kiro
+~/.kimi/skills/ky-x         ← Kimi
 ~/.grok/skills/ky-x         ← Grok
-~/.trae/skills/ky-x         ← Trae
-~/.trae-cn/skills/ky-x      ← Trae 国区
-…其他兼容 SKILL.md 的目录
+~/.trae/skills/ky-x         ← Trae（国区 ~/.trae-cn）
+…其他兼容 SKILL.md 的目录，完整列表见 scripts/install-links.sh
 ```
 
 改真源 → 所有软链自动看到新版本（无需每端复制粘贴）。

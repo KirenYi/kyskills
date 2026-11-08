@@ -33,7 +33,7 @@ log() {
 # Host skill parent dirs (link targets live at $dir/<skill-name>).
 # Only used when the parent directory already exists OR is a well-known primary.
 HOST_SKILL_PARENTS=(
-  "$HOST_HOME/.agents/skills"          # 豆包 / Trae Solo / generic agents
+  "$HOST_HOME/.agents/skills"          # shared standard: Codex, Gemini CLI, Copilot, Cursor, OpenCode, Amp, Goose, Roo…
   "$HOST_HOME/.claude/skills"          # Claude Code
   "$HOST_HOME/.codex/skills"           # Codex
   "$HOST_HOME/.grok/skills"            # Grok
@@ -50,6 +50,12 @@ HOST_SKILL_PARENTS=(
   "$HOST_HOME/.augment/skills"
   "$HOST_HOME/.openhands/skills"
   "$HOST_HOME/.config/goose/skills"
+  "$HOST_HOME/.gemini/skills"          # Gemini CLI (also reads ~/.agents/skills)
+  "$HOST_HOME/.copilot/skills"         # GitHub Copilot (also reads ~/.agents/skills)
+  "$HOST_HOME/.config/opencode/skills" # OpenCode (also reads ~/.agents/skills)
+  "$HOST_HOME/.kiro/skills"            # Kiro
+  "$HOST_HOME/.kimi/skills"            # Kimi
+  "$HOST_HOME/.openclaw/skills"        # OpenClaw
 )
 
 # Primary dirs we may create if missing (core multi-host set).

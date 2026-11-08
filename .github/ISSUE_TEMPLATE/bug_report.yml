@@ -1,0 +1,25 @@
+name: Bug report / 问题反馈
+description: Something doesn't work as described / 某个功能没有按说明工作
+labels: [bug]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      placeholder: ky-learn
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool and OS / 工具和系统
+      placeholder: Claude Code on macOS 15
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / 发生了什么
+      description: What you said or ran, what you expected, and what happened instead. Include the full error. Don't paste passwords, tokens or cookies. / 你说了什么或运行了什么，期望什么，实际发生了什么，附上完整报错。不要贴密码、token 或 cookie。
+    validations:
+      required: true

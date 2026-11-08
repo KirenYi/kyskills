@@ -1,0 +1,9 @@
+{
+  "_note": "times = seconds in work/mezz.wav. items: [\"seg\", start, end, shot, layout(A-E), caption] or [\"card\", shot, seconds, \"E\"]. Consecutive segs whose end == next start stay one continuous take.",
+  "drop_first": [],
+  "items": [
+    ["seg", 0.0, 3.0, "hook", "A", "TODO 钩子那句话"],
+    ["card", "title", 1.8, "E"],
+    ["seg", 0.0, 3.0, "1", "A", "TODO 第一句"]
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY Learn"
+  short_description: "交互式学习、检验掌握并压缩沉淀"
+  default_prompt: "Use $ky-learn to enter a persistent learning room, lead the curriculum, and preserve only high-signal learning state."

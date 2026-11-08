@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY Council"
+  short_description: "多顾问决策、风险检查与结果复盘"
+  default_prompt: "Use $ky-council to enter a persistent council room, keep the same advisors across follow-ups, and preserve the decision when warranted."

@@ -1,0 +1,17 @@
+name: Suggestion / 建议
+description: An idea, a missing feature, or feedback from real use / 想法、缺少的功能、真实使用的反馈
+labels: [suggestion]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill (or "new skill") / 哪个 Skill（或「新 Skill」）
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion / 你的建议
+      description: What would you like to change or add, and why? A real example from your use helps a lot. / 想改什么、加什么，为什么？附一个你真实使用时的例子会很有帮助。
+    validations:
+      required: true

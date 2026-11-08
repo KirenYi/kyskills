@@ -13,7 +13,9 @@
 
 `ky-skills` 是 **Kiren Yi 的个人 Agent Skill 集合**，不是单一脚本仓库。
 
-- 当前（v0.9.0）已发布：`ky-x`、`ky-dy`、`ky-xhs`、`ky-sph`、`ky-xdraft`、`ky-typeset`、`ky-write`
+- 当前（v0.10.0）已发布：`ky-think`、`ky-mirror`、`ky-learn`、`ky-council`、`ky-write`、`ky-typeset`、`ky-xdraft`、`ky-brand`、`ky-video`、`ky-x`、`ky-dy`、`ky-xhs`、`ky-sph`
+- README 有五种语言（`README.md` 英文、`README.zh-CN.md`、`README.ja.md`、`README.es.md`、`README.ko.md`），改一份要同步改其他四份；命令在各语言里保持一致
+- 用户设置和共用字体在 `~/.config/ky-skills/`（不要放进 `~/.ky-skills/`，那是一键安装的仓库目录，更新时会被替换）
 - 命名原则：**短命令 + description 只写核心能力**  
 - **对外表述**：只写 KY 自有能力与用法；禁止把第三方仓库写成「本 skill 组件 / 强制依赖」；借鉴方法论可以，挂靠、整包转贴、冒充自有实现不可以
 - 之后会有更多 `ky-*` skill，全部放在 `skills/` 下

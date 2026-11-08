@@ -1,0 +1,21 @@
+{
+  "theme": "magazine",
+  "slug": "example",
+  "version": "v01",
+  "items": [
+    {"type": "wechat-cover", "kicker": "AI 时代 · 观点", "title": "AI 时代最值钱的，\n不是[会用 AI]", "num": "01"},
+    {"type": "wechat-square", "kicker": "观点", "title": "最值钱的\n不是[会用 AI]"},
+    {"type": "xhs", "kicker": "AI 工作流", "title": "我让 AI\n做完了一整期\n视频的[动画]", "sub": "动画、字幕、音效、封面\n只有一步它替不了我"},
+    {"type": "quote", "text": "品味不是你买了什么，\n是你[没买什么]。"},
+    {"type": "poster", "kicker": "线上课程 · 2026 冬季", "title": "AI 工作流\n[实战课]", "sub": "8 节课，把 AI 变成\n你每天在用的工作流", "tags": ["写作", "视频", "知识库"], "cta": "立即报名"},
+    {"type": "video-cover", "kicker": "第 1 期", "title": "AI 时代最值钱的，\n是{？？}"},
+    {"type": "slides", "name": "deck", "header": "设计课 · 第 2 讲", "slides": [
+      {"layout": "cover", "kicker": "设计课 · 第 2 讲", "title": "品味，\n到底是[什么]？", "sub": "从感知到选择的三层能力"},
+      {"layout": "section", "n": "01", "title": "品味的[三层]", "sub": "感知、判断、选择"},
+      {"layout": "list", "kicker": "核心框架", "title": "品味的\n[三层]", "items": [["感知", "看得出差别"], ["判断", "说得出为什么"], ["选择", "敢按自己的标准选"]]},
+      {"layout": "bullets", "kicker": "怎么练", "title": "每天 10 分钟的[对比练习]", "points": ["找两个同类作品放在一起看", "写下一句：我更喜欢它，是因为……", "一周后回看，标出你改变了看法的地方"]},
+      {"layout": "statement", "text": "AI 能帮你做出一百个东西，\n但哪一个代表你，[只有你能选]。"},
+      {"layout": "end", "title": "谢谢", "sub": "更多内容：[example.com]"}
+    ]}
+  ]
+}

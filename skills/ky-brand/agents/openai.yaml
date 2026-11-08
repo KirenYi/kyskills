@@ -1,0 +1,4 @@
+interface:
+  display_name: "KY Brand"
+  short_description: "个人风格：文章封面、小红书、金句卡、课程海报、PPT"
+  default_prompt: "Use $ky-brand to design covers, cards, posters or slide decks in the user's personal brand style (default theme: magazine) and render them at platform sizes."
