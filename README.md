@@ -4,9 +4,9 @@
 
 # kyskills
 
-**Kiren Yi 的 Agent Skills：想得更清楚，学得更快，把想法变成内容。**
+**知羿 | Kiren Yi 的技能集合：想得更清楚，学得更快，把想法变成内容。**
 
-每个 Skill 一个 `SKILL.md`。可在 Claude Code、Codex、Gemini CLI、Cursor、GitHub Copilot、OpenCode、Kiro 等支持 Agent Skills 的工具里使用。
+每个技能一个 `SKILL.md`，可以在 Claude Code、Codex、Gemini CLI、Cursor、GitHub Copilot、OpenCode、Kiro 等支持技能（Skills）的 AI 工具里使用。
 
 </div>
 
