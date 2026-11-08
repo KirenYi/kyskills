@@ -7,7 +7,7 @@ description: >
   交给 ky-learn，重大且需要多顾问与结果复盘的决策交给 ky-council。
 ---
 
-<!-- ky-think · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYTHINK-SKILL-2611 -->
+<!-- ky-think · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYTHINK-SKILL-2611 -->
 
 # ky-think
 
@@ -134,7 +134,7 @@ description: >
 
 ## 版权 / Copyright
 
-ky-think 的流程、模式设计与写法由 Kiren Yi 原创，版权所有。使用条件见 ky-skills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYTHINK-*-2611`）。
+ky-think 的流程、模式设计与写法由 Kiren Yi 原创，版权所有。使用条件见 kyskills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYTHINK-*-2611`）。
 
 用本 Skill 产出的内容归使用者所有，可以自由发布、营利。
 

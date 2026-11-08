@@ -5,7 +5,7 @@ description: |
   触发：/ky-sph、「视频号」「公众号原料」「入库视频号」
 ---
 
-<!-- ky-sph · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYSPH-SKILL-2611 -->
+<!-- ky-sph · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYSPH-SKILL-2611 -->
 
 # ky-sph · 视频号 / 公众号原料
 

@@ -11,7 +11,7 @@ Outputs (work/):  mezz.mp4 (2560x1440) · mezz.wav (48k) · audio16k.wav · word
                   mezz4k.mp4 with --4k (also made on demand by render.py --4k)
 Also grabs cover photos listed in project.json "frames" into public/.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

@@ -10,7 +10,7 @@ description: >
   learner's own output, schedules review by mastery, and picks up where you left off.
 ---
 
-<!-- ky-learn · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYLEARN-SKILL-2611 -->
+<!-- ky-learn · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYLEARN-SKILL-2611 -->
 
 # ky-learn
 
@@ -115,7 +115,7 @@ description: >
 
 ## 版权 / Copyright
 
-ky-learn 的流程、教学方法与写法由 Kiren Yi 原创，版权所有。使用条件见 ky-skills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYLEARN-*-2611`）。
+ky-learn 的流程、教学方法与写法由 Kiren Yi 原创，版权所有。使用条件见 kyskills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYLEARN-*-2611`）。
 
 用本 Skill 产出的内容归使用者所有，可以自由发布、营利。
 

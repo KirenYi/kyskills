@@ -1,6 +1,6 @@
 # 说明
 
-本仓库（ky-skills）中的 skill 文案与随附脚本由 **Kiren Yi / KY** 维护，按 [LICENSE](./LICENSE) 中的「保留所有权利 + 有限使用许可」条款发布（2026-11-04 前的版本为 MIT）。
+本仓库（kyskills）中的 skill 文案与随附脚本由 **Kiren Yi / KY** 维护，按 [LICENSE](./LICENSE) 中的「保留所有权利 + 有限使用许可」条款发布（2026-11-04 前的版本为 MIT）。
 
 - 不声称与任何平台官方有关联。  
 - 不在 README 或 skill 中把第三方开源项目宣称为「本产品组件」或强制安装依赖。  

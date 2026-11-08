@@ -5,7 +5,7 @@ description: |
   触发：/ky-write、「写文章」「润色」「去 AI 味」「改口播稿」「英文字幕」「非共识」「反常识开头」
 ---
 
-<!-- ky-write · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYWRITE-SKILL-2611 -->
+<!-- ky-write · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYWRITE-SKILL-2611 -->
 
 # ky-write · 写作
 

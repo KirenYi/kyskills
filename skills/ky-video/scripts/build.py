@@ -9,7 +9,7 @@ Cut points come from the audio ENERGY (whisper word times are unreliable around 
   - drop_first: drop the first burst of that seg (stutter like "十…十版")
 Whisper chars are mapped onto the new timeline -> captions + keyword cues (kw('词') in scenes.tsx).
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 import json, re, difflib, sys
 from pathlib import Path

@@ -1,4 +1,4 @@
-// ky-video/engine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-engine-2611
+// ky-video/engine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-engine-2611
 import timeline from '../video/timeline.json';
 import type {Timeline, VProps} from './types';
 export const TL = timeline as unknown as Timeline;

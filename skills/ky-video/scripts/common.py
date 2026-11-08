@@ -1,6 +1,6 @@
 """Shared helpers for ky-video scripts. Python 3.9+, needs numpy. Cross-platform (pathlib, no shell).
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

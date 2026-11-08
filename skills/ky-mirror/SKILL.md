@@ -6,7 +6,7 @@ description: |
   触发 / Triggers：/ky-mirror、「我是不是在逃避」「一直拖着」「想了很久还是没做」、am I avoiding、why do I keep putting this off
 ---
 
-<!-- ky-mirror · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYMIRROR-SKILL-2611 -->
+<!-- ky-mirror · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYMIRROR-SKILL-2611 -->
 
 # ky-mirror
 
@@ -108,7 +108,7 @@ AI 默认会接受用户提出的问题，并把它答好。这恰好会让回�
 
 ## 版权 / Copyright
 
-ky-mirror 的流程、写法与示例由 Kiren Yi 原创，版权所有。使用条件见 ky-skills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYMIRROR-*-2611`）。
+ky-mirror 的流程、写法与示例由 Kiren Yi 原创，版权所有。使用条件见 kyskills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYMIRROR-*-2611`）。
 
 用本 Skill 产出的内容归使用者所有，可以自由发布、营利。
 

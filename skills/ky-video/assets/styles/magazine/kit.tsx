@@ -1,4 +1,4 @@
-// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-magazine-2611
+// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-magazine-2611
 // Magazine style kit: helpers + generic, reusable components.
 // Every style package must export the same names (see references/style-contract.md).
 import React from 'react';

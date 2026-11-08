@@ -1,4 +1,4 @@
-// ky-video/engine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-engine-2611
+// ky-video/engine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-engine-2611
 export type Shot = {id: number; name: string; layout: string; start: number; end: number; text: string; zoom?: number | null};
 export type Caption = {start: number; end: number; text: string};
 export type Timeline = {fps: number; durationInFrames: number; shots: Shot[]; captions: Caption[]; words: {f: number; c: string}[]};

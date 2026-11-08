@@ -1,4 +1,4 @@
-// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-magazine-2611
+// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-magazine-2611
 // Magazine cover templates. Rule: covers raise the question, never show the answer.
 // Each "suspense" cover = struck-through wrong belief + big question with a red ？？ box.
 import React from 'react';

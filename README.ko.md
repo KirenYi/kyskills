@@ -1,8 +1,8 @@
 <div align="center">
 
-[English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | **한국어**
+[简体中文](./README.md) | [English](./README.en.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | **한국어**
 
-# ky-skills
+# kyskills
 
 **Kiren Yi의 Agent Skills: 더 명확하게 생각하고, 더 빠르게 배우고, 아이디어를 콘텐츠로.**
 
@@ -52,13 +52,13 @@
 에이전트에게 이렇게 보내세요:
 
 ```text
-Install the skills from https://github.com/KirenYi/ky-skills
+Install the skills from https://github.com/KirenYi/kyskills
 ```
 
 또는 터미널에서 실행하세요(macOS / Linux):
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh | bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh | bash
 ```
 
 Windows에서는 저장소를 `git clone` 한 뒤 Git Bash 또는 WSL에서 `./scripts/install-links.sh`를 실행하세요.
@@ -103,7 +103,7 @@ Windows에서는 저장소를 `git clone` 한 뒤 Git Bash 또는 WSL에서 `./s
 
 ## 제안과 버그
 
-[이슈](https://github.com/KirenYi/ky-skills/issues)를 열어 주세요. 아이디어, 문제, 실제 사용 후기를 모두 환영합니다. 좋은 제안은 다음 버전에 반영됩니다.
+[이슈](https://github.com/KirenYi/kyskills/issues)를 열어 주세요. 아이디어, 문제, 실제 사용 후기를 모두 환영합니다. 좋은 제안은 다음 버전에 반영됩니다.
 
 ## 책임 있는 사용
 

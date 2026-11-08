@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# One-command installer for ky-skills.
+# One-command installer for kyskills.
 set -euo pipefail
 
-REPO_URL="${KY_SKILLS_REPO_URL:-https://github.com/KirenYi/ky-skills.git}"
-ARCHIVE_URL="${KY_SKILLS_ARCHIVE_URL:-https://github.com/KirenYi/ky-skills/archive/refs/heads/main.tar.gz}"
+REPO_URL="${KY_SKILLS_REPO_URL:-https://github.com/KirenYi/kyskills.git}"
+ARCHIVE_URL="${KY_SKILLS_ARCHIVE_URL:-https://github.com/KirenYi/kyskills/archive/refs/heads/main.tar.gz}"
 INSTALL_DIR="${KY_SKILLS_INSTALL_DIR:-${HOME:-}/.ky-skills}"
 FORCE_ARCHIVE="${KY_SKILLS_FORCE_ARCHIVE:-0}"
 INSTALLER_TMP=""
@@ -74,7 +74,7 @@ case "$INSTALL_DIR" in
 esac
 [[ ! -L "$INSTALL_DIR" ]] || fail "安装目录不能是软链接：$INSTALL_DIR"
 
-info "正在安装 ky-skills……"
+info "正在安装 kyskills……"
 
 if [[ -d "$INSTALL_DIR/.git" ]]; then
   require_command git

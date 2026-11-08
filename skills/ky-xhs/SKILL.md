@@ -5,7 +5,7 @@ description: |
   触发：/ky-xhs、「小红书」「抓笔记」
 ---
 
-<!-- ky-xhs · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYXHS-SKILL-2611 -->
+<!-- ky-xhs · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYXHS-SKILL-2611 -->
 
 # ky-xhs · 抓小红书
 

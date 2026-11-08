@@ -1,4 +1,4 @@
-// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-magazine-2611
+// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-magazine-2611
 // Loads the style's fonts from public/fonts (copied there by new_project.py) before any frame renders.
 // Noto Serif SC / Noto Sans SC: SIL Open Font License 1.1 (public/fonts/OFL.txt) — on the KY font whitelist.
 import {continueRender, delayRender, staticFile} from 'remotion';

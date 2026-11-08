@@ -1,6 +1,6 @@
 # Grok Bot 学习笔记
 
-真源在本仓库。一个入口：安装和查阅都走 [ky-skills](https://github.com/KirenYi/ky-skills)。
+真源在本仓库。一个入口：安装和查阅都走 [kyskills](https://github.com/KirenYi/kyskills)。
 
 | 目录 | 放什么 |
 |---|---|

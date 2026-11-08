@@ -1,8 +1,8 @@
 <div align="center">
 
-[English](./README.md) | [简体中文](./README.zh-CN.md) | **日本語** | [Español](./README.es.md) | [한국어](./README.ko.md)
+[简体中文](./README.md) | [English](./README.en.md) | **日本語** | [Español](./README.es.md) | [한국어](./README.ko.md)
 
-# ky-skills
+# kyskills
 
 **Kiren Yi の Agent Skills：より明確に考え、より速く学び、アイデアをコンテンツにする。**
 
@@ -52,13 +52,13 @@
 エージェントにこう送ってください：
 
 ```text
-Install the skills from https://github.com/KirenYi/ky-skills
+Install the skills from https://github.com/KirenYi/kyskills
 ```
 
 またはターミナルで実行（macOS / Linux）：
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh | bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh | bash
 ```
 
 Windows では、リポジトリを `git clone` して Git Bash または WSL で `./scripts/install-links.sh` を実行します。
@@ -103,7 +103,7 @@ Windows では、リポジトリを `git clone` して Git Bash または WSL �
 
 ## 提案・不具合
 
-[Issue](https://github.com/KirenYi/ky-skills/issues) を作成してください。アイデア、問題、実際に使ったフィードバックを歓迎します。よい提案は次のバージョンに取り入れます。
+[Issue](https://github.com/KirenYi/kyskills/issues) を作成してください。アイデア、問題、実際に使ったフィードバックを歓迎します。よい提案は次のバージョンに取り入れます。
 
 ## 責任ある利用
 

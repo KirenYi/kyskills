@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Search GitHub for copies of ky-skills by their copyright markers.
+"""Search GitHub for copies of kyskills by their copyright markers.
 
 Every SKILL.md and style block in this repository carries a marker such as
 `KYTS-paper-2611` or `KYX-SKILL-2611`. This script collects those markers
 from the repository, searches GitHub code for each one, and lists every
-repository other than KirenYi/ky-skills that contains them.
+repository other than KirenYi/kyskills that contains them.
 
 Requires the GitHub CLI (`gh`) logged in. GitHub limits code search to about
 10 requests per minute, so the script waits between searches.
@@ -17,7 +17,7 @@ Limits: GitHub only indexes default branches, and forks are searchable only
 when they have more stars than the parent. Copies with every marker removed
 cannot be found this way.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE.
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE.
 """
 
 from __future__ import annotations
@@ -32,7 +32,7 @@ import time
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-OWN_REPOS = {"KirenYi/ky-skills"}
+OWN_REPOS = {"KirenYi/kyskills"}
 MARKER = re.compile(r"\bKY[A-Z]+-[A-Za-z]+-2611\b")
 WAIT_SECONDS = 7
 
@@ -63,7 +63,7 @@ def search(marker: str) -> list[dict]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="在 GitHub 上搜索带有 ky-skills 版权标识的副本")
+    parser = argparse.ArgumentParser(description="在 GitHub 上搜索带有 kyskills 版权标识的副本")
     parser.add_argument("--save", action="store_true", help="把报告保存到 docs/copy-reports/")
     args = parser.parse_args()
 
@@ -78,9 +78,9 @@ def main() -> int:
             time.sleep(WAIT_SECONDS)
 
     today = dt.date.today().isoformat()
-    lines = [f"# ky-skills 副本搜索报告 · {today}", ""]
+    lines = [f"# kyskills 副本搜索报告 · {today}", ""]
     if not found:
-        lines.append("没有在其他 GitHub 仓库中发现 ky-skills 的版权标识。")
+        lines.append("没有在其他 GitHub 仓库中发现 kyskills 的版权标识。")
     else:
         lines.append(f"在 {len(found)} 个其他仓库中发现版权标识：")
         for repo, hits in sorted(found.items()):

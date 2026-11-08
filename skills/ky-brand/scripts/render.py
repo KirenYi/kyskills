@@ -12,7 +12,7 @@ with fetch_fonts.py into ~/.config/ky-skills/fonts/.
 
 Signature: from ~/.config/ky-skills/config.json ("brand": {"name", "site"}); a spec can override with "author" / "website".
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYBRAND-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYBRAND-engine-2611
 """
 from __future__ import annotations
 
@@ -30,8 +30,8 @@ from pathlib import Path
 
 SKILL = Path(__file__).resolve().parents[1]
 ASSETS = SKILL / "assets"
-CONFIG = Path.home() / ".config" / "ky-skills" / "config.json"
-SHARED_FONTS = Path.home() / ".config" / "ky-skills" / "fonts"
+CONFIG = Path.home() / ".config" / "kyskills" / "config.json"
+SHARED_FONTS = Path.home() / ".config" / "kyskills" / "fonts"
 
 
 def read_config() -> dict:

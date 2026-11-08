@@ -1,17 +1,17 @@
 # Contributing / 参与改进
 
-Thanks for helping improve **ky-skills**. 谢谢你帮忙改进 ky-skills。
+Thanks for helping improve **kyskills**. 谢谢你帮忙改进 kyskills。
 
 ## How to help / 怎么参与
 
-Please open an [issue](https://github.com/KirenYi/ky-skills/issues). Choose a template:
+Please open an [issue](https://github.com/KirenYi/kyskills/issues). Choose a template:
 
 - **Bug report / 问题反馈**: something doesn't work as described.
 - **Suggestion / 建议**: an idea, a missing feature, or feedback from real use.
 
 Good suggestions are built into the next version by the author, and contributors are thanked in the changelog.
 
-请通过 [Issue](https://github.com/KirenYi/ky-skills/issues) 提问题或建议。好的建议会由作者做进下一个版本，并在更新记录里致谢。
+请通过 [Issue](https://github.com/KirenYi/kyskills/issues) 提问题或建议。好的建议会由作者做进下一个版本，并在更新记录里致谢。
 
 ## Pull requests / 关于 PR
 

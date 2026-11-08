@@ -1,77 +1,77 @@
 <div align="center">
 
-**English** | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.ko.md)
+**简体中文** | [English](./README.en.md) | [日本語](./README.ja.md) | [Español](./README.es.md) | [한국어](./README.ko.md)
 
-# ky-skills
+# kyskills
 
-**Agent Skills by Kiren Yi: think clearly, learn faster, and turn ideas into content.**
+**Kiren Yi 的 Agent Skills：想得更清楚，学得更快，把想法变成内容。**
 
-One `SKILL.md` per skill. Works in Claude Code, Codex, Gemini CLI, Cursor, GitHub Copilot, OpenCode, Kiro and other tools that support Agent Skills.
+每个 Skill 一个 `SKILL.md`。可在 Claude Code、Codex、Gemini CLI、Cursor、GitHub Copilot、OpenCode、Kiro 等支持 Agent Skills 的工具里使用。
 
 </div>
 
 ## Skills
 
-Commands are the same in every language. Each skill replies in the language you write in.
+命令在所有语言里都一样。你用什么语言说，Skill 就用什么语言回答。
 
-### Think and learn
+### 思考与学习
 
-| Command | What it does for you |
+| 命令 | 帮你做什么 |
 |---|---|
-| [`/ky-think`](./skills/ky-think/) | Think a hard problem through: get a clear judgment, truly understand something, or stress-test your own view. |
-| [`/ky-mirror`](./skills/ky-mirror/) | Notice when a request is really a way around a harder problem, name what is being avoided, and take one small step toward it. |
-| [`/ky-learn`](./skills/ky-learn/) | An AI tutor that maps a field for you, asks before it explains, checks what you really understood, and picks up where you left off. |
-| [`/ky-council`](./skills/ky-council/) | Bring two or three thinkers' perspectives to an important decision, keep a decision record, and review the outcome later. |
+| [`/ky-think`](./skills/ky-think/) | 把一个难题想清楚：直接给判断、带你真正搞懂，或者审查你自己的观点。 |
+| [`/ky-mirror`](./skills/ky-mirror/) | 发现你的请求其实是在绕开一个更难面对的问题，说出被回避的是什么，给一个直接朝向它的小行动。 |
+| [`/ky-learn`](./skills/ky-learn/) | AI 导师：先给你画出领域地图，先问再讲，检验你是不是真懂了，下次从上次停下的地方接着学。 |
+| [`/ky-council`](./skills/ky-council/) | 重要决策时请两三位思想家的视角一起分析，记下决策，之后对照结果复盘。 |
 
-### Write and publish
+### 写作与发布
 
-| Command | What it does for you |
+| 命令 | 帮你做什么 |
 |---|---|
-| [`/ky-write`](./skills/ky-write/) | Write and edit opinion articles and talking-head scripts (Chinese): cut AI-sounding filler, check the argument, add English subtitles. |
-| [`/ky-typeset`](./skills/ky-typeset/) | Typeset Markdown into styled HTML you can paste into WeChat, Substack, Medium, email and other editors. 19 styles. |
-| [`/ky-xdraft`](./skills/ky-xdraft/) | Turn a local Markdown file into an X (Twitter) long-post draft. Never publishes by default. |
+| [`/ky-write`](./skills/ky-write/) | 写作和润色中文观点文章、口播稿：去掉 AI 腔，检查论证，可出英文字幕。 |
+| [`/ky-typeset`](./skills/ky-typeset/) | 把 Markdown 排成带样式的网页，复制后能直接粘贴进公众号、Substack、Medium、邮件等编辑器。19 套样式。 |
+| [`/ky-xdraft`](./skills/ky-xdraft/) | 把本地 Markdown 做成 X（推特）长文草稿，默认不发布。 |
 
-### Visuals and video
+### 视觉与视频
 
-| Command | What it does for you |
+| 命令 | 帮你做什么 |
 |---|---|
-| [`/ky-brand`](./skills/ky-brand/) | Covers, quote cards, posters and slide decks in one consistent style, signed with your own name. |
-| [`/ky-video`](./skills/ky-video/) | Turn talking-head footage into a finished video with code: animation, subtitles, sound effects, opening hooks, covers and a publish pack. |
+| [`/ky-brand`](./skills/ky-brand/) | 用统一的风格做封面、金句卡、海报和 PPT，署你自己的名字。 |
+| [`/ky-video`](./skills/ky-video/) | 用代码把口播原片做成成片：动画、字幕、音效、开头钩子、封面和发布包。 |
 
-### Collect material
+### 素材采集
 
-| Command | What it does for you |
+| 命令 | 帮你做什么 |
 |---|---|
-| [`/ky-x`](./skills/ky-x/) | Archive public X posts to your computer (Markdown + JSONL). |
-| [`/ky-dy`](./skills/ky-dy/) | Download public Douyin videos with their metadata. |
-| [`/ky-xhs`](./skills/ky-xhs/) | Fetch public Xiaohongshu (RED) notes: text, images, video. |
-| [`/ky-sph`](./skills/ky-sph/) | Organize WeChat Channels and Official Account material into your library. |
+| [`/ky-x`](./skills/ky-x/) | 把 X 上的公开帖子存到本地（Markdown + JSONL）。 |
+| [`/ky-dy`](./skills/ky-dy/) | 下载抖音公开视频和元数据。 |
+| [`/ky-xhs`](./skills/ky-xhs/) | 抓取小红书公开笔记：文字、图片、视频。 |
+| [`/ky-sph`](./skills/ky-sph/) | 把视频号、公众号的素材整理进你的素材库。 |
 
-## Install
+## 安装
 
-Send this to your agent:
+把下面这句话发给你的 Agent：
 
 ```text
-Install the skills from https://github.com/KirenYi/ky-skills
+帮我安装这里的 Skills：https://github.com/KirenYi/kyskills
 ```
 
-Or run in a terminal (macOS / Linux):
+或者在终端运行（macOS / Linux）：
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh | bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh | bash
 ```
 
-On Windows, `git clone` the repository and run `./scripts/install-links.sh` (Git Bash or WSL).
+Windows：先 `git clone` 本仓库，再在 Git Bash 或 WSL 里运行 `./scripts/install-links.sh`。
 
-Restart your agent after installing.
+安装后重启你的 Agent。
 
-## Supported tools
+## 支持的工具
 
-The installer links every skill into each tool below that is installed on your computer. Updating the repository updates every tool at once.
+安装脚本会把每个 Skill 链接到你电脑上已安装的下列工具。更新仓库，所有工具同时更新。
 
-| Tool | Skills folder |
+| 工具 | Skill 目录 |
 |---|---|
-| Shared standard (Codex, Gemini CLI, GitHub Copilot, Cursor, OpenCode, Goose, Amp and others) | `~/.agents/skills` |
+| 通用标准（Codex、Gemini CLI、GitHub Copilot、Cursor、OpenCode、Goose、Amp 等） | `~/.agents/skills` |
 | Claude Code | `~/.claude/skills` |
 | Codex | `~/.codex/skills` |
 | Gemini CLI | `~/.gemini/skills` |
@@ -80,51 +80,51 @@ The installer links every skill into each tool below that is installed on your c
 | OpenCode | `~/.config/opencode/skills` |
 | Kiro | `~/.kiro/skills` |
 | Windsurf | `~/.codeium/windsurf/skills` |
-| Trae / Trae CN | `~/.trae/skills`, `~/.trae-cn/skills` |
+| Trae / Trae 国内版 | `~/.trae/skills`、`~/.trae-cn/skills` |
 | Qwen Code | `~/.qwen/skills` |
 | Kimi | `~/.kimi/skills` |
 | Grok | `~/.grok/skills` |
 | Goose | `~/.config/goose/skills` |
-| Augment, Continue, OpenHands, CodeBuddy, Lingma, iFlow, OpenClaw | each tool's `skills` folder |
+| Augment、Continue、OpenHands、CodeBuddy、通义灵码、iFlow、OpenClaw | 各工具自己的 `skills` 目录 |
 
-## First use
+## 第一次使用
 
-Some skills ask you once, then remember your answer in `~/.config/ky-skills/`:
+有几个 Skill 会问你一次，之后记在 `~/.config/ky-skills/`：
 
-- **ky-learn, ky-council**: where to save your learning progress and decision records. Any folder works, including an existing Obsidian vault.
-- **ky-brand**: which name and website to sign your images with (or none).
-- **ky-brand, ky-video**: permission to download two open-source fonts (Noto Serif SC, Noto Sans SC, about 40 MB).
+- **ky-learn、ky-council**：学习进度和决策记录存在哪个文件夹。任何文件夹都行，也可以是你已有的 Obsidian 库。
+- **ky-brand**：图上署什么名字和网址，也可以不署名。
+- **ky-brand、ky-video**：是否同意下载两款开源字体（思源宋体、思源黑体，约 40 MB）。
 
-## Requirements
+## 环境
 
-- macOS, Linux or Windows
-- Python 3.10+ for skills with scripts
-- ky-video also needs ffmpeg, Node 18+ and openai-whisper; ky-brand needs Google Chrome or Chromium
+- macOS、Linux 或 Windows
+- 带脚本的 Skill 需要 Python 3.10+
+- ky-video 还需要 ffmpeg、Node 18+ 和 openai-whisper；ky-brand 需要 Google Chrome 或 Chromium
 
-## Suggestions and bugs
+## 建议与问题
 
-Open an [issue](https://github.com/KirenYi/ky-skills/issues). Ideas, problems and real-use feedback are all welcome; good suggestions get built into the next version.
+请提 [Issue](https://github.com/KirenYi/kyskills/issues)。想法、问题、真实使用的反馈都欢迎，好的建议会做进下一个版本。
 
-## Responsible use
+## 合规使用
 
-- Only process content that is public or yours, and follow each platform's terms and your local laws.
-- Collection skills depend on platform policies and may stop working; each skill explains a fallback.
-- Your data (archives, cookies, notes) stays on your computer. Don't commit it to Git.
+- 只处理公开的或属于你自己的内容，遵守各平台条款和当地法律。
+- 采集类 Skill 受平台策略影响，可能失效；每个 Skill 都写了替代办法。
+- 你的数据（归档、cookies、笔记）只留在你自己的电脑上，不要提交到 Git。
 
-## License
+## 版权与使用条款
 
-© 2026 Kiren Yi. All rights reserved.
+© 2026 Kiren Yi，保留所有权利。
 
-- **You may**: install and use the skills for free; what you create with them is yours, including for paid or ad-supported work; modify them on your own computer for your own use.
-- **You may not, without written permission**: redistribute them, publish modified versions, sell them, bundle them into other products or courses, or use them to train AI models.
+- **你可以**：免费安装使用；用 Skill 做出的内容归你，可以用于收费或带广告的作品；在自己电脑上修改，自己使用。
+- **未经书面授权不可以**：转载传播、公开发布修改版、出售、打包进其他产品或课程、用于训练 AI 模型。
 
-Full terms: [LICENSE](./LICENSE) (the Chinese version prevails). Commercial licensing: kirenyi16@gmail.com
+完整条款见 [LICENSE](./LICENSE)（以中文版为准）。商用授权：kirenyi16@gmail.com
 
-## About the author
+## 关于作者
 
-**Kiren Yi (知羿Kiren)**
+**Kiren Yi（知羿Kiren）**
 
-- Website: [kirenyi.com](https://kirenyi.com)
-- YouTube: **Kiren Yi**
-- Douyin · WeChat Channels · Xiaohongshu: **知羿Kiren**
-- Email: kirenyi16@gmail.com
+- 网站：[kirenyi.com](https://kirenyi.com)
+- 抖音 · 视频号 · 小红书：**知羿Kiren**
+- YouTube：**Kiren Yi**
+- 邮箱：kirenyi16@gmail.com

@@ -4,7 +4,7 @@ python3 render.py <project>              -> out/<title>-预览.mp4   (1080p, qui
 python3 render.py <project> --hooks      -> out/开头-0.mp4 …       (one per hook variant, for picking)
 python3 render.py <project> --4k         -> out/<title>-4K.mp4     (final; builds mezz4k + cut4k if needed)
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

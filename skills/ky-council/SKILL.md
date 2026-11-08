@@ -7,7 +7,7 @@ description: >
   出现未关闭的“顾问室进行中”标记后，普通后续输入也持续触发，直到明确退出。
 ---
 
-<!-- ky-council · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYCOUNCIL-SKILL-2611 -->
+<!-- ky-council · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYCOUNCIL-SKILL-2611 -->
 
 # ky-council
 
@@ -65,7 +65,7 @@ description: >
 
 ## 版权 / Copyright
 
-ky-council 的流程、顾问路由、顾问室机制与写法由 Kiren Yi 原创，版权所有。使用条件见 ky-skills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYCOUNCIL-*-2611`）。
+ky-council 的流程、顾问路由、顾问室机制与写法由 Kiren Yi 原创，版权所有。使用条件见 kyskills 仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和标识（`KYCOUNCIL-*-2611`）。
 
 用本 Skill 产出的内容归使用者所有，可以自由发布、营利。
 

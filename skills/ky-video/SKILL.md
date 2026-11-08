@@ -7,7 +7,7 @@ description: >
   「出封面」「导出 4K」「发布包」「新风格」。Talking-head video pipeline with swappable style packs.
 ---
 
-<!-- ky-video · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYVIDEO-SKILL-2611 -->
+<!-- ky-video · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYVIDEO-SKILL-2611 -->
 
 # ky-video
 
@@ -57,7 +57,7 @@ description: >
 
 ## 版权 / Copyright
 
-ky-video 的流程、剪辑脚本、项目模板和 magazine 风格包（组件、版式、封面模板）由 Kiren Yi 原创，版权所有。使用条件同 ky-skills 仓库根目录的 `LICENSE`。再分发须取得书面授权，并保留 SKILL.md 开头的版权注释，以及每个脚本、风格包文件第一行的版权标识（`KYVIDEO-*-2611`）。
+ky-video 的流程、剪辑脚本、项目模板和 magazine 风格包（组件、版式、封面模板）由 Kiren Yi 原创，版权所有。使用条件同 kyskills 仓库根目录的 `LICENSE`。再分发须取得书面授权，并保留 SKILL.md 开头的版权注释，以及每个脚本、风格包文件第一行的版权标识（`KYVIDEO-*-2611`）。
 
 用这个 Skill 做出来的视频、封面和文案归用户所有，可以自由发布和营利。
 

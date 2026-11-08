@@ -4,7 +4,7 @@
 
 ## v0.1（当前）
 
-- [x] 纳入 `ky-skills`  monorepo，调用名 **`/ky-x`**
+- [x] 纳入 `kyskills`  monorepo，调用名 **`/ky-x`**
 - [x] Nitter RSS 增量同步  
 - [x] 多博主 config，数据目录 `~/.ky-x/`  
 - [x] JSONL + 按月 Markdown  

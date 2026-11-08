@@ -7,7 +7,7 @@ Video: trim by frame number from mezz*.mp4.  Audio: trim by sample number (frame
 Both come from the same frame index, so lip sync cannot drift. Cards/gaps = style bg colour + silence.
 Final audio: highpass 70 Hz + loudnorm to -16 LUFS.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

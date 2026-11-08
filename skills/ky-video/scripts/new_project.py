@@ -2,7 +2,7 @@
 
 python3 new_project.py <dest_dir> --style magazine --source <raw.MP4> --title 标题 [--no-install]
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 
@@ -43,7 +43,7 @@ def main() -> int:
     # The font files are not bundled; fetch_fonts.py downloads them once to ~/.config/ky-skills/fonts/.
     if (dest / "src" / "style" / "fonts").is_dir():
         shutil.move(str(dest / "src" / "style" / "fonts"), str(dest / "public" / "fonts"))
-        shared = Path.home() / ".config" / "ky-skills" / "fonts"
+        shared = Path.home() / ".config" / "kyskills" / "fonts"
         for ttf in ("NotoSerifSC.ttf", "NotoSansSC.ttf"):
             if not (shared / ttf).is_file():
                 sys.exit("FONTS_MISSING: 还没有下载字体（约 40 MB，开源可商用）。先征得用户同意，再运行 "

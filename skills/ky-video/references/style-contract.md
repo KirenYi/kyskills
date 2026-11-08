@@ -14,7 +14,7 @@
 | `theme.ts` | `bg ink red grey serif sans ease prog(f,start,dur) out(f,dur,d)`（颜色名可以沿用，值换掉） |
 | `layout.ts` | `geoFor(layout, zoom, face)` 和 `isFlat(layout)`：A–E 版式下人像的位置 |
 | `kit.tsx` | 通用组件（见下表） |
-| `fonts/` + `fonts.ts` | 字体文件和许可证（只能用 `ky-skills/docs/FONT_LICENSE.md` 白名单里的字体）；new_project 会把它们放进 public/fonts |
+| `fonts/` + `fonts.ts` | 字体文件和许可证（只能用 `kyskills/docs/FONT_LICENSE.md` 白名单里的字体）；new_project 会把它们放进 public/fonts |
 | `covers.tsx` | `Suspense169 / Suspense43 / Suspense34`，以及 `Photo Badge Q Strike PhotoSpec` |
 
 ## kit.tsx 必须导出

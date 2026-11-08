@@ -6,7 +6,7 @@ description: |
   触发 / Triggers：/ky-typeset、/ky-mphtml、「排版」「公众号排版」「微信排版」「公众号 HTML」、typeset、format my article
 ---
 
-<!-- ky-typeset · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYTS-SKILL-2611 -->
+<!-- ky-typeset · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYTS-SKILL-2611 -->
 
 # ky-typeset
 

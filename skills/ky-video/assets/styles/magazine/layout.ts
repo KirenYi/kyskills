@@ -1,4 +1,4 @@
-// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-magazine-2611
+// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-magazine-2611
 // Where the speaker video sits in each layout (1920x1080 canvas).
 // face = [x, y] of the speaker's face in the full source frame (project.json "face").
 // A: full frame (zoom around face)  B: same, overlays on the empty side

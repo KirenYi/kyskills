@@ -1,4 +1,4 @@
-// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see ky-skills LICENSE · KYVIDEO-magazine-2611
+// ky-video/magazine · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · Terms: see kyskills LICENSE · KYVIDEO-magazine-2611
 import {Easing, interpolate} from 'remotion';
 export const red = '#D23C22';
 export const bg = '#F7F5F0';

@@ -7,7 +7,7 @@ python3 check.py <project> [--sync] [--words]     (default: both)
 --words  re-transcribe public/cut.mp4 with whisper and diff against the captions:
          missing chars = clipped word at a cut; extra chars = leftover stutter / unwanted word.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

@@ -1,6 +1,6 @@
 # SOURCE_OF_TRUTH.md
 
-本文件标明 **ky-skills** 仓库内「谁说了算」。
+本文件标明 **kyskills** 仓库内「谁说了算」。
 
 ## 真源层级
 

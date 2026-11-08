@@ -12,7 +12,7 @@ Usage:
 Exit codes: 0 ok · 2 not configured yet (ask the user where to save) ·
 3 configured folder missing or not writable.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYNOTES-root-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYNOTES-root-2611
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-CONFIG = Path.home() / ".config" / "ky-skills" / "config.json"
+CONFIG = Path.home() / ".config" / "kyskills" / "config.json"
 ENV = "KY_NOTES_ROOT"
 
 
@@ -53,7 +53,7 @@ def report(path: Path, as_json: bool) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Find or set the ky-skills notes folder.")
+    parser = argparse.ArgumentParser(description="Find or set the kyskills notes folder.")
     parser.add_argument("--set", metavar="PATH", help="save PATH as the notes folder")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()

@@ -10,7 +10,7 @@ Usage:
 
 License: both fonts are under the SIL Open Font License 1.1 (saved next to them as OFL.txt).
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYFONTS-fetch-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYFONTS-fetch-2611
 """
 
 from __future__ import annotations
@@ -20,7 +20,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-FONT_DIR = Path.home() / ".config" / "ky-skills" / "fonts"
+FONT_DIR = Path.home() / ".config" / "kyskills" / "fonts"
 BASE = "https://github.com/google/fonts/raw/main/ofl"
 FILES = {
     "NotoSerifSC.ttf": f"{BASE}/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",

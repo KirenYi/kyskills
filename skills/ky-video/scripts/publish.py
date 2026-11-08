@@ -6,7 +6,7 @@ Renders every cover Still listed in project.json "covers" (PNG), converts to JPG
 then assembles out/发布包-<title>/ with: 4K video, 1080p fallback, 标题和简介.md, 封面/.
 Upload ONLY from this folder (avoids uploading cut.mp4 or other intermediates by mistake).
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE. · KYVIDEO-engine-2611
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYVIDEO-engine-2611
 """
 from __future__ import annotations
 

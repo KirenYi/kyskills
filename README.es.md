@@ -1,8 +1,8 @@
 <div align="center">
 
-[English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md) | **Español** | [한국어](./README.ko.md)
+[简体中文](./README.md) | [English](./README.en.md) | [日本語](./README.ja.md) | **Español** | [한국어](./README.ko.md)
 
-# ky-skills
+# kyskills
 
 **Agent Skills de Kiren Yi: piensa con claridad, aprende más rápido y convierte ideas en contenido.**
 
@@ -52,13 +52,13 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 Envía esto a tu agente:
 
 ```text
-Install the skills from https://github.com/KirenYi/ky-skills
+Install the skills from https://github.com/KirenYi/kyskills
 ```
 
 O ejecuta en una terminal (macOS / Linux):
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh | bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh | bash
 ```
 
 En Windows, haz `git clone` del repositorio y ejecuta `./scripts/install-links.sh` (Git Bash o WSL).
@@ -103,7 +103,7 @@ Algunas skills te preguntan una vez y recuerdan tu respuesta en `~/.config/ky-sk
 
 ## Sugerencias y errores
 
-Abre un [issue](https://github.com/KirenYi/ky-skills/issues). Las ideas, los problemas y la experiencia de uso real son bienvenidos; las buenas sugerencias se incorporan a la siguiente versión.
+Abre un [issue](https://github.com/KirenYi/kyskills/issues). Las ideas, los problemas y la experiencia de uso real son bienvenidos; las buenas sugerencias se incorporan a la siguiente versión.
 
 ## Uso responsable
 

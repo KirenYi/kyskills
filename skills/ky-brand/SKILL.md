@@ -7,7 +7,7 @@ description: >
   「课程海报」「做 PPT」「做幻灯片」。A personal brand design system for covers, quote cards, posters and slide decks.
 ---
 
-<!-- ky-brand · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYBRAND-SKILL-2611 -->
+<!-- ky-brand · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYBRAND-SKILL-2611 -->
 
 # ky-brand
 
@@ -53,7 +53,7 @@ description: >
 
 ## 版权 / Copyright
 
-ky-brand 的视觉风格（三套主题的配色、版式、组件）和渲染脚本由 Kiren Yi 原创，版权所有。使用条件同 ky-skills 仓库根目录的 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和脚本头部的版权标识（`KYBRAND-*-2611`）。
+ky-brand 的视觉风格（三套主题的配色、版式、组件）和渲染脚本由 Kiren Yi 原创，版权所有。使用条件同 kyskills 仓库根目录的 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和脚本头部的版权标识（`KYBRAND-*-2611`）。
 
 用这个 Skill 生成的封面、海报、PPT 归使用者所有，可以自由发布和营利。
 

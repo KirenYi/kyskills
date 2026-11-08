@@ -11,7 +11,7 @@
 ## 命令行
 
 ```bash
-export PYTHONPATH=/path/to/ky-skills/skills/ky-x/scripts
+export PYTHONPATH=/path/to/kyskills/skills/ky-x/scripts
 python3 -m xarchive init -c ~/.ky-x/config.json
 python3 -m xarchive add naval -c ~/.ky-x/config.json
 python3 -m xarchive sync --handle naval -c ~/.ky-x/config.json

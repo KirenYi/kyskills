@@ -5,7 +5,7 @@ description: |
   触发：/ky-x、「抓推文」「同步 X」
 ---
 
-<!-- ky-x · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see ky-skills LICENSE · KYX-SKILL-2611 -->
+<!-- ky-x · © 2026 Kiren Yi（知羿Kiren）· kirenyi.com · 抖音/视频号/小红书：知羿Kiren · YouTube：Kiren Yi · Terms: see kyskills LICENSE · KYX-SKILL-2611 -->
 
 # ky-x · 归档 X
 

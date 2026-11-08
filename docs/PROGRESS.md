@@ -25,6 +25,12 @@
 
 ---
 
+## 2026-11-08 — Claude Code — 仓库改名 kyskills；中文首页优先
+
+- GitHub 仓库 `KirenYi/ky-skills` 改名为 `KirenYi/kyskills`（旧网址自动跳转），所有链接、标题、版权注释里的仓库名同步改为 `kyskills`；命令仍是 `ky-*`。
+- 本机路径不改：`~/.config/ky-skills/`（用户设置、字体）、`~/.ky-skills/`（一键安装目录），改了会断开已有设置。
+- README 顺序改为中文优先：`README.md` 是简体中文，英文移到 `README.en.md`；语言切换顺序为 简体中文 | English | 日本語 | Español | 한국어。
+
 ## 2026-11-08 — Claude Code — 发布 6 个新 Skill；多语言 README；适配更多 AI 工具
 
 - **新增 Skill**：`ky-think`、`ky-mirror`、`ky-learn`、`ky-council`、`ky-brand`、`ky-video`（从 Kiren 的私有 Skill 工厂迁入，去掉了验证记录和个人内容）。`ky-card` 未发布：方法改编自第三方提示词，待作者许可或重写。
@@ -430,7 +436,7 @@
 ## 2026-07-20 — Grok — 新增媒体抓取与 X 草稿四 skill 并准备推送
 
 - **操作者**：Grok
-- **目标**：将抖音 / 小红书 / 视频号 / X Article 草稿能力沉淀为正式 `ky-*` skill，并入 ky-skills 真源后推送 GitHub
+- **目标**：将抖音 / 小红书 / 视频号 / X Article 草稿能力沉淀为正式 `ky-*` skill，并入 kyskills 真源后推送 GitHub
 - **已完成**：
   - 新增 `ky-douyin`（Playwright 拦截下载 + metadata）
   - 新增 `ky-xhs`（INITIAL_STATE 抓取 + 媒体）
@@ -447,7 +453,7 @@
   - `python -m py_compile` 对新脚本（若环境有 Python）
   - `git status` 确认仅相关文件
 - **未完成 / 下一步**：
-  - `git push` 到 `KirenYi/ky-skills`（本轮执行）
+  - `git push` 到 `KirenYi/kyskills`（本轮执行）
   - 用户本机 `./scripts/install-links.sh` 刷新软链
 - **风险或注意**：
   - 平台抓取随时可能被风控；文档已写诚实限制
@@ -587,7 +593,7 @@
 - **操作者**：Grok
 - **目标**：
   1. 为多工具协作增加规范与进度同步文件
-  2. 明确 ky-skills 是「多 skill 集合」，ky-x 仅为 v0.1 第一个 skill
+  2. 明确 kyskills 是「多 skill 集合」，ky-x 仅为 v0.1 第一个 skill
   3. 强化「任意主流 Agent 宿主都能装同一套 skill」的安装方式
 - **已完成**：
   - 新增 `AGENTS.md`、`CLAUDE.md`、`SOURCE_OF_TRUTH.md`
@@ -613,9 +619,9 @@
 ## 2026-07-12 — Grok — 初版仓库上线
 
 - **操作者**：Grok
-- **目标**：发布 ky-skills 与首个 skill `ky-x`
+- **目标**：发布 kyskills 与首个 skill `ky-x`
 - **已完成**：
-  - 仓库结构、`ky-x` 实现、GitHub `KirenYi/ky-skills` public 推送
+  - 仓库结构、`ky-x` 实现、GitHub `KirenYi/kyskills` public 推送
 - **改动路径**：
   - 初版全量
 - **验证**：

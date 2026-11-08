@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ky-xhs: fetch a public Xiaohongshu note (metadata + media).
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE.
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE.
 Parses window.__INITIAL_STATE__; optional XHS_COOKIE env for logged-in HTML.
 """
 

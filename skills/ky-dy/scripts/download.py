@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ky-dy: download a public Douyin video via Playwright network intercept.
 
-Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See ky-skills LICENSE.
+Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE.
 Technique: headless Chromium intercepts aweme/detail JSON for play URLs.
 """
 

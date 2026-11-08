@@ -29,7 +29,7 @@
 直接发给支持终端操作的 Agent：
 
 ```text
-帮我安装这里的 Skills：https://github.com/KirenYi/ky-skills
+帮我安装这里的 Skills：https://github.com/KirenYi/kyskills
 ```
 
 Codex 用户也可以调用 `$skill-installer`，让它从上述仓库安装全部 Skills。
@@ -37,7 +37,7 @@ Codex 用户也可以调用 `$skill-installer`，让它从上述仓库安装全�
 如果 Agent 无法安装，再使用终端命令：
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh|bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh|bash
 ```
 
 这条命令会自动：
@@ -51,14 +51,14 @@ curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh|bash
 只安装一个 Skill：
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh|bash -s -- ky-x
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh|bash -s -- ky-x
 ```
 
 ## 手动安装（可选）
 
 ```bash
-git clone https://github.com/KirenYi/ky-skills.git ~/ky-skills
-cd ~/ky-skills
+git clone https://github.com/KirenYi/kyskills.git ~/kyskills
+cd ~/kyskills
 ./scripts/install-links.sh
 ./scripts/install-links.sh --dry-run
 ```
@@ -80,7 +80,7 @@ cd ~/ky-skills
 ## 升级
 
 ```bash
-curl -fsSL https://github.com/KirenYi/ky-skills/raw/main/install.sh|bash
+curl -fsSL https://github.com/KirenYi/kyskills/raw/main/install.sh|bash
 ```
 
 ## 卸载链接（不删仓库）
