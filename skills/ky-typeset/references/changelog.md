@@ -1,5 +1,11 @@
 # ky-typeset Changelog（原 ky-mphtml）
 
+## 0.5.0 — 2026-11-06（新增 6 套）
+
+- 新增 6 套 KY 原创样式，造型与原有 13 套明显区分：`studio` 工作室、`brutal` 粗野、`bubble` 对话、`retro` 复古、`capsule` 胶囊、`scrapbook` 手账
+- 全量风格 13 → **19**；SKILL.md 推荐表补充对应文章类型，新增「新款」多套对比口令
+- 均不使用伪元素；`scrapbook` 的旋转、`brutal` / `bubble` 的投影为可丢失装饰，已在样式说明中注明
+
 ## 0.4.0 — 2026-11-04（更名）
 
 - `ky-mphtml` 更名为 `ky-typeset`，面向全球用户；旧命令 `/ky-mphtml` 仍可触发

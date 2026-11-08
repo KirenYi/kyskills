@@ -59,11 +59,18 @@ description: |
 | 设计感、大留白 / design-forward | `swiss` 网格 Swiss Grid |
 | 深色、夜间 / dark mode | `night` 夜读 Night Read |
 | 生活、清新 / lifestyle | `fresh` 青芽 Fresh |
+| 清单、干货、方法论 / listicle, how-to | `studio` 工作室 Studio |
+| 有态度、测评、要抢眼 / bold, opinionated | `brutal` 粗野 Brutal |
+| 口语、问答、像聊天 / conversational, Q&A | `bubble` 对话 Bubble |
+| 怀旧、生活方式 / retro, nostalgic | `retro` 复古 Retro |
+| 精致、仪式感、品牌 / elegant, refined | `capsule` 胶囊 Capsule |
+| 手账、生活记录 / journal, scrapbook | `scrapbook` 手账 Scrapbook |
 
 **用户要多套对比**：
 
 - 「多出几套」"show me a few" → 常用 6 套：`paper` `window` `steps` `desk` `margin` `notebook`
-- 「全部」"all" → 全部 13 套
+- 「全部」"all" → 全部 19 套
+- 「新款」"new ones" → 0.5.0 新增 6 套：`studio` `brutal` `bubble` `retro` `capsule` `scrapbook`
 - 「出 A、B、C」→ 只出点名的这几套
 
 多套时额外生成一个对比页（见第五步）。
@@ -168,6 +175,6 @@ Say "switch to xxx" to try another style.
 
 ## 版权 / Copyright
 
-ky-typeset（原名 ky-mphtml）的流程说明与全部 13 套样式由 Kiren Yi 原创，版权所有。使用条件见仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和每段 CSS 第一行的版权标识。
+ky-typeset（原名 ky-mphtml）的流程说明与全部 19 套样式由 Kiren Yi 原创，版权所有。使用条件见仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和每段 CSS 第一行的版权标识。
 
 商用授权 / Commercial licensing：kirenyi16@gmail.com · kirenyi.com

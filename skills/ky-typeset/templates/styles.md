@@ -13,15 +13,15 @@
 1. **真实大于完美**：暖白、纸张、牛皮纸这类有温度的底色，不用纯白和冷蓝灰。
 2. **克制大于堆砌**：每套样式最多一个强调色，靠留白和字重建立层次。
 3. **情感大于信息**：先让人愿意读下去，再让结构清楚。
-4. **可粘贴**：新样式不用 `:before` / `:after` 伪元素、计数器和动画，这些在复制进编辑器时常被丢掉。`ink`、`cream`、`swiss`、`night`、`fresh` 中少量伪元素装饰粘贴后可能不显示，不影响正文。
+4. **可粘贴**：新样式不用 `:before` / `:after` 伪元素、计数器和动画，这些在复制进编辑器时常被丢掉。`scrapbook` 的旋转、`brutal` / `bubble` 的投影属于装饰，丢了也不影响正文。`ink`、`cream`、`swiss`、`night`、`fresh` 中少量伪元素装饰粘贴后可能不显示，不影响正文。
 
 ## 常用 6 套
 
 `paper` · `window` · `steps` · `desk` · `margin` · `notebook`
 
-## 全部 13 套
+## 全部 19 套
 
-`paper` · `window` · `steps` · `desk` · `margin` · `notebook` · `kraft` · `poster` · `ink` · `cream` · `swiss` · `night` · `fresh`
+`paper` · `window` · `steps` · `desk` · `margin` · `notebook` · `kraft` · `poster` · `ink` · `cream` · `swiss` · `night` · `fresh` · `studio` · `brutal` · `bubble` · `retro` · `capsule` · `scrapbook`
 
 ---
 
@@ -369,4 +369,169 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background
 pre{background:#dcfce7;color:#14532d;padding:14px 16px;overflow:auto;font-size:14px;line-height:1.6;border-radius:8px;}
 pre code{background:none;padding:0;}
 hr{border:none;border-top:1px dashed #86efac;margin:30px auto;width:50%;}
+```
+
+---
+
+## studio · 工作室
+
+- English：Studio
+- 别名：清单、干货、标签、方法论
+- 适合：清单体、干货、方法论、AI 工作流——一条一条往下扫的文章
+- 设计依据：设计工作室的标签贴：黑底白字小标题像一张张标签，重点用红色粗下划线
+
+```css
+/* ky-typeset/studio · © 2026 Kiren Yi · KYTS-studio-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#222;background:#f6f4ef;max-width:680px;margin:0 auto;padding:36px 22px;}
+h1{font-size:30px;line-height:1.28;font-weight:900;color:#111;letter-spacing:-0.02em;margin:6px 0 26px;}
+h2{display:inline-block;font-size:17px;line-height:1.5;font-weight:800;color:#f6f4ef;background:#111;margin:44px 0 10px;padding:6px 14px;}
+h3{font-size:16px;line-height:1.55;font-weight:800;color:#111;margin:26px 0 8px;}
+p{margin:10px 0;}
+blockquote{margin:24px 0;padding:16px 18px;background:#fff;border:2px solid #111;color:#111;font-weight:500;}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:7px 0;}
+strong{font-weight:800;color:#111;border-bottom:3px solid #d23c22;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#e8e4db;padding:1px 5px;}
+pre{background:#111;color:#f6f4ef;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;color:inherit;padding:0;}
+hr{border:none;border-top:2px solid #111;margin:40px 0;}
+```
+
+---
+
+## brutal · 粗野
+
+- English：Brutal
+- 别名：新粗野主义、贴纸、张扬
+- 适合：有态度的观点、工具测评、想让人停下来的内容
+- 设计依据：Neo-brutalism：黄黑撞色、粗黑框加实心投影，像贴在页面上的贴纸
+- 注意：投影在部分编辑器粘贴后可能丢失，粘贴后预览确认
+
+```css
+/* ky-typeset/brutal · © 2026 Kiren Yi · KYTS-brutal-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#111;background:#fffdf6;max-width:680px;margin:0 auto;padding:36px 22px;}
+h1{font-size:28px;line-height:1.35;font-weight:900;color:#111;background:#ffd84d;border:3px solid #111;box-shadow:6px 6px 0 #111;margin:6px 6px 34px 0;padding:16px 18px;}
+h2{display:inline-block;font-size:18px;line-height:1.5;font-weight:900;color:#111;background:#fff;border:2.5px solid #111;box-shadow:4px 4px 0 #111;margin:42px 0 14px;padding:6px 14px;}
+h3{font-size:16px;line-height:1.55;font-weight:900;color:#111;margin:26px 0 8px;}
+p{margin:10px 0;}
+blockquote{margin:24px 6px 28px 0;padding:14px 18px;background:#ffd84d;border:2.5px solid #111;box-shadow:5px 5px 0 #111;color:#111;font-weight:600;}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:7px 0;}
+strong{font-weight:900;color:#111;background:#ffd84d;padding:0 3px;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#fff;border:1.5px solid #111;padding:0 4px;}
+pre{background:#111;color:#ffd84d;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;border:none;color:inherit;padding:0;}
+hr{border:none;border-top:3px solid #111;margin:40px 0;}
+```
+
+---
+
+## bubble · 对话
+
+- English：Bubble
+- 别名：聊天、气泡、口语、问答
+- 适合：口语化的文章、问答、像在跟读者聊天的内容
+- 设计依据：聊天界面：小标题是陶土红气泡，引言是对方回的一条白色消息
+- 注意：投影在部分编辑器粘贴后可能丢失，粘贴后预览确认
+
+```css
+/* ky-typeset/bubble · © 2026 Kiren Yi · KYTS-bubble-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#2b2723;background:#f4efe7;max-width:660px;margin:0 auto;padding:34px 20px;}
+h1{font-size:26px;line-height:1.4;font-weight:800;color:#2b2723;margin:6px 0 28px;}
+h2{display:inline-block;font-size:17px;line-height:1.5;font-weight:700;color:#fff;background:#c0582f;border-radius:18px 18px 18px 4px;margin:40px 0 12px;padding:9px 16px;}
+h3{font-size:16px;line-height:1.55;font-weight:700;color:#c0582f;margin:24px 0 8px;}
+p{margin:10px 0;}
+blockquote{margin:22px 0 22px 12%;padding:14px 18px;background:#fff;border-radius:18px 18px 4px 18px;color:#3d3832;box-shadow:0 1px 2px rgba(60,40,20,.08);}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:7px 0;}
+strong{font-weight:700;color:#c0582f;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#e9e1d4;padding:1px 6px;border-radius:6px;}
+pre{background:#fff;padding:14px 16px;border-radius:14px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:2px dotted #cdbfac;margin:36px 30%;}
+```
+
+---
+
+## retro · 复古
+
+- English：Retro
+- 别名：70 年代、怀旧、三色条纹
+- 适合：生活方式、个人故事、带怀旧感的内容
+- 设计依据：70 年代海报：芥末黄、陶土红、橄榄绿三色条纹，胶囊小标题
+
+```css
+/* ky-typeset/retro · © 2026 Kiren Yi · KYTS-retro-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#3b2a1e;background:#f4e9d3;max-width:670px;margin:0 auto;padding:36px 22px;}
+h1{font-size:29px;line-height:1.3;font-weight:900;color:#3b2a1e;margin:6px 0 44px;padding-bottom:14px;border-bottom:6px solid #c4572e;box-shadow:0 6px 0 #e0a526,0 12px 0 #6b7a3a;}
+h2{display:inline-block;font-size:17px;line-height:1.5;font-weight:800;color:#f4e9d3;background:#c4572e;border-radius:999px;margin:42px 0 12px;padding:6px 18px;}
+h3{font-size:16px;line-height:1.55;font-weight:800;color:#6b7a3a;margin:26px 0 8px;}
+p{margin:11px 0;}
+blockquote{margin:24px 0;padding:14px 18px;background:#ecd9a8;border-radius:14px;color:#3b2a1e;}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:7px 0;}
+strong{font-weight:800;color:#c4572e;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#e8d9b8;padding:1px 6px;border-radius:5px;}
+pre{background:#3b2a1e;color:#f4e9d3;padding:14px 16px;border-radius:10px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;color:inherit;padding:0;}
+hr{border:none;border-top:6px solid #e0a526;margin:40px 40%;border-radius:3px;}
+```
+
+---
+
+## capsule · 胶囊
+
+- English：Capsule
+- 别名：请柬、精致、居中、酒红
+- 适合：人文、品牌感强、仪式感的长文
+- 设计依据：请柬与菜单：酒红宋体、居中描边胶囊小标题、圆角引言框
+
+```css
+/* ky-typeset/capsule · © 2026 Kiren Yi · KYTS-capsule-2611 */
+body{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:16px;line-height:1.95;color:#2e2629;background:#faf6f3;max-width:640px;margin:0 auto;padding:40px 22px;}
+h1{font-size:27px;line-height:1.4;font-weight:900;color:#5e1f2d;text-align:center;letter-spacing:0.04em;margin:10px 0 32px;}
+h2{display:table;font-size:17px;line-height:1.5;font-weight:700;color:#5e1f2d;text-align:center;border:1.5px solid #5e1f2d;border-radius:999px;margin:48px auto 16px;padding:5px 22px;}
+h3{font-size:16px;line-height:1.55;font-weight:700;color:#5e1f2d;text-align:center;margin:28px 0 8px;}
+p{margin:13px 0;}
+blockquote{margin:26px 4%;padding:16px 20px;border:1px solid #d9c2c6;border-radius:24px;text-align:center;color:#5e1f2d;font-size:15px;}
+ul{margin:13px 0;padding-left:22px;}
+ol{margin:13px 0;padding-left:24px;}
+li{margin:8px 0;}
+strong{font-weight:700;color:#5e1f2d;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;background:#f1e8e6;padding:1px 6px;border-radius:999px;}
+pre{background:#f1e8e6;padding:14px 18px;border-radius:16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:1.5px solid #5e1f2d;margin:40px 46%;}
+```
+
+---
+
+## scrapbook · 手账
+
+- English：Scrapbook
+- 别名：手帐、纸胶带、便签、生活记录
+- 适合：生活记录、成长复盘、轻松的个人分享
+- 设计依据：手账本：小标题像斜贴的纸胶带，引言像一张歪贴的黄便签，虚线分隔
+- 注意：小标题和便签的轻微旋转在部分编辑器（含公众号）粘贴后可能被拉正，颜色与结构不受影响
+
+```css
+/* ky-typeset/scrapbook · © 2026 Kiren Yi · KYTS-scrapbook-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#33302b;background:#f7f3ea;max-width:660px;margin:0 auto;padding:36px 22px;}
+h1{font-size:27px;line-height:1.4;font-weight:800;color:#2a2622;margin:6px 0 30px;padding-bottom:10px;border-bottom:2px dashed #b9a98d;}
+h2{display:inline-block;font-size:17px;line-height:1.5;font-weight:800;color:#2a2622;background:rgba(150,190,170,.45);transform:rotate(-1.2deg);margin:42px 0 12px;padding:5px 14px;}
+h3{font-size:16px;line-height:1.55;font-weight:700;color:#7d6a4a;margin:24px 0 8px;}
+p{margin:11px 0;}
+blockquote{margin:26px 4px;padding:16px 18px;background:#fff3b8;transform:rotate(.8deg);box-shadow:2px 4px 10px rgba(80,60,20,.15);color:#3d3524;}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:7px 0;}
+strong{font-weight:800;color:#2a2622;border-bottom:2px dashed #e07a5f;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#ece5d6;padding:1px 6px;border-radius:3px;}
+pre{background:#fff;border:1.5px dashed #b9a98d;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:2px dashed #b9a98d;margin:38px 0;}
 ```
