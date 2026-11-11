@@ -25,6 +25,13 @@
 
 ---
 
+## 2026-11-11 — Claude Code — 设置目录统一为 ~/.config/kyskills/
+
+- **目标**：修复改名后代码和文档不一致。2026-11-08 改名时脚本里的设置目录被改成 `~/.config/kyskills/`，文档和说明仍写 `~/.config/ky-skills/`，导致已有设置读不到。
+- **已完成**：按 Kiren 决定统一用 `kyskills`。所有 README（五种语言）、`AGENTS.md`、`THIRD_PARTY_NOTICES.md`、`ky-brand` / `ky-video` 的 `SKILL.md` 和脚本注释改为 `~/.config/kyskills/`；脚本逻辑未变。
+- **验证**：`ky-learn`、`ky-council` 的 `notes_root.py` 返回已设置的笔记库（退出码 0）；`ky-brand` 的 `render.py assets/example.json` 正常出图。`ky-video` 未重新渲染。
+- **风险或注意**：2026-11-08 当天在旧目录 `~/.config/ky-skills/` 存过设置的用户，需要把该文件夹改名为 `kyskills`，或重新设置一次。`~/.ky-skills/` 安装目录没有改。
+
 ## 2026-11-08 — Claude Code — 仓库改名 kyskills；中文首页优先
 
 - GitHub 仓库 `KirenYi/ky-skills` 改名为 `KirenYi/kyskills`（旧网址自动跳转），所有链接、标题、版权注释里的仓库名同步改为 `kyskills`；命令仍是 `ky-*`。

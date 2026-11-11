@@ -89,7 +89,7 @@ El instalador enlaza cada skill en cada una de estas herramientas que tengas ins
 
 ## Primer uso
 
-Algunas skills te preguntan una vez y recuerdan tu respuesta en `~/.config/ky-skills/`:
+Algunas skills te preguntan una vez y recuerdan tu respuesta en `~/.config/kyskills/`:
 
 - **ky-learn, ky-council**: dónde guardar tu progreso de aprendizaje y tus registros de decisiones. Sirve cualquier carpeta, incluida una bóveda de Obsidian existente.
 - **ky-brand**: con qué nombre y sitio web firmar tus imágenes (o sin firma).

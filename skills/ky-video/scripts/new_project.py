@@ -40,7 +40,7 @@ def main() -> int:
     shutil.copytree(style, dest / "src" / "style", dirs_exist_ok=True)
     (dest / "src" / "style" / "sample.png").unlink(missing_ok=True)
     # style fonts are served from public/ (loaded by src/style/fonts.ts).
-    # The font files are not bundled; fetch_fonts.py downloads them once to ~/.config/ky-skills/fonts/.
+    # The font files are not bundled; fetch_fonts.py downloads them once to ~/.config/kyskills/fonts/.
     if (dest / "src" / "style" / "fonts").is_dir():
         shutil.move(str(dest / "src" / "style" / "fonts"), str(dest / "public" / "fonts"))
         shared = Path.home() / ".config" / "kyskills" / "fonts"

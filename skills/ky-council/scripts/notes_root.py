@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Find (or set) the notes folder where ky-learn, ky-card and ky-council save their files.
 
-Order: the KY_NOTES_ROOT environment variable, then ~/.config/ky-skills/config.json.
+Order: the KY_NOTES_ROOT environment variable, then ~/.config/kyskills/config.json.
 The script never falls back to the current directory.
 
 Usage:

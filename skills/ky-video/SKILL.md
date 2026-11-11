@@ -26,7 +26,7 @@ description: >
 1. **选题与稿子**：先聊清楚必须回答的问题，再出口播稿 + 分镜表（每句标 A–E 版式）。可配合 `ky-write`。
 2. **选风格**：读 `assets/styles/INDEX.md` 推荐 1–2 个；用户想要新风格 → 按 `references/style-contract.md` 新建（先 3 张样图，选定后做 10 秒样片）。
 3. **拍摄前**：把 `references/shooting-checklist.md` 发给用户；先要 10 秒测试样片，确认比例、帧率、背景。
-4. **建项目**：`python3 scripts/new_project.py <目录> --style <风格> --source <原片> --title <标题>`。第一次提示 `FONTS_MISSING` 时，告诉用户要下载两款开源字体（约 40 MB），征得同意后运行 `python3 scripts/fetch_fonts.py`（和 ky-brand 共用 `~/.config/ky-skills/fonts/`）。
+4. **建项目**：`python3 scripts/new_project.py <目录> --style <风格> --source <原片> --title <标题>`。第一次提示 `FONTS_MISSING` 时，告诉用户要下载两款开源字体（约 40 MB），征得同意后运行 `python3 scripts/fetch_fonts.py`（和 ky-brand 共用 `~/.config/kyskills/fonts/`）。
 5. **预处理**：`python3 scripts/prep.py <项目>` → 固定 30 帧中间文件 + whisper 转写 + `work/transcript.md`；在 project.json 填 `face`（人脸在 1920×1080 中的位置）。
 6. **写剪辑表**：读 transcript.md，按“同一句保留最后一遍”写 `edl.json`（格式见 `references/project-files.md`）。开头钩子 = 复制全片最反常识/最有冲突的一句放最前。
 7. **精剪**：`build.py` → `cut.py`。

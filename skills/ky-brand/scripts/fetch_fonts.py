@@ -2,7 +2,7 @@
 """Download the open-source fonts used by ky-brand and ky-video (Noto Serif SC, Noto Sans SC).
 
 The fonts are not bundled with the skills, to keep the repository small. They are saved once
-to ~/.config/ky-skills/fonts/ and shared by both skills. About 40 MB in total.
+to ~/.config/kyskills/fonts/ and shared by both skills. About 40 MB in total.
 
 Usage:
     python3 fetch_fonts.py           # download if missing

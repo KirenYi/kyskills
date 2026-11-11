@@ -89,7 +89,7 @@ Windows에서는 저장소를 `git clone` 한 뒤 Git Bash 또는 WSL에서 `./s
 
 ## 처음 사용할 때
 
-몇몇 스킬은 한 번만 묻고, 답을 `~/.config/ky-skills/`에 기억합니다:
+몇몇 스킬은 한 번만 묻고, 답을 `~/.config/kyskills/`에 기억합니다:
 
 - **ky-learn, ky-council**: 학습 진도와 결정 기록을 저장할 폴더. 기존 Obsidian 볼트를 포함해 어떤 폴더든 됩니다.
 - **ky-brand**: 이미지에 서명할 이름과 웹사이트(서명 없음도 가능).

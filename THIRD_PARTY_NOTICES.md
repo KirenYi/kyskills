@@ -22,5 +22,5 @@
 
 ## 字体
 
-`ky-brand`、`ky-video` 使用 Noto Serif SC / Noto Sans SC（SIL Open Font License 1.1）。字体文件不随本仓库分发，由 `scripts/fetch_fonts.py` 在用户同意后从 Google Fonts 官方仓库下载到 `~/.config/ky-skills/fonts/`，许可证一并保存。
+`ky-brand`、`ky-video` 使用 Noto Serif SC / Noto Sans SC（SIL Open Font License 1.1）。字体文件不随本仓库分发，由 `scripts/fetch_fonts.py` 在用户同意后从 Google Fonts 官方仓库下载到 `~/.config/kyskills/fonts/`，许可证一并保存。
 

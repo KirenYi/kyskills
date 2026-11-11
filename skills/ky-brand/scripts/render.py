@@ -8,9 +8,9 @@ Markup inside text: [文字] = accent colour, {？？} = accent box, \\n = line 
 Output names follow 项目简称_用途_版本_比例_日期, e.g. taste_wechat-cover_v01_235x100_20261105.png
 
 Needs Google Chrome or Chromium (headless). Fonts: Noto Serif SC / Noto Sans SC (SIL OFL 1.1), downloaded once
-with fetch_fonts.py into ~/.config/ky-skills/fonts/.
+with fetch_fonts.py into ~/.config/kyskills/fonts/.
 
-Signature: from ~/.config/ky-skills/config.json ("brand": {"name", "site"}); a spec can override with "author" / "website".
+Signature: from ~/.config/kyskills/config.json ("brand": {"name", "site"}); a spec can override with "author" / "website".
 
 Copyright (c) 2026 Kiren Yi (KY). All rights reserved. See kyskills LICENSE. · KYBRAND-engine-2611
 """

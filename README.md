@@ -89,7 +89,7 @@ Windows：先 `git clone` 本仓库，再在 Git Bash 或 WSL 里运行 `./scrip
 
 ## 第一次使用
 
-有几个 Skill 会问你一次，之后记在 `~/.config/ky-skills/`：
+有几个 Skill 会问你一次，之后记在 `~/.config/kyskills/`：
 
 - **ky-learn、ky-council**：学习进度和决策记录存在哪个文件夹。任何文件夹都行，也可以是你已有的 Obsidian 库。
 - **ky-brand**：图上署什么名字和网址，也可以不署名。

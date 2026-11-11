@@ -19,7 +19,7 @@ description: >
 渲染脚本遇到下面两种情况会停下，按提示处理一次即可，以后不再问：
 
 - **`SIGNATURE_NOT_SET`**：问用户想在图上署什么名字，要不要带网址，也可以不署名。然后运行 `python3 scripts/render.py --set-signature "名字" --site 网址`（不署名就写 `""`）。
-- **`FONTS_MISSING`**：告诉用户需要下载两款开源字体（思源宋体、思源黑体，约 40 MB，可商用），征得同意后运行 `python3 scripts/fetch_fonts.py`。字体存在 `~/.config/ky-skills/fonts/`，ky-video 也共用。
+- **`FONTS_MISSING`**：告诉用户需要下载两款开源字体（思源宋体、思源黑体，约 40 MB，可商用），征得同意后运行 `python3 scripts/fetch_fonts.py`。字体存在 `~/.config/kyskills/fonts/`，ky-video 也共用。
 
 ## 怎么用
 
@@ -58,7 +58,7 @@ ky-brand 的视觉风格（三套主题的配色、版式、组件）和渲染�
 用这个 Skill 生成的封面、海报、PPT 归使用者所有，可以自由发布和营利。
 
 **第三方**
-- 字体：Noto Serif SC / Noto Sans SC，SIL Open Font License 1.1。不随 Skill 附带，由 `scripts/fetch_fonts.py` 从 Google Fonts 官方仓库下载，许可证一并保存为 `~/.config/ky-skills/fonts/OFL.txt`。
+- 字体：Noto Serif SC / Noto Sans SC，SIL Open Font License 1.1。不随 Skill 附带，由 `scripts/fetch_fonts.py` 从 Google Fonts 官方仓库下载，许可证一并保存为 `~/.config/kyskills/fonts/OFL.txt`。
 - Google Chrome / Chromium：只作为本机渲染工具调用，不随 Skill 分发。
 
 商用授权 / Commercial licensing：kirenyi16@gmail.com · kirenyi.com

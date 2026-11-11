@@ -89,7 +89,7 @@ The installer links every skill into each tool below that is installed on your c
 
 ## First use
 
-Some skills ask you once, then remember your answer in `~/.config/ky-skills/`:
+Some skills ask you once, then remember your answer in `~/.config/kyskills/`:
 
 - **ky-learn, ky-council**: where to save your learning progress and decision records. Any folder works, including an existing Obsidian vault.
 - **ky-brand**: which name and website to sign your images with (or none).

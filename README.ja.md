@@ -89,7 +89,7 @@ Windows では、リポジトリを `git clone` して Git Bash または WSL �
 
 ## 初回の利用
 
-いくつかのスキルは一度だけ質問し、答えを `~/.config/ky-skills/` に記憶します：
+いくつかのスキルは一度だけ質問し、答えを `~/.config/kyskills/` に記憶します：
 
 - **ky-learn、ky-council**：学習の進捗と決定記録の保存先。既存の Obsidian ボールトを含め、どのフォルダでも構いません。
 - **ky-brand**：画像に署名する名前とウェブサイト（署名なしも可）。
