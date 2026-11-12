@@ -25,6 +25,28 @@
 
 ---
 
+## 2026-11-12 — Claude Code — 发布入口 Skill `ky`（v0.11.0）
+
+- **操作者**：Claude Code
+- **目标**：用户说不清自己的问题、只是觉得乱时，有一个入口先听，再接到对应的 Skill；用户不需要先知道有哪些 Skill。
+- **已完成**：
+  - 新增 `skills/ky/`（0.1.0）：请求清楚就直接交给对应 Skill；不清楚就复述关键、给一个猜测和依据、整条回复只问一个问题；信号明显时同一条回复里直接交出去；只想说说就只听；对应 Skill 没装时用最基本的做法帮忙。
+  - `install.sh`、`scripts/install-links.sh` 同时匹配 `ky` 和 `ky-*`（原来只认 `ky-*`，`ky` 装不上）。
+  - 五种语言 README 在「思考与学习」表加 `/ky` 一行；`AGENTS.md` 更新已发布列表和命名例外；仓库 `VERSION` 0.11.0。
+- **改动路径**：
+  - `skills/ky/SKILL.md`、`skills/ky/VERSION`
+  - `install.sh`、`scripts/install-links.sh`
+  - `README.md`、`README.en.md`、`README.ja.md`、`README.es.md`、`README.ko.md`、`AGENTS.md`、`VERSION`
+- **验证**：
+  - 6 个多轮场景（只想说说、学了没学会、想辞职、想法半年没开始、清楚的改稿请求、没打 /ky 只说很迷茫）全部交给了正确的 Skill 或只倾听。
+  - `KY_SKILLS_HOST_HOME=<临时目录> ./scripts/install-links.sh` 装上 14 个 Skill，包括 `ky`。
+- **未完成 / 下一步**：
+  - 还没真实使用；连续两次猜错、对应 Skill 没装时的退路都没测。
+- **风险或注意**：
+  - `ky` 的 description 含「很迷茫」「不知道怎么办」，可能和 ky-mirror、ky-think 的触发词交叠；以真实使用为准再调。
+
+---
+
 ## 2026-11-11 — Claude Code — ky-council 视角改用问题命名；顾问室/学习室标记缩短
 
 - **操作者**：Claude Code

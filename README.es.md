@@ -18,6 +18,7 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 
 | Comando | Qué hace por ti |
 |---|---|
+| [`/ky`](./skills/ky/) | Úsalo cuando algo no va bien pero no sabes qué: te escucha, propone una sola hipótesis sobre qué tipo de problema es y te lleva a la skill adecuada. No necesitas conocer antes las demás skills. |
 | [`/ky-think`](./skills/ky-think/) | Piensa a fondo un problema difícil: obtén un juicio claro, entiende algo de verdad o pon a prueba tu propia opinión. |
 | [`/ky-mirror`](./skills/ky-mirror/) | Detecta cuándo una petición es en realidad una forma de rodear un problema más difícil, nombra lo que se evita y propone un pequeño paso hacia ello. |
 | [`/ky-learn`](./skills/ky-learn/) | Un tutor con IA que traza el mapa de un campo, pregunta antes de explicar, comprueba lo que de verdad entendiste y retoma donde lo dejaste. |

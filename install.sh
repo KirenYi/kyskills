@@ -91,7 +91,7 @@ fi
 
 if [[ "$#" -eq 0 ]]; then
   all_commands=""
-  for skill_dir in "$INSTALL_DIR"/skills/ky-*; do
+  for skill_dir in "$INSTALL_DIR"/skills/ky "$INSTALL_DIR"/skills/ky-*; do
     [[ -f "$skill_dir/SKILL.md" ]] || continue
     all_commands="${all_commands} /$(basename "$skill_dir")"
   done

@@ -13,7 +13,7 @@
 
 `kyskills` 是 **Kiren Yi 的个人 Agent Skill 集合**，不是单一脚本仓库。
 
-- 当前（v0.10.0）已发布：`ky-think`、`ky-mirror`、`ky-learn`、`ky-council`、`ky-write`、`ky-typeset`、`ky-xdraft`、`ky-brand`、`ky-video`、`ky-x`、`ky-dy`、`ky-xhs`、`ky-sph`
+- 当前（v0.11.0）已发布：`ky`（入口）、`ky-think`、`ky-mirror`、`ky-learn`、`ky-council`、`ky-write`、`ky-typeset`、`ky-xdraft`、`ky-brand`、`ky-video`、`ky-x`、`ky-dy`、`ky-xhs`、`ky-sph`
 - 仓库名 `kyskills`（2026-11-08 由 ky-skills 改名，GitHub 自动跳转旧网址）；Skill 命令仍是 `ky-*`。设置目录是 `~/.config/kyskills/`（2026-11-11 统一，代码和文档一致）；本机仓库目录和 `~/.ky-skills/` 安装目录保留旧写法，不要改，否则会断开已有链接
 - README 有五种语言，中文优先：`README.md` 简体中文（默认）、`README.en.md`、`README.ja.md`、`README.es.md`、`README.ko.md`，改一份要同步改其他四份；命令在各语言里保持一致
 - 用户设置和共用字体在 `~/.config/kyskills/`（不要放进 `~/.ky-skills/`，那是一键安装的仓库目录，更新时会被替换）
@@ -101,7 +101,7 @@
 
 ## 5. 新增 skill 的规范
 
-1. 目录名 = 调用名 = `ky-<短名>`
+1. 目录名 = 调用名 = `ky-<短名>`（唯一例外：入口 Skill `ky`；安装脚本同时匹配 `ky` 和 `ky-*`）
 2. 必须有 `skills/ky-<短名>/SKILL.md`（含 frontmatter `name` + `description` + 触发词）
 3. 可选 `scripts/`、`references/`、`VERSION`
 4. 更新根 `README.md` skill 表

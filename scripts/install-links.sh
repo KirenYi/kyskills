@@ -140,7 +140,7 @@ list_skill_names() {
     return
   fi
   local d
-  for d in "$SKILLS_DIR"/ky-*; do
+  for d in "$SKILLS_DIR"/ky "$SKILLS_DIR"/ky-*; do
     [[ -d "$d" ]] || continue
     basename "$d"
   done

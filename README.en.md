@@ -18,6 +18,7 @@ Commands are the same in every language. Each skill replies in the language you 
 
 | Command | What it does for you |
 |---|---|
+| [`/ky`](./skills/ky/) | Use it when something feels off but you can't say what: it listens, makes one guess about what kind of problem it is, and hands you to the right skill. You don't need to know the other skills first. |
 | [`/ky-think`](./skills/ky-think/) | Think a hard problem through: get a clear judgment, truly understand something, or stress-test your own view. |
 | [`/ky-mirror`](./skills/ky-mirror/) | Notice when a request is really a way around a harder problem, name what is being avoided, and take one small step toward it. |
 | [`/ky-learn`](./skills/ky-learn/) | An AI tutor that maps a field for you, asks before it explains, checks what you really understood, and picks up where you left off. |
