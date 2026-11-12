@@ -25,6 +25,25 @@
 
 ---
 
+## 2026-11-11 — Claude Code — ky-council 视角改用问题命名；顾问室/学习室标记缩短
+
+- **操作者**：Claude Code
+- **目标**：去掉顾问名单里的真实人名，补上专门找失败原因的视角；房间标记丢失时不再悄悄按普通对话处理。
+- **已完成**：
+  - ky-council 0.3.0：12 个按问题命名的视角，思想来源另起一列；「失败路径」包含事前验尸；回答只写视角名。
+  - ky-council、ky-learn（0.2.3）：找不到标记但明显在接着上一轮时，先问要不要继续；标记缩短，保留「进行中」。
+- **改动路径**：
+  - `skills/ky-council/SKILL.md`、`skills/ky-council/references/council.md`、`skills/ky-council/VERSION`
+  - `skills/ky-learn/SKILL.md`、`skills/ky-learn/VERSION`
+- **验证**：
+  - 同一道合伙决策题 A/B 对比后选 A；正式版重测人名 0 次，结论不变。
+- **未完成 / 下一步**：
+  - 标记丢失后的追问未验证，需要真实长对话。
+- **风险或注意**：
+  - 无。
+
+---
+
 ## 2026-11-11 — Claude Code — 设置目录统一为 ~/.config/kyskills/
 
 - **目标**：修复改名后代码和文档不一致。2026-11-08 改名时脚本里的设置目录被改成 `~/.config/kyskills/`，文档和说明仍写 `~/.config/ky-skills/`，导致已有设置读不到。
