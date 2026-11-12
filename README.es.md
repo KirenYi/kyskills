@@ -22,7 +22,7 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 | [`/ky-think`](./skills/ky-think/) | Piensa a fondo un problema difícil: obtén un juicio claro, entiende algo de verdad o pon a prueba tu propia opinión. |
 | [`/ky-mirror`](./skills/ky-mirror/) | Detecta cuándo una petición es en realidad una forma de rodear un problema más difícil, nombra lo que se evita y propone un pequeño paso hacia ello. |
 | [`/ky-learn`](./skills/ky-learn/) | Un tutor con IA que traza el mapa de un campo, pregunta antes de explicar, comprueba lo que de verdad entendiste y retoma donde lo dejaste. |
-| [`/ky-council`](./skills/ky-council/) | Aplica la perspectiva de dos o tres pensadores a una decisión importante, guarda un registro y revisa el resultado más adelante. |
+| [`/ky-council`](./skills/ky-council/) | Analiza una decisión importante desde varios ángulos clave (el valor para el cliente, cómo podría fallar, si podría ser más simple), guarda un registro y revisa el resultado más adelante. |
 
 ### Escribir y publicar
 

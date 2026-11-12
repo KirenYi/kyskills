@@ -25,6 +25,14 @@
 
 ---
 
+## 2026-11-12 — Claude Code — README 里 ky-council 的介绍跟上 0.3.0
+
+- **操作者**：Claude Code
+- **已完成**：五种语言 README 的 ky-council 一行，从「请两三位思想家的视角」改为「从几个关键角度分析（客户价值、可能怎么失败、能不能更简单）」，和 0.3.0 按问题命名的视角一致。
+- **改动路径**：`README.md`、`README.en.md`、`README.ja.md`、`README.es.md`、`README.ko.md`
+
+---
+
 ## 2026-11-12 — Claude Code — 发布入口 Skill `ky`（v0.11.0）
 
 - **操作者**：Claude Code

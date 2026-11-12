@@ -22,7 +22,7 @@ Commands are the same in every language. Each skill replies in the language you 
 | [`/ky-think`](./skills/ky-think/) | Think a hard problem through: get a clear judgment, truly understand something, or stress-test your own view. |
 | [`/ky-mirror`](./skills/ky-mirror/) | Notice when a request is really a way around a harder problem, name what is being avoided, and take one small step toward it. |
 | [`/ky-learn`](./skills/ky-learn/) | An AI tutor that maps a field for you, asks before it explains, checks what you really understood, and picks up where you left off. |
-| [`/ky-council`](./skills/ky-council/) | Bring two or three thinkers' perspectives to an important decision, keep a decision record, and review the outcome later. |
+| [`/ky-council`](./skills/ky-council/) | Look at an important decision from a few key angles (such as value to the customer, how it could fail, whether it could be simpler), keep a decision record, and review the outcome later. |
 
 ### Write and publish
 
