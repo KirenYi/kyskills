@@ -29,6 +29,7 @@
 | コマンド | できること |
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | 中国語の意見記事やトーク動画の台本を執筆・推敲：AI っぽい言い回しを削り、論証を点検し、英語字幕も作れる。 |
+| [`/ky-follow`](./skills/ky-follow/) | 記事や動画台本のどこで読者・視聴者がついて来られなくなるかを見つける：読者が何を知っているかを決め、まっさらな読者に読ませ、論証の各ステップを照合し、埋めるべき断絶と意図した難所を分ける。直すのは最小限だけ。 |
 | [`/ky-typeset`](./skills/ky-typeset/) | Markdown をスタイル付き HTML に組版し、WeChat、Substack、Medium、メールなどのエディタにそのまま貼り付けられる。19 スタイル。 |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | ローカルの Markdown を X（Twitter）の長文下書きにする。既定では投稿しない。 |
 
@@ -93,6 +94,7 @@ Windows では、リポジトリを `git clone` して Git Bash または WSL �
 いくつかのスキルは一度だけ質問し、答えを `~/.config/kyskills/` に記憶します：
 
 - **ky-learn、ky-council**：学習の進捗と決定記録の保存先。既存の Obsidian ボールトを含め、どのフォルダでも構いません。
+- **ky-follow**：読者設定（初見の視聴者とターゲット読者が何を知り、何を信じているか）。次回のチェックでそのまま使います。
 - **ky-brand**：画像に署名する名前とウェブサイト（署名なしも可）。
 - **ky-brand、ky-video**：2 つのオープンソースフォント（Noto Serif SC、Noto Sans SC、約 40 MB）をダウンロードしてよいか。
 

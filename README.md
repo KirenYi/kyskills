@@ -29,6 +29,7 @@
 | 命令 | 帮你做什么 |
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | 写作和润色中文观点文章、口播稿：去掉 AI 腔，检查论证，可出英文字幕。 |
+| [`/ky-follow`](./skills/ky-follow/) | 检查文章、口播稿哪里会让读者跟不上：先定义读者知道什么，再冷读、对照论证每一步，分清该补的断层和有意的门槛，只给最小改法。 |
 | [`/ky-typeset`](./skills/ky-typeset/) | 把 Markdown 排成带样式的网页，复制后能直接粘贴进公众号、Substack、Medium、邮件等编辑器。19 套样式。 |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 把本地 Markdown 做成 X（推特）长文草稿，默认不发布。 |
 
@@ -93,6 +94,7 @@ Windows：先 `git clone` 本仓库，再在 Git Bash 或 WSL 里运行 `./scrip
 有几个 Skill 会问你一次，之后记在 `~/.config/kyskills/`：
 
 - **ky-learn、ky-council**：学习进度和决策记录存在哪个文件夹。任何文件夹都行，也可以是你已有的 Obsidian 库。
+- **ky-follow**：读者设定（门口读者、目标读者知道什么、相信什么），下次检查直接用。
 - **ky-brand**：图上署什么名字和网址，也可以不署名。
 - **ky-brand、ky-video**：是否同意下载两款开源字体（思源宋体、思源黑体，约 40 MB）。
 

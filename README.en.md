@@ -29,6 +29,7 @@ Commands are the same in every language. Each skill replies in the language you 
 | Command | What it does for you |
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | Write and edit opinion articles and talking-head scripts (Chinese): cut AI-sounding filler, check the argument, add English subtitles. |
+| [`/ky-follow`](./skills/ky-follow/) | Find where readers or viewers will lose the thread in an article or script: define what the reader knows, run a cold read, check each step of the argument, and separate real gaps from deliberate thresholds. Minimal fixes only. |
 | [`/ky-typeset`](./skills/ky-typeset/) | Typeset Markdown into styled HTML you can paste into WeChat, Substack, Medium, email and other editors. 19 styles. |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | Turn a local Markdown file into an X (Twitter) long-post draft. Never publishes by default. |
 
@@ -93,6 +94,7 @@ The installer links every skill into each tool below that is installed on your c
 Some skills ask you once, then remember your answer in `~/.config/kyskills/`:
 
 - **ky-learn, ky-council**: where to save your learning progress and decision records. Any folder works, including an existing Obsidian vault.
+- **ky-follow**: your reader profiles (what first-time viewers and target readers know and believe), reused on the next check.
 - **ky-brand**: which name and website to sign your images with (or none).
 - **ky-brand, ky-video**: permission to download two open-source fonts (Noto Serif SC, Noto Sans SC, about 40 MB).
 

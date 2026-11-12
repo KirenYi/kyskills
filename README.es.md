@@ -29,6 +29,7 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 | Comando | Qué hace por ti |
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | Escribe y edita artículos de opinión y guiones para vídeo (en chino): elimina el relleno con tono de IA, revisa el argumento y añade subtítulos en inglés. |
+| [`/ky-follow`](./skills/ky-follow/) | Detecta dónde los lectores o espectadores pierden el hilo en un artículo o guion: define qué sabe el lector, hace una lectura en frío, revisa cada paso del argumento y separa los saltos reales de las barreras intencionadas. Solo cambios mínimos. |
 | [`/ky-typeset`](./skills/ky-typeset/) | Convierte Markdown en HTML con estilo que puedes pegar en WeChat, Substack, Medium, correo y otros editores. 19 estilos. |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | Convierte un archivo Markdown local en un borrador de publicación larga en X (Twitter). Nunca publica por defecto. |
 
@@ -93,6 +94,7 @@ El instalador enlaza cada skill en cada una de estas herramientas que tengas ins
 Algunas skills te preguntan una vez y recuerdan tu respuesta en `~/.config/kyskills/`:
 
 - **ky-learn, ky-council**: dónde guardar tu progreso de aprendizaje y tus registros de decisiones. Sirve cualquier carpeta, incluida una bóveda de Obsidian existente.
+- **ky-follow**: tus perfiles de lector (qué saben y creen los espectadores nuevos y tus lectores objetivo), que se reutilizan en la siguiente revisión.
 - **ky-brand**: con qué nombre y sitio web firmar tus imágenes (o sin firma).
 - **ky-brand, ky-video**: permiso para descargar dos fuentes de código abierto (Noto Serif SC y Noto Sans SC, unos 40 MB).
 
