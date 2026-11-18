@@ -30,7 +30,7 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | Escribe y edita artículos de opinión y guiones para vídeo (en chino): elimina el relleno con tono de IA, revisa el argumento y añade subtítulos en inglés. |
 | [`/ky-follow`](./skills/ky-follow/) | Detecta dónde los lectores o espectadores pierden el hilo en un artículo o guion: define qué sabe el lector, hace una lectura en frío, revisa cada paso del argumento y separa los saltos reales de las barreras intencionadas. Solo cambios mínimos. |
-| [`/ky-typeset`](./skills/ky-typeset/) | Convierte Markdown en HTML con estilo que puedes pegar en WeChat, Substack, Medium, correo y otros editores. 19 estilos. |
+| [`/ky-typeset`](./skills/ky-typeset/) | Convierte Markdown en HTML con estilo que puedes pegar en WeChat, Substack, Medium, correo y otros editores. 22 estilos. |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | Convierte un archivo Markdown local en un borrador de publicación larga en X (Twitter). Nunca publica por defecto. |
 
 ### Imagen y vídeo

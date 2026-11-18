@@ -19,9 +19,13 @@
 
 `paper` · `window` · `steps` · `desk` · `margin` · `notebook`
 
-## 全部 19 套
+## 极简 3 套
 
-`paper` · `window` · `steps` · `desk` · `margin` · `notebook` · `kraft` · `poster` · `ink` · `cream` · `swiss` · `night` · `fresh` · `studio` · `brutal` · `bubble` · `retro` · `capsule` · `scrapbook`
+`plain` · `still` · `line`
+
+## 全部 22 套
+
+`paper` · `window` · `steps` · `desk` · `margin` · `notebook` · `kraft` · `poster` · `ink` · `cream` · `swiss` · `night` · `fresh` · `studio` · `brutal` · `bubble` · `retro` · `capsule` · `scrapbook` · `plain` · `still` · `line`
 
 ---
 
@@ -534,4 +538,85 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:
 pre{background:#fff;border:1.5px dashed #b9a98d;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
 pre code{background:none;padding:0;}
 hr{border:none;border-top:2px dashed #b9a98d;margin:38px 0;}
+```
+
+---
+
+## plain · 白描
+
+- English：Plain
+- 别名：极简、素、干净、minimal
+- 适合：想要最素的排版、只让文字说话的文章
+- 设计依据：只靠字号和字重分层级；小标题用黑底白字小标签，没有强调色和色块。与 `studio` 的区别：不加粗大标题、不加红线、引用不加框
+
+```css
+/* ky-typeset/plain · © 2026 Kiren Yi · KYTS-plain-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.9;color:#2b2b2b;background:#fcfbf9;max-width:640px;margin:0 auto;padding:40px 22px;}
+h1{font-size:24px;line-height:1.45;font-weight:700;color:#1a1a1a;margin:8px 0 36px;}
+h2{display:inline-block;font-size:17px;line-height:1.5;font-weight:700;color:#fcfbf9;background:#1a1a1a;margin:52px 0 14px;padding:4px 12px;}
+h3{font-size:16px;line-height:1.6;font-weight:700;color:#1a1a1a;margin:32px 0 8px;}
+p{margin:14px 0;}
+blockquote{margin:24px 0;padding:0 0 0 18px;border-left:2px solid #e4e1dc;color:#6b6865;}
+ul{margin:14px 0;padding-left:20px;}
+ol{margin:14px 0;padding-left:22px;}
+li{margin:6px 0;}
+strong{font-weight:700;color:#1a1a1a;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#f2f0ec;padding:1px 5px;border-radius:3px;}
+pre{background:#f4f2ee;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:1px solid #e4e1dc;margin:44px 40%;}
+```
+
+---
+
+## still · 静
+
+- English：Still
+- 别名：极简、留白、安静、衬线
+- 适合：慢读的随笔、散文、需要安静感的长文
+- 设计依据：宋体加大留白；小标题是居中的黑底条，只有三级标题带一点灰棕
+
+```css
+/* ky-typeset/still · © 2026 Kiren Yi · KYTS-still-2611 */
+body{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:16px;line-height:2;color:#333;background:#faf9f6;max-width:620px;margin:0 auto;padding:48px 24px;}
+h1{font-size:24px;line-height:1.5;font-weight:600;color:#222;text-align:center;letter-spacing:0.04em;margin:12px 0 48px;}
+h2{display:table;font-size:16px;line-height:1.6;font-weight:600;color:#faf9f6;background:#222;text-align:center;letter-spacing:0.08em;margin:60px auto 20px;padding:5px 18px;}
+h3{font-size:16px;line-height:1.6;font-weight:600;color:#8a7560;margin:34px 0 10px;}
+p{margin:16px 0;text-align:justify;}
+blockquote{margin:30px 8%;padding:0;color:#7a7672;font-size:15px;text-align:center;}
+ul{margin:16px 0;padding-left:22px;}
+ol{margin:16px 0;padding-left:24px;}
+li{margin:8px 0;}
+strong{font-weight:700;color:#222;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;background:#f1efea;padding:1px 5px;}
+pre{background:#f1efea;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:1px solid #d9d4cc;margin:48px 45%;}
+```
+
+---
+
+## line · 一线
+
+- English：Line
+- 别名：极简、黑白、细线、现代
+- 适合：结构清楚、偏现代感的观点文和产品文
+- 设计依据：只有黑白两色；大标题整块黑底，小标题左侧粗黑竖线，其余只用细线
+
+```css
+/* ky-typeset/line · © 2026 Kiren Yi · KYTS-line-2611 */
+body{font-family:"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#262626;background:#fbfbfa;max-width:660px;margin:0 auto;padding:40px 22px;}
+h1{font-size:26px;line-height:1.35;font-weight:800;color:#fbfbfa;background:#111;letter-spacing:-0.01em;margin:6px 0 32px;padding:18px 20px;}
+h2{font-size:18px;line-height:1.5;font-weight:700;color:#111;margin:48px 0 14px;padding:0 0 0 12px;border-left:6px solid #111;}
+h3{font-size:15px;line-height:1.6;font-weight:700;color:#555;margin:28px 0 8px;}
+p{margin:12px 0;}
+blockquote{margin:24px 0;padding:2px 0 2px 16px;border-left:1px solid #111;color:#444;}
+ul{margin:12px 0;padding-left:20px;}
+ol{margin:12px 0;padding-left:22px;}
+li{margin:6px 0;}
+strong{font-weight:700;color:#111;border-bottom:1px solid #111;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;background:#f0f0ee;padding:1px 5px;}
+pre{background:#f0f0ee;padding:14px 16px;overflow:auto;font-size:13px;line-height:1.65;}
+pre code{background:none;padding:0;}
+hr{border:none;border-top:1px solid #d6d6d3;margin:40px 0;}
 ```

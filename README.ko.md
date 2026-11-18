@@ -30,7 +30,7 @@
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | 중국어 의견 글과 토킹헤드 영상 대본을 쓰고 다듬습니다: AI 같은 군더더기를 빼고, 논증을 점검하고, 영어 자막도 만듭니다. |
 | [`/ky-follow`](./skills/ky-follow/) | 글이나 영상 대본에서 독자·시청자가 흐름을 놓치는 곳을 찾습니다: 독자가 무엇을 아는지 정하고, 처음 보는 독자처럼 읽게 한 뒤, 논증의 각 단계를 대조해 메워야 할 단절과 의도한 문턱을 구분합니다. 수정은 최소한만 제안합니다. |
-| [`/ky-typeset`](./skills/ky-typeset/) | Markdown을 스타일이 적용된 HTML로 조판해 WeChat, Substack, Medium, 이메일 등 편집기에 바로 붙여 넣을 수 있게 합니다. 19가지 스타일. |
+| [`/ky-typeset`](./skills/ky-typeset/) | Markdown을 스타일이 적용된 HTML로 조판해 WeChat, Substack, Medium, 이메일 등 편집기에 바로 붙여 넣을 수 있게 합니다. 22가지 스타일. |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 로컬 Markdown 파일을 X(트위터) 긴 글 초안으로 만듭니다. 기본적으로 게시하지 않습니다. |
 
 ### 비주얼과 영상

@@ -65,12 +65,16 @@ description: |
 | 怀旧、生活方式 / retro, nostalgic | `retro` 复古 Retro |
 | 精致、仪式感、品牌 / elegant, refined | `capsule` 胶囊 Capsule |
 | 手账、生活记录 / journal, scrapbook | `scrapbook` 手账 Scrapbook |
+| 极简、素、只让文字说话 / minimal | `plain` 白描 Plain |
+| 极简 + 慢读、留白 / minimal, quiet | `still` 静 Still |
+| 极简 + 黑白、现代 / minimal, monochrome | `line` 一线 Line |
 
 **用户要多套对比**：
 
 - 「多出几套」"show me a few" → 常用 6 套：`paper` `window` `steps` `desk` `margin` `notebook`
-- 「全部」"all" → 全部 19 套
+- 「全部」"all" → 全部 22 套
 - 「新款」"new ones" → 0.5.0 新增 6 套：`studio` `brutal` `bubble` `retro` `capsule` `scrapbook`
+- 「极简」"minimal" → 0.6.0 新增 3 套：`plain` `still` `line`
 - 「出 A、B、C」→ 只出点名的这几套
 
 多套时额外生成一个对比页（见第五步）。
@@ -175,6 +179,6 @@ Say "switch to xxx" to try another style.
 
 ## 版权 / Copyright
 
-ky-typeset（原名 ky-mphtml）的流程说明与全部 19 套样式由 Kiren Yi 原创，版权所有。使用条件见仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和每段 CSS 第一行的版权标识。
+ky-typeset（原名 ky-mphtml）的流程说明与全部 22 套样式由 Kiren Yi 原创，版权所有。使用条件见仓库根目录 `LICENSE`。再分发须取得书面授权，并保留本文件开头的版权注释和每段 CSS 第一行的版权标识。
 
 商用授权 / Commercial licensing：kirenyi16@gmail.com · kirenyi.com

@@ -30,7 +30,7 @@
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | 写作和润色中文观点文章、口播稿：去掉 AI 腔，检查论证，可出英文字幕。 |
 | [`/ky-follow`](./skills/ky-follow/) | 检查文章、口播稿哪里会让读者跟不上：先定义读者知道什么，再冷读、对照论证每一步，分清该补的断层和有意的门槛，只给最小改法。 |
-| [`/ky-typeset`](./skills/ky-typeset/) | 把 Markdown 排成带样式的网页，复制后能直接粘贴进公众号、Substack、Medium、邮件等编辑器。19 套样式。 |
+| [`/ky-typeset`](./skills/ky-typeset/) | 把 Markdown 排成带样式的网页，复制后能直接粘贴进公众号、Substack、Medium、邮件等编辑器。22 套样式。 |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | 把本地 Markdown 做成 X（推特）长文草稿，默认不发布。 |
 
 ### 视觉与视频

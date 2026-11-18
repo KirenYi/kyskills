@@ -30,7 +30,7 @@
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | 中国語の意見記事やトーク動画の台本を執筆・推敲：AI っぽい言い回しを削り、論証を点検し、英語字幕も作れる。 |
 | [`/ky-follow`](./skills/ky-follow/) | 記事や動画台本のどこで読者・視聴者がついて来られなくなるかを見つける：読者が何を知っているかを決め、まっさらな読者に読ませ、論証の各ステップを照合し、埋めるべき断絶と意図した難所を分ける。直すのは最小限だけ。 |
-| [`/ky-typeset`](./skills/ky-typeset/) | Markdown をスタイル付き HTML に組版し、WeChat、Substack、Medium、メールなどのエディタにそのまま貼り付けられる。19 スタイル。 |
+| [`/ky-typeset`](./skills/ky-typeset/) | Markdown をスタイル付き HTML に組版し、WeChat、Substack、Medium、メールなどのエディタにそのまま貼り付けられる。22 スタイル。 |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | ローカルの Markdown を X（Twitter）の長文下書きにする。既定では投稿しない。 |
 
 ### ビジュアル・動画

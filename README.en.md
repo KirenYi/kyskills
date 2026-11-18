@@ -30,7 +30,7 @@ Commands are the same in every language. Each skill replies in the language you 
 |---|---|
 | [`/ky-write`](./skills/ky-write/) | Write and edit opinion articles and talking-head scripts (Chinese): cut AI-sounding filler, check the argument, add English subtitles. |
 | [`/ky-follow`](./skills/ky-follow/) | Find where readers or viewers will lose the thread in an article or script: define what the reader knows, run a cold read, check each step of the argument, and separate real gaps from deliberate thresholds. Minimal fixes only. |
-| [`/ky-typeset`](./skills/ky-typeset/) | Typeset Markdown into styled HTML you can paste into WeChat, Substack, Medium, email and other editors. 19 styles. |
+| [`/ky-typeset`](./skills/ky-typeset/) | Typeset Markdown into styled HTML you can paste into WeChat, Substack, Medium, email and other editors. 22 styles. |
 | [`/ky-xdraft`](./skills/ky-xdraft/) | Turn a local Markdown file into an X (Twitter) long-post draft. Never publishes by default. |
 
 ### Visuals and video
