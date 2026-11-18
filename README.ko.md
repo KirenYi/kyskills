@@ -45,9 +45,7 @@
 | 명령어 | 해 주는 일 |
 |---|---|
 | [`/ky-x`](./skills/ky-x/) | X의 공개 게시물을 컴퓨터에 보관합니다(Markdown + JSONL). |
-| [`/ky-dy`](./skills/ky-dy/) | Douyin 공개 영상을 메타데이터와 함께 내려받습니다. |
 | [`/ky-xhs`](./skills/ky-xhs/) | 샤오훙수(RED) 공개 노트를 가져옵니다: 텍스트, 이미지, 영상. |
-| [`/ky-sph`](./skills/ky-sph/) | WeChat 채널과 공식 계정 자료를 라이브러리로 정리합니다. |
 
 ## 설치
 

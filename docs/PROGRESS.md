@@ -25,6 +25,26 @@
 
 ---
 
+## 2026-11-18 — Claude Code — 删除 ky-dy、ky-sph
+
+- **操作者**：Claude Code
+- **目标**：用户要求删除这两个 Skill
+- **已完成**：
+  - 实测 ky-dy：两个真实链接都失败，`aweme/detail` 返回空内容，响应头带滑块验证（`subtype: slide`）；yt-dlp 不带 Cookie 也返回 403
+  - `skills/ky-dy`、`skills/ky-sph` 移到 `../_Archive/2026-11-18_ky-dy_ky-sph/`；删除 40 个宿主软链接
+  - 5 个 README 的命令表、AGENTS.md 的已发布列表去掉这两项
+- **改动路径**：
+  - `skills/ky-dy/**`、`skills/ky-sph/**`（删除）
+  - `README.md`、`README.en.md`、`README.es.md`、`README.ja.md`、`README.ko.md`、`AGENTS.md`
+- **验证**：
+  - README / AGENTS 中已无 ky-dy、ky-sph 引用
+- **未完成 / 下一步**：
+  - 未 commit / push（等用户确认）；未改版本号
+- **风险或注意**：
+  - 以后做「视频 → 文字稿」可考虑 yt-dlp + 浏览器 Cookie + whisper
+
+---
+
 ## 2026-11-13 — Claude Code — 发布 ky-follow（v0.12.0）
 
 - **操作者**：Claude Code

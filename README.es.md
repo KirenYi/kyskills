@@ -45,9 +45,7 @@ Los comandos son los mismos en todos los idiomas. Cada skill responde en el idio
 | Comando | Qué hace por ti |
 |---|---|
 | [`/ky-x`](./skills/ky-x/) | Archiva publicaciones públicas de X en tu ordenador (Markdown + JSONL). |
-| [`/ky-dy`](./skills/ky-dy/) | Descarga vídeos públicos de Douyin con sus metadatos. |
 | [`/ky-xhs`](./skills/ky-xhs/) | Obtén notas públicas de Xiaohongshu (RED): texto, imágenes y vídeo. |
-| [`/ky-sph`](./skills/ky-sph/) | Organiza material de WeChat Channels y de cuentas oficiales en tu biblioteca. |
 
 ## Instalación
 

@@ -45,9 +45,7 @@
 | コマンド | できること |
 |---|---|
 | [`/ky-x`](./skills/ky-x/) | X の公開投稿をローカルに保存（Markdown + JSONL）。 |
-| [`/ky-dy`](./skills/ky-dy/) | Douyin の公開動画をメタデータ付きでダウンロード。 |
 | [`/ky-xhs`](./skills/ky-xhs/) | 小紅書（RED）の公開ノートを取得：テキスト、画像、動画。 |
-| [`/ky-sph`](./skills/ky-sph/) | WeChat チャンネルと公式アカウントの素材をライブラリに整理。 |
 
 ## インストール
 

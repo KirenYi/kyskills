@@ -45,9 +45,7 @@ Commands are the same in every language. Each skill replies in the language you 
 | Command | What it does for you |
 |---|---|
 | [`/ky-x`](./skills/ky-x/) | Archive public X posts to your computer (Markdown + JSONL). |
-| [`/ky-dy`](./skills/ky-dy/) | Download public Douyin videos with their metadata. |
 | [`/ky-xhs`](./skills/ky-xhs/) | Fetch public Xiaohongshu (RED) notes: text, images, video. |
-| [`/ky-sph`](./skills/ky-sph/) | Organize WeChat Channels and Official Account material into your library. |
 
 ## Install
 
