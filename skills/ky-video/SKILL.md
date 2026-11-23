@@ -33,7 +33,7 @@ description: >
 8. **挂动画**：写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上、钩子文案 3 版），专属动画写进 `custom.tsx`。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。
 9. **质检**：`python3 scripts/check.py <项目>`（口型偏差 ≤1 帧 + 成片逐字比对，修掉漏字/残留词），再 `render.py` 出 1080p 预览，抽帧看一遍有没有挡脸、重叠。
 10. **给用户看**：直接给完整版，不给粗剪。钩子用 `render.py --hooks` 出 3 版让用户挑。按反馈改 → 重跑 7–9。
-11. **封面与标题**：同一风格出 3 款，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题，并带“AI 制作 / 合作咨询”）。
+11. **封面与标题**：两套版式可选（见 `references/covers.md`）：风格包自带的 `suspense-*`，或通用大字封面 `bigtext-*`（真人照片 + 上下各约 4 个大字，系列感强，和视频风格无关）。同一版式出 3 款文案，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题，并带“AI 制作 / 合作咨询”）。
 12. **导出发布**：`render.py --4k` → `publish.py` → `out/发布包-<标题>/`，告诉用户只从这个文件夹上传。
 
 ## 硬规则
@@ -52,6 +52,7 @@ description: >
 - `references/project-files.md`：project.json / edl.json / scenes.tsx 写法
 - `references/style-contract.md`：风格包必须提供的零件 + 新建风格流程
 - `references/platforms.md`：各平台封面尺寸与上传要点
+- `references/covers.md`：两套封面版式、大字封面的写法规则
 - `references/shooting-checklist.md`：发给用户的拍摄清单
 - 环境：ffmpeg、Node 18+、Python 3.9+（带 numpy）、openai-whisper（large-v3-turbo）；字体第一次使用时下载（magazine：Noto Serif SC / Noto Sans SC，OFL），不依赖系统字体
 
@@ -66,6 +67,7 @@ ky-video 的流程、剪辑脚本、项目模板和 magazine 风格包（组件�
 - ffmpeg（LGPL/GPL）、openai-whisper（MIT）、React（MIT）：只作为本机工具调用，不随 Skill 分发。
 - 字体：magazine 使用 Noto Serif SC / Noto Sans SC（SIL Open Font License 1.1，许可证在 `assets/styles/magazine/fonts/OFL.txt`）。字体文件不随 Skill 附带，由 `scripts/fetch_fonts.py` 从 Google Fonts 官方仓库下载。
 - 音效：全部由 `scripts/sfx.py` 用代码合成，没有第三方素材。BGM 若用曲库，需记录曲目来源和授权。
+- 大字封面（`bigtext`）的版式参考了国内口播博主常见的「真人大头 + 上下粗描边大字」做法，只借鉴通用机制，代码和配色为本 Skill 自写。
 - `assets/examples/taste/` 是作者已公开发布的视频项目，只作为写法示例，版权归作者所有。
 
 商用授权 / Commercial licensing：kirenyi16@gmail.com · kirenyi.com

@@ -49,6 +49,11 @@ def main() -> int:
                 sys.exit("FONTS_MISSING: 还没有下载字体（约 40 MB，开源可商用）。先征得用户同意，再运行 "
                          f"python3 {Path(__file__).with_name('fetch_fonts.py')}，然后重新建项目。")
             shutil.copy2(shared / ttf, dest / "public" / "fonts" / ttf)
+    # the style-independent big-text cover (src/engine/BigTextCover.tsx) needs Noto Sans SC in every project
+    sans = Path.home() / ".config" / "kyskills" / "fonts" / "NotoSansSC.ttf"
+    if not (dest / "public" / "fonts" / "NotoSansSC.ttf").is_file() and sans.is_file():
+        (dest / "public" / "fonts").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(sans, dest / "public" / "fonts" / "NotoSansSC.ttf")
     if a.example:
         ex = ASSETS / "examples" / a.example
         shutil.copytree(ex, dest, dirs_exist_ok=True)

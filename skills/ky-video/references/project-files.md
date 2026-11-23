@@ -11,7 +11,7 @@
 | `style` | 风格包名 |
 | `face` | 人脸中心在 1920×1080 画面中的坐标，决定放大中心、C/D 版式裁切、口型检测区域。拿一帧截图量一下 |
 | `frames` | 封面用的截图：`{"文件名.png": 秒数}`，prep 时从中间文件截到 public/ |
-| `covers` | 封面 Still id → 导出文件名列表（每个平台一份） |
+| `covers` | 封面 Still id → 导出文件名列表（每个平台一份）。用大字封面时换成 `bigtext-34 / bigtext-43 / bigtext-916 / bigtext-169`，见 `references/covers.md` |
 
 ## edl.json（剪辑表）
 

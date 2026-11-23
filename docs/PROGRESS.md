@@ -25,6 +25,24 @@
 
 ---
 
+## 2026-11-23 — Claude Code — ky-video 0.2.0：通用大字封面 bigtext
+
+- **操作者**：Claude Code
+- **目标**：封面增加一套和视频风格无关的「真人大头 + 上下粗描边大字」版式，让每期封面有系列感
+- **已完成**：
+  - 新增 `BigTextCover`（上行白字 / 副标题 / 下行渐变色、字号自动撑满、横版用 `photoWide`）
+  - 模板注册 `bigtext-34/916/43/169`；new_project 确保每个项目都有 Noto Sans SC
+  - 新增 `references/covers.md`；更新 SKILL.md、platforms.md、project-files.md、shooting-checklist.md；VERSION 0.2.0
+- **改动路径**：
+  - `skills/ky-video/assets/template/src/engine/BigTextCover.tsx`（新）
+  - `skills/ky-video/assets/template/src/video/covers.tsx`
+  - `skills/ky-video/scripts/new_project.py`
+  - `skills/ky-video/references/{covers,platforms,project-files,shooting-checklist}.md`
+  - `skills/ky-video/SKILL.md`、`skills/ky-video/VERSION`
+- **验证**：用 `new_project.py --example taste --no-install` 建临时项目，4 个尺寸都渲染通过；版权标识 `KYVIDEO-bigtext-2611` 已加
+- **未完成 / 下一步**：Kiren 同意后已提交推送（只含 ky-video 和本条记录）；下一期实拍后用专门拍的封面照验证
+- **风险或注意**：无
+
 ## 2026-11-18 — Claude Code — 删除 ky-dy、ky-sph
 
 - **操作者**：Claude Code
