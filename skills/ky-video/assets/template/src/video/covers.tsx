@@ -8,7 +8,7 @@ import project from '../../project.json';
 const photo: PhotoSpec = {file: 'cover_calm.png', face: project.face as [number, number]};
 const strike = 'TODO 被推翻的常识';
 const big = ['TODO 问题第一行', '是？？'];
-const badge = '全片动画由 AI 制作';
+const badge: string | undefined = undefined; // optional corner badge; off by default
 
 const bt: Omit<BigTextProps, 'w' | 'h'> = {photo: 'cover_photo.png', photoWide: 'cover_calm.png', top: 'TODO四字', sub: 'TODO 一行补充信息', bottom: 'TODO四字'};
 const BT = (w: number, h: number) => () => <BigTextCover w={w} h={h} {...bt} />;

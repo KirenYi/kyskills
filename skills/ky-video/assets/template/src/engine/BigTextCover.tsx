@@ -27,7 +27,7 @@ export type BigTextProps = {
   focus?: [number, number];      // 0–1 point of the photo kept in view when cropping (default: centre, slightly high)
   top: string; bottom: string; sub?: string;
   accent?: BigTextAccent;        // bottom line colour; keep the same one for every episode
-  tag?: string;                  // optional small corner tag, e.g. "动画全由 AI 制作"
+  tag?: string;                  // optional small corner tag (e.g. episode / series name); off by default
 };
 
 // CJK = 1 unit, ASCII = 0.6

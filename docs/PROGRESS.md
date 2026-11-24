@@ -25,6 +25,17 @@
 
 ---
 
+## 2026-11-24 — Claude Code — ky-video 0.2.1 → 0.2.2：竖屏安全区、默认不加“AI 制作”、第 0 步先看原片
+
+- **操作者**：Claude Code
+- **目标**：根据第 2 期真实使用的反馈修正默认值
+- **已完成**：platforms.md 加竖屏安全区（抖音全面屏会裁掉左右各约 9%，顶部被界面盖住）；SKILL.md 硬规则加两条；模板 badge 默认关闭；covers.md、retrospective.md、BigTextCover 注释同步；VERSION 0.2.1
+- **改动路径**：`skills/ky-video/{SKILL.md,VERSION,references/platforms.md,references/covers.md,references/retrospective.md,assets/template/src/video/covers.tsx,assets/template/src/engine/BigTextCover.tsx}`
+- **0.2.2**：新增 `references/source-check.md` 和 SKILL.md 第 0 步：先看原片（已剪、已加速、已有字幕、竖屏），做过的不重做。起因是 GrokBot 用 0.2.0 剪同一条原片时，遮掉了原字幕重排
+- **验证**：只改了文档和默认值，没有改脚本逻辑
+- **未完成 / 下一步**：Kiren 同意后已推送；chalk 叠加风格包、prep.py 竖屏支持以后再做
+- **风险或注意**：无
+
 ## 2026-11-23 — Claude Code — ky-video 0.2.0：通用大字封面 bigtext
 
 - **操作者**：Claude Code

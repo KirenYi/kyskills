@@ -23,6 +23,7 @@ description: >
 
 ## 流程（每步做完再进下一步）
 
+0. **先看原片**（拿到原片后第一件事）：横屏还是竖屏、有没有烧录字幕、有没有加过速、是不是已经剪过。**用户已经做过的不重做**（不遮原字幕重排、不重复加速），拿不准就问。判断方法见 `references/source-check.md`。
 1. **选题与稿子**：先聊清楚必须回答的问题，再出口播稿 + 分镜表（每句标 A–E 版式）。可配合 `ky-write`。
 2. **选风格**：读 `assets/styles/INDEX.md` 推荐 1–2 个；用户想要新风格 → 按 `references/style-contract.md` 新建（先 3 张样图，选定后做 10 秒样片）。
 3. **拍摄前**：把 `references/shooting-checklist.md` 发给用户；先要 10 秒测试样片，确认比例、帧率、背景。
@@ -33,7 +34,7 @@ description: >
 8. **挂动画**：写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上、钩子文案 3 版），专属动画写进 `custom.tsx`。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。
 9. **质检**：`python3 scripts/check.py <项目>`（口型偏差 ≤1 帧 + 成片逐字比对，修掉漏字/残留词），再 `render.py` 出 1080p 预览，抽帧看一遍有没有挡脸、重叠。
 10. **给用户看**：直接给完整版，不给粗剪。钩子用 `render.py --hooks` 出 3 版让用户挑。按反馈改 → 重跑 7–9。
-11. **封面与标题**：两套版式可选（见 `references/covers.md`）：风格包自带的 `suspense-*`，或通用大字封面 `bigtext-*`（真人照片 + 上下各约 4 个大字，系列感强，和视频风格无关）。同一版式出 3 款文案，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题，并带“AI 制作 / 合作咨询”）。
+11. **封面与标题**：两套版式可选（见 `references/covers.md`）：风格包自带的 `suspense-*`，或通用大字封面 `bigtext-*`（真人照片 + 上下各约 4 个大字，系列感强，和视频风格无关）。同一版式出 3 款文案，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题；默认不写“由 AI 制作”，合作咨询引导按用户需要加）。
 12. **导出发布**：`render.py --4k` → `publish.py` → `out/发布包-<标题>/`，告诉用户只从这个文件夹上传。
 
 ## 硬规则
@@ -43,12 +44,15 @@ description: >
 - 动画不能挡脸：全屏动画时人像缩到画中画并在动画上层。
 - 文字一律在 Remotion 里做（本机 ffmpeg 没有 drawtext）。
 - 平台尺寸见 `references/platforms.md`；抖音横封面是 4:3，不是 16:9。
+- 竖屏视频的叠加画面要留安全边距（左右约 130px、顶部约 190px，1080 宽时），见 `references/platforms.md`。
+- 封面、画面、简介默认不加“由 AI 制作”这类标签，用户明确要求时才加。
 - BGM：第 1 期未使用，代码合成效果差。下一期要专门测试（真实曲库 + 说话时自动压低）。
 - 不覆盖已有项目目录；原片只读。
 
 ## 参考
 
 - `references/retrospective.md`：复盘手册（坑、做对的、用户偏好）
+- `references/source-check.md`：第 0 步，先看原片状态（已剪 / 已加速 / 已有字幕 / 竖屏）
 - `references/project-files.md`：project.json / edl.json / scenes.tsx 写法
 - `references/style-contract.md`：风格包必须提供的零件 + 新建风格流程
 - `references/platforms.md`：各平台封面尺寸与上传要点
