@@ -29,11 +29,11 @@ description: >
 3. **拍摄前**：把 `references/shooting-checklist.md` 发给用户；先要 10 秒测试样片，确认比例、帧率、背景。
 4. **建项目**：`python3 scripts/new_project.py <目录> --style <风格> --source <原片> --title <标题>`。第一次提示 `FONTS_MISSING` 时，告诉用户要下载两款开源字体（约 40 MB），征得同意后运行 `python3 scripts/fetch_fonts.py`（和 ky-brand 共用 `~/.config/kyskills/fonts/`）。
 5. **预处理**：`python3 scripts/prep.py <项目>` → 固定 30 帧中间文件 + whisper 转写 + `work/transcript.md`；在 project.json 填 `face`（人脸在 1920×1080 中的位置）。
-6. **写剪辑表**：读 transcript.md，按“同一句保留最后一遍”写 `edl.json`（格式见 `references/project-files.md`）。开头钩子 = 复制全片最反常识/最有冲突的一句放最前。
+6. **写剪辑表**：读 transcript.md，按“同一句保留最后一遍”写 `edl.json`（格式见 `references/project-files.md`）。**钩子先看开头**：前 5 秒已经是提问、冲突或承诺（用户写稿时就设计好的钩子），就不复制，`scenes.tsx` 写 `HOOK = null`，交片时说明「开头已是钩子，没复制；想换的话备选是……」；开头平淡时，才复制全片最反常识/最有冲突的一句放最前。字幕按正确写法写，口误改掉的在 `_note` 记一笔。
 7. **精剪**：`build.py` → `cut.py`。
-8. **挂动画**：写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上、钩子文案 3 版），专属动画写进 `custom.tsx`。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。
+8. **挂动画**：写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上；复制了钩子才写钩子文案 3 版），专属动画写进 `custom.tsx`。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。画面上的产品名、功能名以用户给的截图或官方界面写法为准，不照搬口语叫法；拿不准的先列出来问，再渲染。
 9. **质检**：`python3 scripts/check.py <项目>`（口型偏差 ≤1 帧 + 成片逐字比对，修掉漏字/残留词），再 `render.py` 出 1080p 预览，抽帧看一遍有没有挡脸、重叠。
-10. **给用户看**：直接给完整版，不给粗剪。钩子用 `render.py --hooks` 出 3 版让用户挑。按反馈改 → 重跑 7–9。
+10. **给用户看**：直接给完整版，不给粗剪。复制了钩子时用 `render.py --hooks` 出 3 版让用户挑。按反馈改 → 重跑 7–9。
 11. **封面与标题**：两套版式可选（见 `references/covers.md`）：风格包自带的 `suspense-*`，或通用大字封面 `bigtext-*`（真人照片 + 上下各约 4 个大字，系列感强，和视频风格无关）。同一版式出 3 款文案，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题；默认不写“由 AI 制作”，合作咨询引导按用户需要加）。
 12. **导出发布**：`render.py --4k` → `publish.py` → `out/发布包-<标题>/`，告诉用户只从这个文件夹上传。
 

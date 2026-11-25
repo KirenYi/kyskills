@@ -61,7 +61,12 @@ def sync(p: Path, cfg: dict) -> bool:
             items.append((sg[-1], pos, sg[1]))
         pos += sg[-1]
     ok = True
-    picks = sorted(items, reverse=True)[:5]
+    # two pieces can share one source take (e.g. a copied hook): compare each source spot once
+    seen, picks = set(), []
+    for it in sorted(items, reverse=True):
+        if it[2] in seen: continue
+        seen.add(it[2]); picks.append(it)
+    picks = picks[:5]
     cutf = frames_at(p / "public/cut.mp4", [(tl + 15, 6) for _, tl, _ in picks])
     mezf = frames_at(p / "work/mezz.mp4", [(round(src * FPS) + 13, 10) for _, _, src in picks])
     for n, tl, src in picks:

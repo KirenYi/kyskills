@@ -25,6 +25,20 @@
 
 ---
 
+## 2026-11-25 — Claude Code — ky-video 0.2.2 → 0.2.3：钩子先看开头、字幕不切英文单词、check 去重、产品名按截图
+
+- **操作者**：Claude Code
+- **目标**：修第 3 期真实使用发现的 4 个问题
+- **已完成**：
+  - `check.py --sync`：两段镜头共用同一段原片（复制的钩子）时按原片位置去重，不再报错
+  - `build.py`：新增 `split_cap()`，英文和数字按半个字宽计算，超出 18 字宽时在空格或中英交界处折行，不切断单词
+  - SKILL.md 第 6 步：前 5 秒已是钩子就不复制（`HOOK = null`），交片时说明并给备选；第 8、10 步相应修改；第 8 步加「画面上的产品名以截图或官方写法为准，拿不准先问」
+  - `references/project-files.md` 补充 HOOK = null 和字幕折行说明；VERSION 0.2.3
+- **改动路径**：`skills/ky-video/{SKILL.md,VERSION,references/project-files.md,scripts/build.py,scripts/check.py}`
+- **验证**：两个脚本语法检查通过；`split_cap` 用 5 句中英混排字幕测试，都没有切断单词，每行 ≤ 18 字宽；check.py 的去重和第 3 期项目里实际跑通的副本一致。没有用新 build.py 重跑一整期项目
+- **未完成 / 下一步**：Kiren 同意后已推送（只含 ky-video）；下一期用 0.2.3 跑完整流程验证
+- **风险或注意**：英文按半宽算后，中英混排的字幕一行能放更多字符，下一期留意是否过宽
+
 ## 2026-11-24 — Claude Code — ky-video 0.2.1 → 0.2.2：竖屏安全区、默认不加“AI 制作”、第 0 步先看原片
 
 - **操作者**：Claude Code

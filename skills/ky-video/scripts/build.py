@@ -16,6 +16,31 @@ from pathlib import Path
 import numpy as np
 from common import FPS, envelope, load, project_root, words
 
+
+def cap_width(s: str) -> float:
+    """Screen width in CJK-char units: ASCII letters, digits, spaces and punctuation are half width."""
+    return sum(0.5 if ord(c) < 128 else 1 for c in s)
+
+
+def split_cap(p: str, limit: float = 18, target: float = 16) -> list[str]:
+    """Split one caption part that is too wide for one line. Never cuts inside an English word or a
+    number: breaks at a space or a CJK/Latin boundary, whichever is closest to `target` width."""
+    out = []
+    while cap_width(p) > limit:
+        best, best_d, w = None, None, 0.0
+        for i in range(1, len(p)):
+            w += cap_width(p[i - 1])
+            if w > limit: break
+            a, b = p[i - 1], p[i]
+            if a.isascii() and b.isascii() and (a.isalnum() or a in '.+-_') and (b.isalnum() or b in '.+-_'):
+                continue  # inside a word / number
+            d = abs(w - target) + (0 if ' ' in (a, b) else 0.25)
+            if best_d is None or d < best_d: best, best_d = i, d
+        if best is None: break  # a single token wider than the line: keep it whole
+        out.append(p[:best].rstrip()); p = p[best:].lstrip()
+    out.append(p)
+    return [x for x in out if x]
+
 P = project_root(sys.argv[1] if len(sys.argv) > 1 else None)
 WORK = P / 'work'
 EDLJ = load(P, 'edl.json')
@@ -123,8 +148,7 @@ for g in groups:
         chunks = []
         for p in parts:
             p = p.strip()
-            while len(p) > 18: chunks.append(p[:16]); p = p[16:]
-            chunks.append(p)
+            chunks += split_cap(p)
         capc = ''.join(c for c in ''.join(chunks) if keep(c))
         cmap = {}
         sm = difflib.SequenceMatcher(None, capc, ''.join(x[0] for x in sub), autojunk=False)
