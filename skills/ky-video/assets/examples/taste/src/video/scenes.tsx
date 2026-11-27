@@ -4,6 +4,7 @@ import React from 'react';
 import * as St from '../style';
 import * as V from './custom';
 import type {VProps, Render, SfxList, HookSpec} from '../engine/types';
+import {typeSfx} from '../engine/fx';
 
 // ---------- visuals: [fromShot, toShot, render] ----------
 export const VIS: [string, string, Render][] = [
@@ -41,7 +42,7 @@ export const VIS: [string, string, Render][] = [
   ['51', '51', (p) => <V.CritiqueB {...p} />],
   ['52', '52', (p) => <V.MiniPyramid {...p} />],
   ['53', '53', (p) => <St.Method {...p} n="03" title="说出为什么" />],
-  ['54', '54', (p) => <St.TypeNote {...p} label="写下来" text="我喜欢它，是因为……" />],
+  ['54', '54', (p) => <St.TypeNote {...p} label="写下来" draft="好看。" text="我喜欢它，是因为……" startKey="我喜欢" />],
   ['56', '56', (p) => <St.Method {...p} n="04" title="顺藤摸瓜" />],
   ['57', '57', (p) => <V.Tree {...p} />],
   ['58', '58', (p) => <St.Method {...p} n="05" title="跨领域" />],
@@ -65,11 +66,12 @@ export const SFX_MAP: Record<string, (p: VProps) => SfxList> = {
   '4': (p) => [[0, 'pop'], [p.kw('我负责', 30), 'pop'], [p.kw('我负责', 30) + 4, 'ding']],
   '5': (p) => [[p.kw('品位', 0), 'impact']],
   '6': (p) => [[p.kw('到底是什么', 30) - 4, 'tick'], [p.kw('为什么', 70) - 4, 'tick'], [p.kw('怎么把', 120) - 4, 'tick']],
-  '7': () => [[-4, 'whoosh']], '22': () => [[-4, 'whoosh']], '40': () => [[-4, 'whoosh']],
+  // full-screen cards: whoosh as the circle opens, a low 'sub' for weight, two ticks as the chapter number rolls
+  '7': () => [[-4, 'whoosh'], [2, 'sub'], [10, 'tick'], [14, 'tick']], '22': () => [[-4, 'whoosh'], [2, 'sub'], [10, 'tick'], [14, 'tick']], '40': () => [[-4, 'whoosh'], [2, 'sub'], [10, 'tick'], [14, 'tick']],
   '9': (p) => [[0, 'pop'], [p.kw('贵', 12) + 10, 'strike']], '10': (p) => [[0, 'pop'], [p.kw('跟潮流', 12) + 10, 'strike']],
   '11': (p) => [[c(p, 1), 'tick'], [c(p, 3), 'tick'], [c(p, 5), 'tick'], [c(p, 5) + 24, 'ding']],
   '18': (p) => [[p.kw('做减法', 30), 'pop']],
-  '19': () => [[-4, 'whoosh']], '64': () => [[-4, 'whoosh']],
+  '19': () => [[-4, 'whoosh'], [2, 'sub']], '64': () => [[-4, 'whoosh'], [2, 'sub']],
   '21': () => [[6, 'ding']],
   '24': () => range(5, (i) => i * 4).map((f) => [f, 'tick'] as [number, string]),
   '25': (p) => [[p.kw('做东西', 0), 'pop'], [p.kw('东西的能力', 80) - 6, 'pop']],
@@ -89,7 +91,7 @@ export const SFX_MAP: Record<string, (p: VProps) => SfxList> = {
   '50': (p) => [[p.kw('四种', 10), 'strike'], [p.kw('五种', 40), 'strike'], [p.kw('抢你', 70), 'strike']],
   '51': (p) => [[p.kw('一种字体', 6), 'tick'], [p.kw('一个颜色', 20), 'tick'], [p.kw('留白', 34), 'tick']],
   '52': (p) => [[p.kw('直觉', 5), 'tick'], [p.kw('原因', 45), 'tick']],
-  '54': () => range(10, (i) => 10 + i * 3).map((f) => [f, 'type'] as [number, string]),
+  '54': (p) => typeSfx(St.typeNoteSched(p, '我喜欢它，是因为……', '好看。', '我喜欢')),
   '57': () => [[0, 'tick']],
   '59': () => [[0, 'whoosh']],
   '60': () => range(4, (i) => i * 8).map((f) => [f, 'tick'] as [number, string]),

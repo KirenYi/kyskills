@@ -7,3 +7,4 @@ export * from './layout';
 export * from './covers';
 import style from './style.json';
 export const SFX_VOL: Record<string, number> = style.sfx;
+export const GRAIN: number = (style as {grain?: number}).grain ?? 0;

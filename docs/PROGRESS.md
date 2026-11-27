@@ -25,6 +25,24 @@
 
 ---
 
+## 2026-11-27 — Claude Code — ky-video 0.2.3 → 0.3.0：动效库 + magazine 组件升级 + 镜头手法清单
+
+- **操作者**：Claude Code
+- **目标**：把拆解公开演示得到的动效手法做成 ky-video 的通用能力，新视频默认就有
+- **已完成**：
+  - 新增 `assets/template/src/engine/fx.tsx`：Rise（逐字从缝里升起）、BlurIn、Odometer、Reveal（圆形展开 + 推近 + 暗角）、Grain、Vignette、打字/删字/重打时间表与音效、音效 jitter
+  - magazine kit：BigWord、NotEqual、Statement、Method、TypeNote（新增 `draft`、`startKey`，导出 `typeNoteSched`）、ChapterCard、QuoteCard、TitleSting、HookOverlay 改用 fx；style.json 加 `grain` 和 `del`/`sub` 音量；index.ts 导出 `GRAIN`
+  - 引擎 Main.tsx：全片颗粒、音效随机音高、`del` 别名；`scripts/sfx.py` 新增 `sub`
+  - 新增 `references/motion.md`；SKILL.md 第 1、8 步和参考、版权节（致谢借鉴来源）同步；style-contract、retrospective 同步；示例 taste 的 TypeNote 和卡片音效更新
+  - VERSION 0.3.0
+- **改动路径**：`skills/ky-video/{SKILL.md,VERSION,assets/template/src/engine/{fx.tsx,Main.tsx},assets/styles/magazine/{kit.tsx,index.ts,style.json},assets/examples/taste/src/video/scenes.tsx,references/{motion.md,retrospective.md,style-contract.md},scripts/sfx.py}`
+- **验证**：先在真实项目重剪第 1 期并渲染整片（作者认可）；再用 `new_project.py --example taste` 建临时工程，接已剪素材渲染 7 帧，各组件正常
+- **补充**：同日按 motion.md 重新设计第 3 期画面并通过作者确认，motion.md 补了 3 条排版细节（手动断行、C 版式宽度、全脸镜头放卡片）
+- **未完成 / 下一步**：下一期从分镜开始按 motion.md 设计；README 未改（ky-video 对外说明未提动效细节）
+- **风险或注意**：作者确认发布后提交推送。仓库里 ky-learn、README 等文件另有他人未提交改动，与本次无关，未动
+
+---
+
 ## 2026-11-25 — Claude Code — ky-video 0.2.2 → 0.2.3：钩子先看开头、字幕不切英文单词、check 去重、产品名按截图
 
 - **操作者**：Claude Code

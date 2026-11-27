@@ -7,7 +7,7 @@
 
 | 文件 | 内容 |
 |---|---|
-| `style.json` | `name`、`label`、`bg`（卡片和空白段的底色，hex，不带 #）、`sfx`（各音效音量） |
+| `style.json` | `name`、`label`、`bg`（卡片和空白段的底色，hex，不带 #）、`sfx`（各音效音量，含 `del`、`sub`）；可选 `grain`（全片颗粒强度，0 关闭） |
 | `STYLE.md` | 一句话气质、配色、字体、适合 / 不适合的题材、样图 |
 | `sample.png` | 1920×1080 样图 |
 | `index.ts` | 导出下面所有名字，以及 `SFX_VOL` |
@@ -17,10 +17,14 @@
 | `fonts/` + `fonts.ts` | 字体文件和许可证（只能用 `kyskills/docs/FONT_LICENSE.md` 白名单里的字体）；new_project 会把它们放进 public/fonts |
 | `covers.tsx` | `Suspense169 / Suspense43 / Suspense34`，以及 `Photo Badge Q Strike PhotoSpec` |
 
+组件的动效优先用引擎的 `src/engine/fx.tsx`（`Rise BlurIn Odometer Reveal` 等），换风格只换样式，不换手感。`index.ts` 还要导出 `GRAIN`（读 style.json 的 `grain`）。
+
 ## kit.tsx 必须导出
 
 辅助：`glow useSpring cueAt BZone CZone Kicker`
 组件：`TwoLines BigWord NotEqual Statement Chat Method NumberList CheckList TypeNote ChapterCard QuoteCard TitleSting HookOverlay CaptionBox`
+
+另需导出 `typeNoteSched(p, text, draft?, startKey?)`（TypeNote 的打字时间表，scenes 里配 `typeSfx` 挂音效）；TypeNote 支持可选 `draft`（先打后删的草稿）和 `startKey`。
 
 props 签名照抄 magazine，样式可以完全不同。新风格可以额外加组件，但 scenes 里用了额外组件之后就不能直接换风格，记得在 STYLE.md 里标注。
 

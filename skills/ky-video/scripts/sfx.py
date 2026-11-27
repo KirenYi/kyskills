@@ -43,4 +43,7 @@ x = np.sin(2 * np.pi * np.cumsum(f) / sr) * np.exp(-tt * 7) + 0.15 * lp(rng.norm
 save('impact', x, 0.6)
 # type: keyboard click
 tt = t(0.035); save('type', lp(rng.normal(size=tt.size), 0.5) * np.exp(-tt * 250) + 0.3 * np.sin(2 * np.pi * 1800 * tt) * np.exp(-tt * 300), 0.3)
+# sub: low weight under a full-screen card (46 Hz + octave, slow decay); felt more than heard
+tt = t(1.0); x = (np.sin(2 * np.pi * 46 * tt) + 0.4 * np.sin(2 * np.pi * 92 * tt)) * np.exp(-tt * 3.2) * np.minimum(1, tt / 0.008)
+save('sub', x, 0.7)
 print('音效已生成：', OUT)

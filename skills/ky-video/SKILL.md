@@ -17,21 +17,21 @@ description: >
 ## 结构
 
 - `scripts/`：通用引擎，每期不改。`prep → build → cut → render → check → publish`
-- `assets/template/`：Remotion 项目骨架（`src/engine/` 通用，`src/video/` 每期内容）
+- `assets/template/`：Remotion 项目骨架（`src/engine/` 通用，含动效库 `fx.tsx`；`src/video/` 每期内容）
 - `assets/styles/<name>/`：风格包（配色、组件、字幕、版式、封面模板），目录见 `assets/styles/INDEX.md`
 - `assets/examples/taste/`：作者已公开发布的第 1 期《品味》的完整项目，写新一期时照着抄
 
 ## 流程（每步做完再进下一步）
 
 0. **先看原片**（拿到原片后第一件事）：横屏还是竖屏、有没有烧录字幕、有没有加过速、是不是已经剪过。**用户已经做过的不重做**（不遮原字幕重排、不重复加速），拿不准就问。判断方法见 `references/source-check.md`。
-1. **选题与稿子**：先聊清楚必须回答的问题，再出口播稿 + 分镜表（每句标 A–E 版式）。可配合 `ky-write`。
+1. **选题与稿子**：先聊清楚必须回答的问题，再出口播稿 + 分镜表（每句标 A–E 版式）。分镜时按 `references/motion.md` 第二部分逐条过一遍，把用得上的镜头手法标进分镜。可配合 `ky-write`。
 2. **选风格**：读 `assets/styles/INDEX.md` 推荐 1–2 个；用户想要新风格 → 按 `references/style-contract.md` 新建（先 3 张样图，选定后做 10 秒样片）。
 3. **拍摄前**：把 `references/shooting-checklist.md` 发给用户；先要 10 秒测试样片，确认比例、帧率、背景。
 4. **建项目**：`python3 scripts/new_project.py <目录> --style <风格> --source <原片> --title <标题>`。第一次提示 `FONTS_MISSING` 时，告诉用户要下载两款开源字体（约 40 MB），征得同意后运行 `python3 scripts/fetch_fonts.py`（和 ky-brand 共用 `~/.config/kyskills/fonts/`）。
 5. **预处理**：`python3 scripts/prep.py <项目>` → 固定 30 帧中间文件 + whisper 转写 + `work/transcript.md`；在 project.json 填 `face`（人脸在 1920×1080 中的位置）。
 6. **写剪辑表**：读 transcript.md，按“同一句保留最后一遍”写 `edl.json`（格式见 `references/project-files.md`）。**钩子先看开头**：前 5 秒已经是提问、冲突或承诺（用户写稿时就设计好的钩子），就不复制，`scenes.tsx` 写 `HOOK = null`，交片时说明「开头已是钩子，没复制；想换的话备选是……」；开头平淡时，才复制全片最反常识/最有冲突的一句放最前。字幕按正确写法写，口误改掉的在 `_note` 记一笔。
 7. **精剪**：`build.py` → `cut.py`。
-8. **挂动画**：写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上；复制了钩子才写钩子文案 3 版），专属动画写进 `custom.tsx`。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。画面上的产品名、功能名以用户给的截图或官方界面写法为准，不照搬口语叫法；拿不准的先列出来问，再渲染。
+8. **挂动画**：先读 `references/motion.md`。写 `src/video/scenes.tsx`（哪段放什么动画、音效挂在哪个关键词上；复制了钩子才写钩子文案 3 版），专属动画写进 `custom.tsx`，优先用 `src/engine/fx.tsx` 里的动效（逐字升起、模糊进场、数字滚动、圆形展开、打字删改），保持全片手感一致。动画用 `kw('关键词')` 定时，**必须和人声同时出现，不能提前**。画面上的产品名、功能名以用户给的截图或官方界面写法为准，不照搬口语叫法；拿不准的先列出来问，再渲染。
 9. **质检**：`python3 scripts/check.py <项目>`（口型偏差 ≤1 帧 + 成片逐字比对，修掉漏字/残留词），再 `render.py` 出 1080p 预览，抽帧看一遍有没有挡脸、重叠。
 10. **给用户看**：直接给完整版，不给粗剪。复制了钩子时用 `render.py --hooks` 出 3 版让用户挑。按反馈改 → 重跑 7–9。
 11. **封面与标题**：两套版式可选（见 `references/covers.md`）：风格包自带的 `suspense-*`，或通用大字封面 `bigtext-*`（真人照片 + 上下各约 4 个大字，系列感强，和视频风格无关）。同一版式出 3 款文案，**只抛问题不给答案**；用户选定后写进 `src/video/covers.tsx`，标题简介写 `标题和简介.md`（简介里可以点题；默认不写“由 AI 制作”，合作咨询引导按用户需要加）。
@@ -52,6 +52,7 @@ description: >
 ## 参考
 
 - `references/retrospective.md`：复盘手册（坑、做对的、用户偏好）
+- `references/motion.md`：内置动效怎么用 + 每期要单独设计的镜头手法清单
 - `references/source-check.md`：第 0 步，先看原片状态（已剪 / 已加速 / 已有字幕 / 竖屏）
 - `references/project-files.md`：project.json / edl.json / scenes.tsx 写法
 - `references/style-contract.md`：风格包必须提供的零件 + 新建风格流程
@@ -71,6 +72,7 @@ ky-video 的流程、剪辑脚本、项目模板和 magazine 风格包（组件�
 - ffmpeg（LGPL/GPL）、openai-whisper（MIT）、React（MIT）：只作为本机工具调用，不随 Skill 分发。
 - 字体：magazine 使用 Noto Serif SC / Noto Sans SC（SIL Open Font License 1.1，许可证在 `assets/styles/magazine/fonts/OFL.txt`）。字体文件不随 Skill 附带，由 `scripts/fetch_fonts.py` 从 Google Fonts 官方仓库下载。
 - 音效：全部由 `scripts/sfx.py` 用代码合成，没有第三方素材。BGM 若用曲库，需记录曲目来源和授权。
+- 动效手法（逐字升起、模糊进场、数字滚动、圆形展开、胶片颗粒、打字删改等）参考了公开演示《The Last Boring Slide》的通用做法，只借鉴机制和参数思路，代码为本 Skill 自写，未使用其代码、素材或文案。
 - 大字封面（`bigtext`）的版式参考了国内口播博主常见的「真人大头 + 上下粗描边大字」做法，只借鉴通用机制，代码和配色为本 Skill 自写。
 - `assets/examples/taste/` 是作者已公开发布的视频项目，只作为写法示例，版权归作者所有。
 

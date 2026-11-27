@@ -5,6 +5,11 @@ import React from 'react';
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {red, ink, grey, serif, sans, prog, out, bg} from './theme';
 import type {VProps} from '../engine/types';
+import {Rise as RiseBase, BlurIn, Odometer, Reveal, ramp, eOut4, typeSchedule, typedAt, typedDoneAt} from '../engine/fx';
+
+// magazine defaults for the engine primitives: highlights are red
+const Rise: React.FC<React.ComponentProps<typeof RiseBase>> = (p) => <RiseBase hiColor={red} {...p} />;
+const grow = (f: number, s: number, d = 14) => eOut4(ramp(f, s, d)); // rules and underlines
 
 // ---------- helpers ----------
 export const glow = '0 0 18px rgba(247,245,240,0.95), 0 0 6px rgba(247,245,240,0.9)';
@@ -67,30 +72,30 @@ export const TwoLines: React.FC<VProps & {rows: [string, string, boolean][]; key
 
 export const BigWord: React.FC<VProps & {word: string; sub?: string; key2?: string}> = ({dur, word, sub, key2, kw}) => {
   const k0 = key2 ? kw(key2, 0) : 0;
-  const s = useSpring(k0, 14);
   const f = useCurrentFrame();
   return (
     <BZone dur={dur} top={150}>
-      <div style={{fontFamily: serif, fontWeight: 900, fontSize: 230, lineHeight: 1, letterSpacing: -4, transform: `translateY(${(1 - s) * -80}px)`, opacity: Math.min(1, s * 1.5)}}>{word}</div>
-      <div style={{width: 120 * prog(f, k0 + 10), height: 8, background: red, marginTop: 30}} />
-      {sub && <div style={{fontFamily: sans, fontSize: 34, marginTop: 24, opacity: prog(f, 16)}}>{sub}</div>}
+      <div style={{fontFamily: serif, fontWeight: 900, fontSize: 230, lineHeight: 1, letterSpacing: -4}}><Rise text={word} at={k0 - 2} d={18} stagger={4} /></div>
+      <div style={{width: 120 * grow(f, k0 + 10), height: 8, background: red, marginTop: 30}} />
+      {sub && <BlurIn at={k0 + 16} size={34}><div style={{fontFamily: sans, fontSize: 34, marginTop: 24}}>{sub}</div></BlurIn>}
     </BZone>
   );
 };
 
-// "A ≠ B" with B struck through when key2 is spoken
+// "A ≠ B" with B struck through when key2 is spoken; the struck word then fades back and sinks
 export const NotEqual: React.FC<VProps & {left: string; right: string; key2: string}> = ({dur, left, right, key2, kw}) => {
   const f = useCurrentFrame();
   const r = kw(key2, 12);
-  const strike = prog(f, r + 10, 12);
+  const strike = grow(f, r + 10, 10);
+  const sink = grow(f, r + 20, 14);
   return (
     <BZone dur={dur} top={230}>
       <div style={{display: 'flex', alignItems: 'center', gap: 40, fontFamily: serif, fontWeight: 700, fontSize: 120}}>
-        <span style={{opacity: prog(f, 0)}}>{left}</span>
-        <span style={{color: red, opacity: prog(f, 6), fontFamily: sans, fontWeight: 300}}>≠</span>
-        <span style={{position: 'relative', opacity: prog(f, r)}}>
-          {right}
-          <span style={{position: 'absolute', left: -10, top: '52%', height: 8, background: red, width: `calc(${strike * 100}% + 20px)`}} />
+        <Rise text={left} at={0} stagger={3} />
+        <BlurIn at={6} size={120}><span style={{color: red, fontFamily: sans, fontWeight: 300}}>≠</span></BlurIn>
+        <span style={{position: 'relative', opacity: 1 - 0.55 * sink, transform: `translateY(${sink * 12}px)`, filter: `blur(${sink * 1.5}px)`}}>
+          <Rise text={right} at={r - 2} stagger={3} />
+          <span style={{position: 'absolute', left: -10, top: '52%', height: 8, background: red, width: `calc(${strike * 100}% + 20px)`, opacity: strike > 0 ? 1 : 0}} />
         </span>
       </div>
     </BZone>
@@ -103,12 +108,13 @@ export const Statement: React.FC<VProps & {lines: string[]; hi?: string; size?: 
   const k0 = key2 ? Math.max(0, kw(key2, 0) - 8) : 0;
   return (
     <BZone dur={dur} top={200}>
-      {kicker && <Kicker text={kicker} />}
+      {kicker && <BlurIn at={k0} size={24}><Kicker text={kicker} delay={k0} /></BlurIn>}
       <div style={{marginTop: kicker ? 30 : 0}}>
-        {lines.map((l, i) => {
-          const p = prog(f, k0 + 6 + i * 10);
-          return <div key={i} style={{fontFamily: serif, fontWeight: 700, fontSize: size, lineHeight: 1.35, opacity: p, transform: `translateY(${(1 - p) * 20}px)`}}>{hl(l, hi)}</div>;
-        })}
+        {lines.map((l, i) => (
+          <div key={i} style={{fontFamily: serif, fontWeight: 700, fontSize: size, lineHeight: 1.35}}>
+            <Rise text={l} at={k0 + 4 + i * 12} hi={hi && l.includes(hi) ? hi : undefined} />
+          </div>
+        ))}
       </div>
     </BZone>
   );
@@ -140,10 +146,10 @@ export const Method: React.FC<VProps & {n: string; title: string; sub?: string}>
     <BZone dur={dur} top={210}>
       <div style={{display: 'flex', alignItems: 'baseline', gap: 30}}>
         <span style={{fontFamily: serif, fontStyle: 'italic', fontSize: 130, color: red, opacity: s, transform: `translateY(${(1 - s) * 30}px)`, display: 'inline-block'}}>{n}</span>
-        <span style={{fontFamily: serif, fontWeight: 700, fontSize: 96, opacity: prog(f, 6)}}>{title}</span>
+        <span style={{fontFamily: serif, fontWeight: 700, fontSize: 96}}><Rise text={title} at={4} stagger={3} /></span>
       </div>
-      <div style={{height: 2, background: ink, width: 640 * prog(f, 8, 20), marginTop: 10}} />
-      {sub && <div style={{fontFamily: sans, fontSize: 38, marginTop: 26, opacity: prog(f, 16)}}>{sub}</div>}
+      <div style={{height: 2, background: ink, width: 640 * grow(f, 8, 20), marginTop: 10}} />
+      {sub && <BlurIn at={16} size={38}><div style={{fontFamily: sans, fontSize: 38, marginTop: 26}}>{sub}</div></BlurIn>}
     </BZone>
   );
 };
@@ -190,19 +196,27 @@ export const CheckList: React.FC<VProps & {title: string; items: string[]}> = ({
   );
 };
 
-// sticky note with typed text
-export const TypeNote: React.FC<VProps & {label: string; text: string}> = ({dur, label, text}) => {
+// sticky note with typed text.
+// draft (optional): typed first in grey, deleted, then `text` is typed when startKey is spoken
+// (e.g. draft "好看。" -> text "我喜欢它，是因为……"). Pair with typeNoteSfx in SFX_MAP.
+export const typeNoteSched = (p: VProps, text: string, draft?: string, startKey?: string) =>
+  typeSchedule(text, draft, draft ? 4 : 10, startKey ? p.kw(startKey, 30) : draft ? 30 : 10);
+export const TypeNote: React.FC<VProps & {label: string; text: string; draft?: string; startKey?: string}> = (p) => {
+  const {dur, label, text, draft, startKey} = p;
   const f = useCurrentFrame();
-  const n = Math.floor(interpolate(f, [10, 10 + text.length * 3], [0, text.length], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}));
+  const sc = typeNoteSched(p, text, draft, startKey);
+  const t = typedAt(f, sc);
   const s = useSpring(0, 14);
+  const typing = typedAt(f - 3, sc) !== t;
+  const cursor = typing || Math.sin(f * 0.32) > -0.3; // steady while typing, blinks when idle
   return (
     <BZone dur={dur} top={220}>
       <div style={{background: '#FFF8DC', width: 720, padding: '44px 48px', boxShadow: '0 12px 30px rgba(0,0,0,0.12)', transform: `rotate(${-3 * s}deg) scale(${s})`, textShadow: 'none'}}>
         <div style={{fontFamily: sans, fontSize: 24, color: grey, letterSpacing: 4}}>{label}</div>
-        <div style={{fontFamily: serif, fontWeight: 700, fontSize: 52, marginTop: 20, minHeight: 80, whiteSpace: 'nowrap'}}>
-          {text.slice(0, n)}<span style={{opacity: f % 20 < 10 ? 1 : 0, color: red}}>|</span>
+        <div style={{fontFamily: serif, fontWeight: 700, fontSize: 52, marginTop: 20, minHeight: 80, whiteSpace: 'nowrap', color: draft && f < sc.t2 ? grey : ink}}>
+          {t}<span style={{display: 'inline-block', width: 4, height: 54, marginLeft: 4, verticalAlign: -6, background: red, opacity: cursor ? 1 : 0}} />
         </div>
-        <div style={{height: 2, background: red, width: 520 * prog(f, 50, 20), marginTop: 8}} />
+        <div style={{height: 2, background: red, width: 520 * grow(f, typedDoneAt(sc) + 4, 16), marginTop: 8}} />
       </div>
     </BZone>
   );
@@ -212,39 +226,43 @@ export const TypeNote: React.FC<VProps & {label: string; text: string}> = ({dur,
 const CN = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
 export const ChapterCard: React.FC<VProps & {n: string; title: string; sub: string; tag?: string}> = ({dur, n, title, sub, tag = ''}) => {
   const f = useCurrentFrame();
-  const {fps} = useVideoConfig();
+  const isNum = /^\d+$/.test(n);
+  const prev = isNum ? String(Math.max(0, Number(n) - 1)).padStart(n.length, '0') : n;
   return (
-    <AbsoluteFill style={{background: bg, opacity: interpolate(f, [0, 6, dur - 8, dur], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>
+    // opens as a circle from the PiP speaker, chapter number rolls from the previous one
+    <Reveal dur={dur} bg={bg}>
       <div style={{position: 'absolute', top: 70, left: 120, right: 120, display: 'flex', justifyContent: 'space-between', fontSize: 22, letterSpacing: 6, fontFamily: sans}}>
-        <span>第{CN[Number(n) - 1]}章 · CHAPTER {n}</span><span style={{color: red}}>{tag}</span>
+        <BlurIn at={6} size={22}><span>第{CN[Number(n) - 1]}章 · CHAPTER {n}</span></BlurIn><span style={{color: red}}>{tag}</span>
       </div>
-      <div style={{position: 'absolute', top: 118, left: 120, height: 2, background: ink, width: 1680 * prog(f, 0, 25)}} />
-      <div style={{position: 'absolute', left: 120, top: 250, fontFamily: serif, fontStyle: 'italic', fontSize: 220, color: red, opacity: prog(f, 4), lineHeight: 1}}>{n}</div>
-      <div style={{position: 'absolute', left: 120, top: 520, fontFamily: serif, fontWeight: 900, fontSize: 120, display: 'flex'}}>
-        {title.split('').map((c, i) => {
-          const s = spring({frame: f - 8 - i * 2, fps, config: {damping: 200}});
-          return <span key={i} style={{opacity: s, transform: `translateY(${(1 - s) * 40}px)`, color: c === '？' ? red : ink}}>{c}</span>;
-        })}
+      <div style={{position: 'absolute', top: 118, left: 120, height: 2, background: ink, width: 1680 * grow(f, 4, 26)}} />
+      <div style={{position: 'absolute', left: 120, top: 250, fontFamily: serif, fontStyle: 'italic', fontSize: 220, color: red, lineHeight: 1}}>
+        {isNum ? <Odometer from={prev} to={n} at={8} d={20} /> : <Rise text={n} at={8} />}
       </div>
-      <div style={{position: 'absolute', left: 120, top: 700, width: 120 * prog(f, 18), height: 8, background: red}} />
-      <div style={{position: 'absolute', left: 120, top: 740, fontFamily: sans, fontSize: 30, color: '#555', letterSpacing: 2, opacity: prog(f, 24)}}>{sub}</div>
-    </AbsoluteFill>
+      <div style={{position: 'absolute', left: 120, top: 520, fontFamily: serif, fontWeight: 900, fontSize: 120}}>
+        <Rise text={title} at={12} stagger={2} hi="？" />
+      </div>
+      <div style={{position: 'absolute', left: 120, top: 700, width: 120 * grow(f, 24), height: 8, background: red}} />
+      <BlurIn at={28} size={30} style={{position: 'absolute', left: 120, top: 740}}>
+        <div style={{fontFamily: sans, fontSize: 30, color: '#555', letterSpacing: 2}}>{sub}</div>
+      </BlurIn>
+    </Reveal>
   );
 };
 
 export const QuoteCard: React.FC<VProps & {en: string; zh: string; who: string; hi?: string}> = ({dur, en, zh, who, hi}) => {
-  const f = useCurrentFrame();
   return (
-    <AbsoluteFill style={{background: bg, opacity: out(f, dur)}}>
-      <div style={{position: 'absolute', left: 140, top: 60, fontFamily: serif, fontSize: 320, color: red, opacity: prog(f, 0), lineHeight: 1}}>“</div>
+    <Reveal dur={dur} bg={bg}>
+      <div style={{position: 'absolute', left: 140, top: 60, fontFamily: serif, fontSize: 320, color: red, lineHeight: 1}}><Rise text="“" at={4} d={20} /></div>
       <div style={{position: 'absolute', left: 160, top: 300, width: 1180}}>
-        <div style={{fontFamily: serif, fontStyle: 'italic', fontSize: 50, lineHeight: 1.4, opacity: prog(f, 4)}}>{en}</div>
-        <div style={{fontFamily: serif, fontWeight: 700, fontSize: 52, marginTop: 40, opacity: prog(f, 14)}}>{hl(zh, hi)}</div>
-        <div style={{display: 'flex', alignItems: 'center', gap: 16, marginTop: 50, fontFamily: sans, fontSize: 30, opacity: prog(f, 22)}}>
-          <div style={{width: 60, height: 2, background: ink}} />{who}
-        </div>
+        <BlurIn at={8} size={50} d={20}><div style={{fontFamily: serif, fontStyle: 'italic', fontSize: 50, lineHeight: 1.4}}>{en}</div></BlurIn>
+        <div style={{fontFamily: serif, fontWeight: 700, fontSize: 52, marginTop: 40, whiteSpace: 'normal'}}><Rise text={zh} at={20} stagger={1} hi={hi} style={{whiteSpace: 'normal'}} /></div>
+        <BlurIn at={36} size={30}>
+          <div style={{display: 'flex', alignItems: 'center', gap: 16, marginTop: 50, fontFamily: sans, fontSize: 30}}>
+            <div style={{width: 60, height: 2, background: ink}} />{who}
+          </div>
+        </BlurIn>
       </div>
-    </AbsoluteFill>
+    </Reveal>
   );
 };
 
@@ -256,10 +274,10 @@ export const TitleSting: React.FC<VProps & {word: string; sub: string}> = ({dur,
   const q = sub.endsWith('？') ? sub.slice(0, -1) : sub;
   return (
     <AbsoluteFill style={{background: bg, opacity: interpolate(f, [0, 4, dur - 6, dur], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})}}>
-      <div style={{position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center'}}>
-        <div style={{fontFamily: serif, fontWeight: 900, fontSize: 300, lineHeight: 1, transform: `scale(${0.9 + 0.1 * s})`, opacity: s}}>{word}</div>
-        <div style={{fontFamily: serif, fontSize: 72, marginTop: 30, opacity: prog(f, 8)}}>{q}{q !== sub && <span style={{color: red}}>？</span>}</div>
-        <div style={{width: 120 * prog(f, 12), height: 8, background: red, margin: '36px auto 0'}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: 300, textAlign: 'center', transform: `scale(${1 + 0.03 * s})`}}>
+        <div style={{fontFamily: serif, fontWeight: 900, fontSize: 300, lineHeight: 1}}><Rise text={word} at={0} d={14} stagger={4} /></div>
+        <div style={{fontFamily: serif, fontSize: 72, marginTop: 30}}><Rise text={q + (q !== sub ? '？' : '')} at={10} d={12} stagger={1} hi="？" /></div>
+        <div style={{width: 120 * grow(f, 18, 12), height: 8, background: red, margin: '36px auto 0'}} />
       </div>
     </AbsoluteFill>
   );
@@ -277,7 +295,7 @@ export const HookOverlay: React.FC<VProps & {lines: string[]; hi: string; stamp?
     <div style={{position: 'absolute', left: 100, top: 110, width: 860, opacity: out(f, dur, 6)}}>
       <div style={{display: 'inline-block', background: 'rgba(247,245,240,0.92)', padding: '34px 44px 40px', transform: `scale(${0.85 + 0.15 * slam})`, transformOrigin: 'left top', opacity: Math.min(1, slam * 1.4), borderLeft: `10px solid ${red}`, boxShadow: '0 16px 40px rgba(0,0,0,0.12)'}}>
         {lines.map((l, i) => (
-          <div key={i} style={{fontFamily: serif, fontWeight: 900, fontSize: i === 0 ? 64 : 84, lineHeight: 1.25, color: ink, opacity: 1 - 0.55 * Math.min(1, Math.max(0, st))}}>{hl(l, hi)}</div>
+          <div key={i} style={{fontFamily: serif, fontWeight: 900, fontSize: i === 0 ? 64 : 84, lineHeight: 1.25, color: ink, opacity: 1 - 0.55 * Math.min(1, Math.max(0, st))}}><Rise text={l} at={3 + i * 8} stagger={1} hi={l.includes(hi) ? hi : undefined} /></div>
         ))}
       </div>
       {stamp && f >= pay && (

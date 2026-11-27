@@ -8,6 +8,15 @@ import {TL, makeKw, byName, propsFor} from './tl';
 import * as St from '../style';
 import {VIS, SFX_MAP, HOOK} from '../video/scenes';
 import type {Geo} from '../style';
+import {Grain, jitter} from './fx';
+
+// optional per-style settings (style.json): grain = film-grain opacity over the whole frame (0 = off)
+const GRAIN: number = (St as unknown as {GRAIN?: number}).GRAIN ?? 0;
+// SFX aliases: 'del' = the type sound pitched up
+const SFX_FILE: Record<string, string> = {del: 'type'};
+const SFX_RATE: Record<string, number> = {del: 1.35};
+// low sounds keep their pitch; everything else varies slightly each time
+const NO_JITTER = new Set(['sub', 'impact']);
 
 const FACE = project.face as [number, number];
 const geo = (s: (typeof TL.shots)[number]) => St.geoFor(s.layout, s.zoom ?? 1, FACE);
@@ -54,7 +63,7 @@ const SFX: React.FC = () => {
     <>
       {items.map(([from, type], i) => (
         <Sequence key={i} from={from} durationInFrames={45} layout="none">
-          <Audio src={staticFile(`sfx_${type}.wav`)} volume={St.SFX_VOL[type] ?? 0.5} />
+          <Audio src={staticFile(`sfx_${SFX_FILE[type] ?? type}.wav`)} volume={St.SFX_VOL[type] ?? 0.5} playbackRate={(SFX_RATE[type] ?? 1) * (NO_JITTER.has(type) ? 1 : jitter(i))} />
         </Sequence>
       ))}
     </>
@@ -90,6 +99,7 @@ export const Main: React.FC<{hook?: number}> = ({hook}) => (
     })}
     <Hook v={hook ?? HOOK?.defaultVariant ?? 0} />
     <VideoLayer over />
+    {GRAIN > 0 && <Grain opacity={GRAIN} />}
     <Captions />
     <SFX />
   </AbsoluteFill>
